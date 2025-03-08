@@ -437,3 +437,11 @@
 2025-03-07 11:41:22,841 [main] DEBUG [nynu.mapper.CustomerMapper.insertCustomer4] - ==>  Preparing: insert into t_customer ( username ) values ( ? ) 
 2025-03-07 11:41:22,868 [main] DEBUG [nynu.mapper.CustomerMapper.insertCustomer4] - ==> Parameters: 扬子(String)
 2025-03-07 11:41:22,870 [main] DEBUG [nynu.mapper.CustomerMapper.insertCustomer4] - <==    Updates: 1
+2025-03-08 17:04:30,121 [main] DEBUG [nynu.mapper.CustomerMapper.selectList] - ==>  Preparing: select * from t_customer where id in ( ? , ? , ? ) 
+2025-03-08 17:04:30,143 [main] DEBUG [nynu.mapper.CustomerMapper.selectList] - ==> Parameters: 1(Integer), 3(Integer), 5(Integer)
+2025-03-08 17:10:50,975 [main] DEBUG [nynu.mapper.CustomerMapper.selectList] - ==>  Preparing: select * from t_customer where id in ( ? , ? , ? ) 
+2025-03-08 17:10:50,995 [main] DEBUG [nynu.mapper.CustomerMapper.selectList] - ==> Parameters: 1(Integer), 3(Integer), 5(Integer)
+2025-03-08 17:10:51,013 [main] DEBUG [nynu.mapper.CustomerMapper.selectList] - <==      Total: 3
+2025-03-08 17:11:04,781 [main] DEBUG [nynu.mapper.CustomerMapper.insertCustomer] - ==>  Preparing: insert into t_customer (username,jobs,phone) values (?,?,?) 
+2025-03-08 17:11:04,801 [main] DEBUG [nynu.mapper.CustomerMapper.insertCustomer] - ==> Parameters: 单个添加(String), 神话任务(String), 0377(String)
+2025-03-08 17:11:04,803 [main] DEBUG [nynu.mapper.CustomerMapper.insertCustomer] - <==    Updates: 1

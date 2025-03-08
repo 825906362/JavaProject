@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.mapper.StudentMapper">
+
+    <!-- 功能1：多条件查询 -->
+    <select id="findByCondition" resultType="Student">
+        SELECT id, student_name, major, student_number
+        FROM student
+        <where>
+            <!-- 当studentName不为空时，添加姓名条件 -->
+            <if test="studentName != null and studentName != ''">
+                AND student_name = #{studentName}
+            </if>
+            <!-- 当studentName为空且major不为空时，添加专业条件 -->
+            <if test="studentName == null and major != null and major != ''">
+                AND major = #{major}
+            </if>
+            <!-- 当两者都为空时，查询学号不为空的数据 -->
+            <if test="studentName == null and major == null">
+                AND student_number IS NOT NULL
+            </if>
+        </where>
+    </select>
+
+    <select id="findByIdLessThan5" resultType="Student">
+        SELECT id, student_name, major, student_number
+        FROM student
+        WHERE id &lt; 5 <!-- XML中必须转义<符号 -->
+    </select>
+
+    <select id="findByNumbers" resultType="Student">
+        SELECT * FROM student
+        WHERE student_number IN
+        <foreach item="num" collection="numbers"
+                 open="(" separator="," close=")">
+            #{num}
+        </foreach>
+    </select>
+
+    <insert id="batchInsert">
+        INSERT INTO student (student_name, major, student_number)
+        VALUES
+        <foreach collection="students" item="stu" separator=",">
+            (
+            #{stu.studentName},
+            #{stu.major},
+            #{stu.studentNumber}
+            )
+        </foreach>
+    </insert>
+</mapper>
