@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.nynu.mapper.EmployeeMapper">
+    <select id="selectById" parameterType="Integer" resultType="Employee">
+        select * from Employee where id=#{id}
+    </select>
+    <insert id="insertEmployee" parameterType="Employee">
+        <selectKey resultType="Integer" keyColumn="id" keyProperty="id" order="BEFORE">
+            SELECT IFNULL(MAX(id), 0) + 1 FROM Employee
+        </selectKey>
+        insert into Employee(id,name,age,position)  <!-- 正确表名 -->
+        values(#{id},#{name},#{age},#{position})
+    </insert>
+    <delete id="deleteEmployee" parameterType="Integer">
+        delete from Employee where id=#{id}
+    </delete>
+    <update id="updateEmployee" parameterType="Employee">
+        update Employee set name=#{name},age=#{age},position=#{position} where id=#{id}
+    </update>
+</mapper>

@@ -1,0 +1,439 @@
+2025-02-27 01:46:27,571 [main] DEBUG [nynu.mapper.findById] - ==>  Preparing: select * from user where uid=? 
+2025-02-27 01:46:27,605 [main] DEBUG [nynu.mapper.findById] - ==> Parameters: 1(Integer)
+2025-02-27 01:46:27,626 [main] DEBUG [nynu.mapper.findById] - <==      Total: 1
+2025-02-27 01:52:46,189 [main] DEBUG [nynu.mapper.findById] - ==>  Preparing: select * from user where uid=? 
+2025-02-27 01:52:46,216 [main] DEBUG [nynu.mapper.findById] - ==> Parameters: 1(Integer)
+2025-02-27 01:52:46,235 [main] DEBUG [nynu.mapper.findById] - <==      Total: 1
+2025-02-27 01:54:24,584 [main] DEBUG [nynu.mapper.findAll] - ==>  Preparing: select * from user 
+2025-02-27 01:54:24,637 [main] DEBUG [nynu.mapper.findAll] - ==> Parameters: 
+2025-02-27 01:54:24,655 [main] DEBUG [nynu.mapper.findAll] - <==      Total: 2
+2025-02-27 01:56:03,703 [main] DEBUG [nynu.mapper.findAll] - ==>  Preparing: select * from user 
+2025-02-27 01:56:03,727 [main] DEBUG [nynu.mapper.findAll] - ==> Parameters: 
+2025-02-27 01:56:03,744 [main] DEBUG [nynu.mapper.findAll] - <==      Total: 2
+2025-02-27 01:57:12,327 [main] DEBUG [nynu.mapper.findAll] - ==>  Preparing: select * from user 
+2025-02-27 01:57:12,351 [main] DEBUG [nynu.mapper.findAll] - ==> Parameters: 
+2025-02-27 01:57:12,374 [main] DEBUG [nynu.mapper.findAll] - <==      Total: 3
+2025-02-27 02:01:44,036 [main] DEBUG [nynu.mapper.findAll] - ==>  Preparing: select * from user 
+2025-02-27 02:01:44,066 [main] DEBUG [nynu.mapper.findAll] - ==> Parameters: 
+2025-02-27 02:01:44,082 [main] DEBUG [nynu.mapper.findAll] - <==      Total: 3
+2025-02-27 02:02:08,062 [main] DEBUG [nynu.mapper.findAll] - ==>  Preparing: select * from user 
+2025-02-27 02:02:08,085 [main] DEBUG [nynu.mapper.findAll] - ==> Parameters: 
+2025-02-27 02:02:08,100 [main] DEBUG [nynu.mapper.findAll] - <==      Total: 3
+2025-02-27 02:19:45,623 [main] DEBUG [nynu.mapper.UserMapper.findById] - ==>  Preparing: select * from user where uid=? 
+2025-02-27 02:19:45,653 [main] DEBUG [nynu.mapper.UserMapper.findById] - ==> Parameters: 3(Integer)
+2025-02-27 02:19:45,672 [main] DEBUG [nynu.mapper.UserMapper.findById] - <==      Total: 1
+2025-02-27 02:38:14,464 [main] DEBUG [nynu.mapper.UserMapper.findById] - ==>  Preparing: select * from user where uid=? 
+2025-02-27 02:38:14,499 [main] DEBUG [nynu.mapper.UserMapper.findById] - ==> Parameters: 3(Integer)
+2025-02-27 02:38:14,521 [main] DEBUG [nynu.mapper.UserMapper.findById] - <==      Total: 1
+2025-02-27 02:40:52,918 [main] DEBUG [nynu.mapper.UserMapper.findById] - ==>  Preparing: select * from user where uid=? 
+2025-02-27 02:40:52,945 [main] DEBUG [nynu.mapper.UserMapper.findById] - ==> Parameters: 3(Integer)
+2025-02-27 02:40:52,963 [main] DEBUG [nynu.mapper.UserMapper.findById] - <==      Total: 1
+2025-02-27 02:41:01,536 [main] DEBUG [nynu.mapper.UserMapper.findById] - ==>  Preparing: select * from user where uid=? 
+2025-02-27 02:41:01,561 [main] DEBUG [nynu.mapper.UserMapper.findById] - ==> Parameters: 3(Integer)
+2025-02-27 02:41:01,577 [main] DEBUG [nynu.mapper.UserMapper.findById] - <==      Total: 1
+2025-02-27 02:42:26,484 [main] DEBUG [nynu.mapper.UserMapper.findById] - ==>  Preparing: select * from user where uid=? 
+2025-02-27 02:42:26,514 [main] DEBUG [nynu.mapper.UserMapper.findById] - ==> Parameters: 3(Integer)
+2025-02-27 02:42:26,534 [main] DEBUG [nynu.mapper.UserMapper.findById] - <==      Total: 1
+2025-02-27 02:42:51,934 [main] DEBUG [nynu.mapper.UserMapper.findById] - ==>  Preparing: select * from user where uid=? 
+2025-02-27 02:42:51,961 [main] DEBUG [nynu.mapper.UserMapper.findById] - ==> Parameters: 3(Integer)
+2025-02-27 02:42:51,979 [main] DEBUG [nynu.mapper.UserMapper.findById] - <==      Total: 1
+2025-02-27 02:43:51,511 [main] DEBUG [nynu.mapper.UserMapper.findById] - ==>  Preparing: select * from user where uid=? 
+2025-02-27 02:43:51,538 [main] DEBUG [nynu.mapper.UserMapper.findById] - ==> Parameters: 3(Integer)
+2025-02-27 02:43:51,553 [main] DEBUG [nynu.mapper.UserMapper.findById] - <==      Total: 1
+2025-02-27 02:43:59,791 [main] DEBUG [nynu.mapper.UserMapper.findById] - ==>  Preparing: select * from user where uid=? 
+2025-02-27 02:43:59,815 [main] DEBUG [nynu.mapper.UserMapper.findById] - ==> Parameters: 3(Integer)
+2025-02-27 02:43:59,835 [main] DEBUG [nynu.mapper.UserMapper.findById] - <==      Total: 1
+2025-02-27 02:44:13,181 [main] DEBUG [nynu.mapper.UserMapper.findById] - ==>  Preparing: select * from user where uid=? 
+2025-02-27 02:44:13,207 [main] DEBUG [nynu.mapper.UserMapper.findById] - ==> Parameters: 3(Integer)
+2025-02-27 02:44:13,222 [main] DEBUG [nynu.mapper.UserMapper.findById] - <==      Total: 1
+2025-02-27 02:44:28,859 [main] DEBUG [nynu.mapper.UserMapper.findById] - ==>  Preparing: select * from user where uid=? 
+2025-02-27 02:44:28,886 [main] DEBUG [nynu.mapper.UserMapper.findById] - ==> Parameters: 3(Integer)
+2025-02-27 02:44:28,901 [main] DEBUG [nynu.mapper.UserMapper.findById] - <==      Total: 1
+2025-02-27 02:45:27,580 [main] DEBUG [nynu.mapper.UserMapper.findById] - ==>  Preparing: select * from user where uid=? 
+2025-02-27 02:45:27,610 [main] DEBUG [nynu.mapper.UserMapper.findById] - ==> Parameters: 3(Integer)
+2025-02-27 02:45:27,630 [main] DEBUG [nynu.mapper.UserMapper.findById] - <==      Total: 1
+2025-02-27 02:46:29,063 [main] DEBUG [nynu.mapper.UserMapper.findById] - ==>  Preparing: select * from user where uid=? 
+2025-02-27 02:46:29,088 [main] DEBUG [nynu.mapper.UserMapper.findById] - ==> Parameters: 3(Integer)
+2025-02-27 02:46:29,102 [main] DEBUG [nynu.mapper.UserMapper.findById] - <==      Total: 1
+2025-02-27 02:47:00,352 [main] DEBUG [nynu.mapper.UserMapper.findById] - ==>  Preparing: select * from user where uid=? 
+2025-02-27 02:47:00,381 [main] DEBUG [nynu.mapper.UserMapper.findById] - ==> Parameters: 3(Integer)
+2025-02-27 02:47:00,403 [main] DEBUG [nynu.mapper.UserMapper.findById] - <==      Total: 1
+2025-02-27 02:47:21,077 [main] DEBUG [nynu.mapper.UserMapper.findById] - ==>  Preparing: select * from user where uid=? 
+2025-02-27 02:47:21,102 [main] DEBUG [nynu.mapper.UserMapper.findById] - ==> Parameters: 3(Integer)
+2025-02-27 02:47:21,117 [main] DEBUG [nynu.mapper.UserMapper.findById] - <==      Total: 1
+2025-02-27 02:49:30,840 [main] DEBUG [nynu.mapper.UserMapper.findAll] - ==>  Preparing: select * from user 
+2025-02-27 02:49:30,864 [main] DEBUG [nynu.mapper.UserMapper.findAll] - ==> Parameters: 
+2025-02-27 02:49:30,881 [main] DEBUG [nynu.mapper.UserMapper.findAll] - <==      Total: 3
+2025-02-27 02:54:32,353 [main] DEBUG [nynu.mapper.UserMapper.findAll] - ==>  Preparing: select * from user 
+2025-02-27 02:54:32,378 [main] DEBUG [nynu.mapper.UserMapper.findAll] - ==> Parameters: 
+2025-02-27 02:54:32,393 [main] DEBUG [nynu.mapper.UserMapper.findAll] - <==      Total: 3
+2025-02-27 02:55:08,655 [main] DEBUG [nynu.mapper.UserMapper.findAll] - ==>  Preparing: select * from user 
+2025-02-27 02:55:08,682 [main] DEBUG [nynu.mapper.UserMapper.findAll] - ==> Parameters: 
+2025-02-27 02:55:08,700 [main] DEBUG [nynu.mapper.UserMapper.findAll] - <==      Total: 3
+2025-02-27 02:55:23,505 [main] DEBUG [nynu.mapper.UserMapper.findAll] - ==>  Preparing: select * from user 
+2025-02-27 02:55:23,534 [main] DEBUG [nynu.mapper.UserMapper.findAll] - ==> Parameters: 
+2025-02-27 02:55:23,554 [main] DEBUG [nynu.mapper.UserMapper.findAll] - <==      Total: 3
+2025-02-27 02:55:54,315 [main] DEBUG [nynu.mapper.UserMapper.findAll] - ==>  Preparing: select * from user 
+2025-02-27 02:55:54,343 [main] DEBUG [nynu.mapper.UserMapper.findAll] - ==> Parameters: 
+2025-02-27 02:55:54,364 [main] DEBUG [nynu.mapper.UserMapper.findAll] - <==      Total: 3
+2025-02-27 02:56:49,058 [main] DEBUG [nynu.mapper.UserMapper.findAll] - ==>  Preparing: select * from user 
+2025-02-27 02:56:49,085 [main] DEBUG [nynu.mapper.UserMapper.findAll] - ==> Parameters: 
+2025-02-27 02:56:49,099 [main] DEBUG [nynu.mapper.UserMapper.findAll] - <==      Total: 3
+2025-02-27 02:56:54,008 [main] DEBUG [nynu.mapper.UserMapper.findAll] - ==>  Preparing: select * from user 
+2025-02-27 02:56:54,031 [main] DEBUG [nynu.mapper.UserMapper.findAll] - ==> Parameters: 
+2025-02-27 02:56:54,044 [main] DEBUG [nynu.mapper.UserMapper.findAll] - <==      Total: 3
+2025-02-27 02:57:16,529 [main] DEBUG [nynu.mapper.UserMapper.findAll] - ==>  Preparing: select * from user 
+2025-02-27 02:57:16,559 [main] DEBUG [nynu.mapper.UserMapper.findAll] - ==> Parameters: 
+2025-02-27 02:57:16,582 [main] DEBUG [nynu.mapper.UserMapper.findAll] - <==      Total: 3
+2025-02-27 03:00:31,247 [main] DEBUG [nynu.mapper.UserMapper.findAll] - ==>  Preparing: select * from user 
+2025-02-27 03:00:31,272 [main] DEBUG [nynu.mapper.UserMapper.findAll] - ==> Parameters: 
+2025-02-27 03:00:31,288 [main] DEBUG [nynu.mapper.UserMapper.findAll] - <==      Total: 3
+2025-02-27 09:56:02,218 [main] DEBUG [nynu.mapper.UserMapper.findAll] - ==>  Preparing: select * from user 
+2025-02-27 09:56:02,244 [main] DEBUG [nynu.mapper.UserMapper.findAll] - ==> Parameters: 
+2025-02-27 09:56:02,267 [main] DEBUG [nynu.mapper.UserMapper.findAll] - <==      Total: 3
+2025-02-27 09:56:40,222 [main] DEBUG [nynu.mapper.UserMapper.findAll] - ==>  Preparing: select * from user 
+2025-02-27 09:56:40,247 [main] DEBUG [nynu.mapper.UserMapper.findAll] - ==> Parameters: 
+2025-02-27 09:56:40,260 [main] DEBUG [nynu.mapper.UserMapper.findAll] - <==      Total: 3
+2025-02-27 10:08:31,438 [main] DEBUG [nynu.mapper.UserMapper.findAll] - ==>  Preparing: select * from user 
+2025-02-27 10:08:31,462 [main] DEBUG [nynu.mapper.UserMapper.findAll] - ==> Parameters: 
+2025-02-27 10:08:31,480 [main] DEBUG [nynu.mapper.UserMapper.findAll] - <==      Total: 3
+2025-02-27 10:08:38,731 [main] DEBUG [nynu.mapper.UserMapper.findAll] - ==>  Preparing: select * from user 
+2025-02-27 10:08:38,754 [main] DEBUG [nynu.mapper.UserMapper.findAll] - ==> Parameters: 
+2025-02-27 10:08:38,774 [main] DEBUG [nynu.mapper.UserMapper.findAll] - <==      Total: 3
+2025-02-27 10:31:01,200 [main] DEBUG [nynu.mapper.UserMapper.findAll] - ==>  Preparing: select * from user 
+2025-02-27 10:31:01,225 [main] DEBUG [nynu.mapper.UserMapper.findAll] - ==> Parameters: 
+2025-02-27 10:31:01,242 [main] DEBUG [nynu.mapper.UserMapper.findAll] - <==      Total: 3
+2025-02-27 10:43:14,739 [main] DEBUG [nynu.mapper.UserMapper.findAll] - ==>  Preparing: select * from user 
+2025-02-27 10:43:14,767 [main] DEBUG [nynu.mapper.UserMapper.findAll] - ==> Parameters: 
+2025-02-27 10:43:14,785 [main] DEBUG [nynu.mapper.UserMapper.findAll] - <==      Total: 3
+2025-02-27 10:49:00,810 [main] DEBUG [nynu.mapper.UserMapper.findAll] - ==>  Preparing: select * from user 
+2025-02-27 10:49:00,842 [main] DEBUG [nynu.mapper.UserMapper.findAll] - ==> Parameters: 
+2025-02-27 10:49:00,860 [main] DEBUG [nynu.mapper.UserMapper.findAll] - <==      Total: 3
+2025-02-27 10:49:49,895 [main] DEBUG [nynu.mapper.UserMapper.findAll] - ==>  Preparing: select * from user 
+2025-02-27 10:49:49,924 [main] DEBUG [nynu.mapper.UserMapper.findAll] - ==> Parameters: 
+2025-02-27 10:49:49,941 [main] DEBUG [nynu.mapper.UserMapper.findAll] - <==      Total: 3
+2025-02-27 11:01:05,721 [main] DEBUG [nynu.mapper.UserMapper.findAll] - ==>  Preparing: select * from user 
+2025-02-27 11:01:05,757 [main] DEBUG [nynu.mapper.UserMapper.findAll] - ==> Parameters: 
+2025-02-27 11:01:05,770 [main] DEBUG [nynu.mapper.UserMapper.findAll] - <==      Total: 3
+2025-02-27 11:01:12,698 [main] DEBUG [nynu.mapper.UserMapper.findAll] - ==>  Preparing: select * from user 
+2025-02-27 11:01:12,728 [main] DEBUG [nynu.mapper.UserMapper.findAll] - ==> Parameters: 
+2025-02-27 11:01:12,746 [main] DEBUG [nynu.mapper.UserMapper.findAll] - <==      Total: 3
+2025-02-27 11:37:23,924 [main] DEBUG [nynu.mapper.UserMapper.findAll] - ==>  Preparing: select * from user 
+2025-02-27 11:37:23,955 [main] DEBUG [nynu.mapper.UserMapper.findAll] - ==> Parameters: 
+2025-02-27 11:37:23,970 [main] DEBUG [nynu.mapper.UserMapper.findAll] - <==      Total: 3
+2025-02-27 11:45:34,596 [main] DEBUG [nynu.mapper.UserMapper.findAll] - ==>  Preparing: select * from user 
+2025-02-27 11:45:34,627 [main] DEBUG [nynu.mapper.UserMapper.findAll] - ==> Parameters: 
+2025-02-27 11:45:34,649 [main] DEBUG [nynu.mapper.UserMapper.findAll] - <==      Total: 4
+2025-02-27 23:18:04,730 [main] DEBUG [nynu.mapper.UserMapper.findByName] - ==>  Preparing: SELECT * FROM users WHERE uname LIKE concat('%',?,'%') 
+2025-02-27 23:18:04,752 [main] DEBUG [nynu.mapper.UserMapper.findByName] - ==> Parameters: 杨(String)
+2025-02-27 23:19:25,218 [main] DEBUG [nynu.mapper.UserMapper.findByName] - ==>  Preparing: SELECT * FROM user WHERE uname LIKE concat('%',?,'%') 
+2025-02-27 23:19:25,236 [main] DEBUG [nynu.mapper.UserMapper.findByName] - ==> Parameters: 杨(String)
+2025-02-27 23:20:45,275 [main] DEBUG [nynu.mapper.UserMapper.findByName] - ==>  Preparing: SELECT * FROM user WHERE uname LIKE concat('%',?,'%') 
+2025-02-27 23:20:45,307 [main] DEBUG [nynu.mapper.UserMapper.findByName] - ==> Parameters: 杨(String)
+2025-02-27 23:22:30,008 [main] DEBUG [nynu.mapper.UserMapper.findByName] - ==>  Preparing: SELECT * FROM user WHERE u_name LIKE concat('%',?,'%') 
+2025-02-27 23:22:30,030 [main] DEBUG [nynu.mapper.UserMapper.findByName] - ==> Parameters: 杨(String)
+2025-02-27 23:22:30,045 [main] DEBUG [nynu.mapper.UserMapper.findByName] - <==      Total: 1
+2025-02-27 23:23:02,662 [main] DEBUG [nynu.mapper.UserMapper.findByNameAndAge] - ==>  Preparing: SELECT * FROM user WHERE u_name LIKE concat('%',?,'%') and u_age=? 
+2025-02-27 23:23:02,674 [main] DEBUG [nynu.mapper.UserMapper.findByNameAndAge] - ==> Parameters: 杨(String), 20(Integer)
+2025-02-27 23:23:02,689 [main] DEBUG [nynu.mapper.UserMapper.findByNameAndAge] - <==      Total: 0
+2025-02-27 23:23:06,222 [main] DEBUG [nynu.mapper.UserMapper.addUser] - ==>  Preparing: INSERT INTO user ( u_name, u_age)VALUES(?,?) 
+2025-02-27 23:23:06,246 [main] DEBUG [nynu.mapper.UserMapper.addUser] - ==> Parameters: 小刚(String), 30(Integer)
+2025-02-27 23:23:06,246 [main] DEBUG [nynu.mapper.UserMapper.addUser] - <==    Updates: 1
+2025-02-27 23:23:23,490 [main] DEBUG [nynu.mapper.UserMapper.findByName] - ==>  Preparing: SELECT * FROM user WHERE uName LIKE concat('%',?,'%') 
+2025-02-27 23:23:23,512 [main] DEBUG [nynu.mapper.UserMapper.findByName] - ==> Parameters: 杨(String)
+2025-02-27 23:23:33,789 [main] DEBUG [nynu.mapper.UserMapper.findByName] - ==>  Preparing: SELECT * FROM user WHERE u_name LIKE concat('%',?,'%') 
+2025-02-27 23:23:33,809 [main] DEBUG [nynu.mapper.UserMapper.findByName] - ==> Parameters: 杨(String)
+2025-02-27 23:23:33,814 [main] DEBUG [nynu.mapper.UserMapper.findByName] - <==      Total: 1
+2025-02-28 09:56:59,526 [main] DEBUG [nynu.mapper.UserMapper.findById] - ==>  Preparing: select * from user where u_id=? 
+2025-02-28 09:56:59,556 [main] DEBUG [nynu.mapper.UserMapper.findById] - ==> Parameters: 3(Integer)
+2025-02-28 09:56:59,580 [main] DEBUG [nynu.mapper.UserMapper.findById] - <==      Total: 1
+2025-02-28 09:59:16,657 [main] DEBUG [nynu.mapper.UserMapper.findByName] - ==>  Preparing: SELECT * FROM user WHERE u_name LIKE concat('%',?,'%') 
+2025-02-28 09:59:16,694 [main] DEBUG [nynu.mapper.UserMapper.findByName] - ==> Parameters: 杨(String)
+2025-02-28 09:59:16,715 [main] DEBUG [nynu.mapper.UserMapper.findByName] - <==      Total: 1
+2025-02-28 09:59:47,846 [main] DEBUG [nynu.mapper.UserMapper.addUser] - ==>  Preparing: INSERT INTO user ( u_name, u_age)VALUES(?,?) 
+2025-02-28 09:59:47,874 [main] DEBUG [nynu.mapper.UserMapper.addUser] - ==> Parameters: 小刚(String), 30(Integer)
+2025-02-28 09:59:47,905 [main] DEBUG [nynu.mapper.UserMapper.addUser] - <==    Updates: 1
+2025-02-28 10:00:09,078 [main] DEBUG [nynu.mapper.UserMapper.addUser] - ==>  Preparing: INSERT INTO user ( u_name, u_age)VALUES(?,?) 
+2025-02-28 10:00:09,112 [main] DEBUG [nynu.mapper.UserMapper.addUser] - ==> Parameters: 小刚(String), 30(Integer)
+2025-02-28 10:00:09,112 [main] DEBUG [nynu.mapper.UserMapper.addUser] - <==    Updates: 1
+2025-02-28 10:03:38,780 [main] DEBUG [nynu.mapper.UserMapper.addUser] - ==>  Preparing: INSERT INTO user ( u_name, u_age)VALUES(?,?) 
+2025-02-28 10:03:38,813 [main] DEBUG [nynu.mapper.UserMapper.addUser] - ==> Parameters: 小刚1(String), 30(Integer)
+2025-02-28 10:03:38,840 [main] DEBUG [nynu.mapper.UserMapper.addUser] - <==    Updates: 1
+2025-02-28 10:11:55,794 [main] DEBUG [nynu.mapper.UserMapper.addUser] - ==>  Preparing: INSERT INTO user ( u_name, u_age)VALUES(?,?) 
+2025-02-28 10:11:55,820 [main] DEBUG [nynu.mapper.UserMapper.addUser] - ==> Parameters: 小刚1(String), 30(Integer)
+2025-02-28 10:11:55,820 [main] DEBUG [nynu.mapper.UserMapper.addUser] - <==    Updates: 1
+2025-02-28 10:13:44,280 [main] DEBUG [nynu.mapper.UserMapper.findById] - ==>  Preparing: select * from user where u_id=? 
+2025-02-28 10:13:44,306 [main] DEBUG [nynu.mapper.UserMapper.findById] - ==> Parameters: 3(Integer)
+2025-02-28 10:13:44,322 [main] DEBUG [nynu.mapper.UserMapper.findById] - <==      Total: 1
+2025-02-28 10:13:51,510 [main] DEBUG [nynu.mapper.UserMapper.findAll] - ==>  Preparing: select * from user 
+2025-02-28 10:13:51,539 [main] DEBUG [nynu.mapper.UserMapper.findAll] - ==> Parameters: 
+2025-02-28 10:13:51,553 [main] DEBUG [nynu.mapper.UserMapper.findAll] - <==      Total: 9
+2025-02-28 10:13:56,322 [main] DEBUG [nynu.mapper.UserMapper.findByName] - ==>  Preparing: SELECT * FROM user WHERE u_name LIKE concat('%',?,'%') 
+2025-02-28 10:13:56,347 [main] DEBUG [nynu.mapper.UserMapper.findByName] - ==> Parameters: 杨(String)
+2025-02-28 10:13:56,363 [main] DEBUG [nynu.mapper.UserMapper.findByName] - <==      Total: 1
+2025-02-28 10:14:01,126 [main] DEBUG [nynu.mapper.UserMapper.findByNameAndAge] - ==>  Preparing: SELECT * FROM user WHERE u_name LIKE concat('%',?,'%') and u_age=? 
+2025-02-28 10:14:01,158 [main] DEBUG [nynu.mapper.UserMapper.findByNameAndAge] - ==> Parameters: 杨(String), 20(Integer)
+2025-02-28 10:14:01,174 [main] DEBUG [nynu.mapper.UserMapper.findByNameAndAge] - <==      Total: 0
+2025-02-28 10:14:04,607 [main] DEBUG [nynu.mapper.UserMapper.addUser] - ==>  Preparing: INSERT INTO user ( u_name, u_age)VALUES(?,?) 
+2025-02-28 10:14:04,642 [main] DEBUG [nynu.mapper.UserMapper.addUser] - ==> Parameters: 小刚1(String), 30(Integer)
+2025-02-28 10:14:04,642 [main] DEBUG [nynu.mapper.UserMapper.addUser] - <==    Updates: 1
+2025-02-28 10:16:36,549 [main] DEBUG [nynu.mapper.UserMapper.addUser] - ==>  Preparing: INSERT INTO user ( u_name, u_age)VALUES(?,?) 
+2025-02-28 10:16:36,582 [main] DEBUG [nynu.mapper.UserMapper.addUser] - ==> Parameters: 小刚1(String), 30(Integer)
+2025-02-28 10:16:36,584 [main] DEBUG [nynu.mapper.UserMapper.addUser] - <==    Updates: 1
+2025-02-28 10:38:55,557 [main] DEBUG [nynu.mapper.UserMapper2.addUser] - ==>  Preparing: INSERT INTO user ( u_name, u_age)VALUES(?,?) 
+2025-02-28 10:38:55,582 [main] DEBUG [nynu.mapper.UserMapper2.addUser] - ==> Parameters: 金吒(String), 30(Integer)
+2025-02-28 10:38:55,582 [main] DEBUG [nynu.mapper.UserMapper2.addUser] - <==    Updates: 1
+2025-02-28 10:43:13,689 [main] DEBUG [nynu.mapper.UserMapper2.addUser] - ==>  Preparing: INSERT INTO user ( u_name, u_age)VALUES(?,?) 
+2025-02-28 10:43:13,712 [main] DEBUG [nynu.mapper.UserMapper2.addUser] - ==> Parameters: 金吒(String), 30(Integer)
+2025-02-28 10:43:13,714 [main] DEBUG [nynu.mapper.UserMapper2.addUser] - <==    Updates: 1
+2025-02-28 11:00:39,081 [main] DEBUG [nynu.mapper.UserMapper2.addUser2] - ==>  Preparing: INSERT INTO user ( u_name, u_age)VALUES(?,?) 
+2025-02-28 11:00:39,107 [main] DEBUG [nynu.mapper.UserMapper2.addUser2] - ==> Parameters: 金吒(String), 30(Integer)
+2025-02-28 11:00:39,107 [main] DEBUG [nynu.mapper.UserMapper2.addUser2] - <==    Updates: 1
+2025-02-28 11:00:52,107 [main] DEBUG [nynu.mapper.UserMapper2.addUser] - ==>  Preparing: INSERT INTO user ( u_name, u_age)VALUES(?,?) 
+2025-02-28 11:00:52,137 [main] DEBUG [nynu.mapper.UserMapper2.addUser] - ==> Parameters: 金吒(String), 30(Integer)
+2025-02-28 11:00:52,137 [main] DEBUG [nynu.mapper.UserMapper2.addUser] - <==    Updates: 1
+2025-02-28 11:11:59,291 [main] DEBUG [nynu.mapper.UserMapper2.userUpdate] - ==>  Preparing: UPDATE USER SET u_name=?,u_age=? WHERE u_id=? 
+2025-02-28 11:11:59,329 [main] DEBUG [nynu.mapper.UserMapper2.userUpdate] - ==> Parameters: 黑马程序员(String), 30(Integer), 1(Integer)
+2025-02-28 11:11:59,331 [main] DEBUG [nynu.mapper.UserMapper2.userUpdate] - <==    Updates: 1
+2025-02-28 11:12:33,347 [main] DEBUG [nynu.mapper.UserMapper2.addUser] - ==>  Preparing: INSERT INTO user ( u_name, u_age)VALUES(?,?) 
+2025-02-28 11:12:33,374 [main] DEBUG [nynu.mapper.UserMapper2.addUser] - ==> Parameters: 金吒(String), 30(Integer)
+2025-02-28 11:12:33,374 [main] DEBUG [nynu.mapper.UserMapper2.addUser] - <==    Updates: 1
+2025-02-28 11:13:01,331 [main] DEBUG [nynu.mapper.UserMapper2.addUser3!selectKey] - ==>  Preparing: select if(max(uid)is null,1,max(uid)+1) from user 
+2025-02-28 11:13:01,353 [main] DEBUG [nynu.mapper.UserMapper2.addUser3!selectKey] - ==> Parameters: 
+2025-02-28 11:13:42,648 [main] DEBUG [nynu.mapper.UserMapper2.addUser3!selectKey] - ==>  Preparing: select if(max(uid)is null,1,max(uid)+1) from user 
+2025-02-28 11:13:42,671 [main] DEBUG [nynu.mapper.UserMapper2.addUser3!selectKey] - ==> Parameters: 
+2025-02-28 11:20:56,742 [main] DEBUG [nynu.mapper.UserMapper2.userDalete] - ==>  Preparing: DELETE FROM USER WHERE u_id=? 
+2025-02-28 11:20:56,768 [main] DEBUG [nynu.mapper.UserMapper2.userDalete] - ==> Parameters: 3(Integer)
+2025-02-28 11:20:56,768 [main] DEBUG [nynu.mapper.UserMapper2.userDalete] - <==    Updates: 1
+2025-02-28 11:21:38,024 [main] DEBUG [nynu.mapper.UserMapper2.userDalete] - ==>  Preparing: DELETE FROM USER WHERE u_id=? 
+2025-02-28 11:21:38,046 [main] DEBUG [nynu.mapper.UserMapper2.userDalete] - ==> Parameters: 3(Integer)
+2025-02-28 11:21:38,050 [main] DEBUG [nynu.mapper.UserMapper2.userDalete] - <==    Updates: 0
+2025-02-28 11:24:53,211 [main] DEBUG [nynu.mapper.UserMapper2.findById] - ==>  Preparing: select * from user where uid=? 
+2025-02-28 11:24:53,236 [main] DEBUG [nynu.mapper.UserMapper2.findById] - ==> Parameters: 1(Integer)
+2025-02-28 11:26:42,607 [main] DEBUG [nynu.mapper.UserMapper2.findById] - ==>  Preparing: select * from user where u_id=? 
+2025-02-28 11:26:42,637 [main] DEBUG [nynu.mapper.UserMapper2.findById] - ==> Parameters: 1(Integer)
+2025-02-28 11:26:42,654 [main] DEBUG [nynu.mapper.UserMapper2.findById] - <==      Total: 1
+2025-02-28 11:26:48,967 [main] DEBUG [nynu.mapper.UserMapper2.userDalete] - ==>  Preparing: DELETE FROM USER WHERE u_id=? 
+2025-02-28 11:26:48,996 [main] DEBUG [nynu.mapper.UserMapper2.userDalete] - ==> Parameters: 3(Integer)
+2025-02-28 11:26:48,998 [main] DEBUG [nynu.mapper.UserMapper2.userDalete] - <==    Updates: 0
+2025-02-28 11:26:53,739 [main] DEBUG [nynu.mapper.UserMapper2.userUpdate] - ==>  Preparing: UPDATE USER SET u_name=?,u_age=? WHERE u_id=? 
+2025-02-28 11:26:53,766 [main] DEBUG [nynu.mapper.UserMapper2.userUpdate] - ==> Parameters: 黑马程序员(String), 30(Integer), 1(Integer)
+2025-02-28 11:26:53,768 [main] DEBUG [nynu.mapper.UserMapper2.userUpdate] - <==    Updates: 1
+2025-02-28 11:27:05,615 [main] DEBUG [nynu.mapper.UserMapper2.addUser3!selectKey] - ==>  Preparing: select if(max(uid)is null,1,max(uid)+1) from user 
+2025-02-28 11:27:05,642 [main] DEBUG [nynu.mapper.UserMapper2.addUser3!selectKey] - ==> Parameters: 
+2025-02-28 11:27:38,181 [main] DEBUG [nynu.mapper.UserMapper2.addUser3!selectKey] - ==>  Preparing: select if(max(u_id)is null,1,max(u_id)+1) from user 
+2025-02-28 11:27:38,206 [main] DEBUG [nynu.mapper.UserMapper2.addUser3!selectKey] - ==> Parameters: 
+2025-02-28 11:27:38,252 [main] DEBUG [nynu.mapper.UserMapper2.addUser3!selectKey] - <==      Total: 1
+2025-02-28 11:27:38,254 [main] DEBUG [nynu.mapper.UserMapper2.addUser3] - ==>  Preparing: INSERT INTO user ( u_name, u_age)VALUES(?,?) 
+2025-02-28 11:27:38,254 [main] DEBUG [nynu.mapper.UserMapper2.addUser3] - ==> Parameters: 金吒(String), 30(Integer)
+2025-02-28 11:27:38,255 [main] DEBUG [nynu.mapper.UserMapper2.addUser3] - <==    Updates: 1
+2025-02-28 11:27:45,098 [main] DEBUG [nynu.mapper.UserMapper2.addUser2] - ==>  Preparing: INSERT INTO user ( u_name, u_age)VALUES(?,?) 
+2025-02-28 11:27:45,125 [main] DEBUG [nynu.mapper.UserMapper2.addUser2] - ==> Parameters: 金吒(String), 30(Integer)
+2025-02-28 11:27:45,125 [main] DEBUG [nynu.mapper.UserMapper2.addUser2] - <==    Updates: 1
+2025-02-28 11:28:53,396 [main] DEBUG [nynu.mapper.UserMapper2.addUser2] - ==>  Preparing: INSERT INTO user ( u_name, u_age)VALUES(?,?) 
+2025-02-28 11:28:53,428 [main] DEBUG [nynu.mapper.UserMapper2.addUser2] - ==> Parameters: 金吒(String), 30(Integer)
+2025-02-28 11:28:53,428 [main] DEBUG [nynu.mapper.UserMapper2.addUser2] - <==    Updates: 1
+2025-02-28 11:29:16,632 [main] DEBUG [nynu.mapper.UserMapper2.addUser3!selectKey] - ==>  Preparing: select if(max(u_id)is null,1,max(u_id)+1) from user 
+2025-02-28 11:29:16,647 [main] DEBUG [nynu.mapper.UserMapper2.addUser3!selectKey] - ==> Parameters: 
+2025-02-28 11:29:16,665 [main] DEBUG [nynu.mapper.UserMapper2.addUser3!selectKey] - <==      Total: 1
+2025-02-28 11:29:16,665 [main] DEBUG [nynu.mapper.UserMapper2.addUser3] - ==>  Preparing: INSERT INTO user ( u_name, u_age)VALUES(?,?) 
+2025-02-28 11:29:16,667 [main] DEBUG [nynu.mapper.UserMapper2.addUser3] - ==> Parameters: 金吒(String), 30(Integer)
+2025-02-28 11:29:16,667 [main] DEBUG [nynu.mapper.UserMapper2.addUser3] - <==    Updates: 1
+2025-02-28 11:29:33,314 [main] DEBUG [nynu.mapper.UserMapper2.findById] - ==>  Preparing: select * from user where u_id=? 
+2025-02-28 11:29:33,341 [main] DEBUG [nynu.mapper.UserMapper2.findById] - ==> Parameters: 1(Integer)
+2025-02-28 11:29:33,351 [main] DEBUG [nynu.mapper.UserMapper2.findById] - <==      Total: 1
+2025-02-28 11:30:46,426 [main] DEBUG [nynu.mapper.UserMapper2.addUser2] - ==>  Preparing: INSERT INTO user ( u_name, u_age)VALUES(?,?) 
+2025-02-28 11:30:46,451 [main] DEBUG [nynu.mapper.UserMapper2.addUser2] - ==> Parameters: 金吒(String), 30(Integer)
+2025-02-28 11:30:46,451 [main] DEBUG [nynu.mapper.UserMapper2.addUser2] - <==    Updates: 1
+2025-02-28 11:30:59,398 [main] DEBUG [nynu.mapper.UserMapper2.addUser2] - ==>  Preparing: INSERT INTO user ( u_name, u_age)VALUES(?,?) 
+2025-02-28 11:30:59,419 [main] DEBUG [nynu.mapper.UserMapper2.addUser2] - ==> Parameters: 金吒(String), 30(Integer)
+2025-02-28 11:30:59,421 [main] DEBUG [nynu.mapper.UserMapper2.addUser2] - <==    Updates: 1
+2025-02-28 11:32:03,702 [main] DEBUG [nynu.mapper.UserMapper2.addUser3!selectKey] - ==>  Preparing: select if(max(u_id)is null,1,max(u_id)+1) from user 
+2025-02-28 11:32:03,724 [main] DEBUG [nynu.mapper.UserMapper2.addUser3!selectKey] - ==> Parameters: 
+2025-02-28 11:32:03,738 [main] DEBUG [nynu.mapper.UserMapper2.addUser3!selectKey] - <==      Total: 1
+2025-02-28 11:32:03,738 [main] DEBUG [nynu.mapper.UserMapper2.addUser3] - ==>  Preparing: INSERT INTO user ( u_name, u_age)VALUES(?,?) 
+2025-02-28 11:32:03,738 [main] DEBUG [nynu.mapper.UserMapper2.addUser3] - ==> Parameters: 金吒(String), 30(Integer)
+2025-02-28 11:32:03,738 [main] DEBUG [nynu.mapper.UserMapper2.addUser3] - <==    Updates: 1
+2025-02-28 11:34:04,213 [main] DEBUG [nynu.mapper.UserMapper2.addUser3!selectKey] - ==>  Preparing: select if(max(u_id)is null,1,max(u_id)+1) from user 
+2025-02-28 11:34:04,238 [main] DEBUG [nynu.mapper.UserMapper2.addUser3!selectKey] - ==> Parameters: 
+2025-02-28 11:34:04,252 [main] DEBUG [nynu.mapper.UserMapper2.addUser3!selectKey] - <==      Total: 1
+2025-02-28 11:34:04,252 [main] DEBUG [nynu.mapper.UserMapper2.addUser3] - ==>  Preparing: INSERT INTO user ( u_name, u_age)VALUES(?,?) 
+2025-02-28 11:34:04,252 [main] DEBUG [nynu.mapper.UserMapper2.addUser3] - ==> Parameters: 金吒(String), 30(Integer)
+2025-02-28 11:34:04,252 [main] DEBUG [nynu.mapper.UserMapper2.addUser3] - <==    Updates: 1
+2025-02-28 11:35:25,393 [main] DEBUG [nynu.mapper.UserMapper2.addUser3!selectKey] - ==>  Preparing: select if(max(u_id)is null,1,max(u_id)) from user 
+2025-02-28 11:35:25,418 [main] DEBUG [nynu.mapper.UserMapper2.addUser3!selectKey] - ==> Parameters: 
+2025-02-28 11:35:25,427 [main] DEBUG [nynu.mapper.UserMapper2.addUser3!selectKey] - <==      Total: 1
+2025-02-28 11:35:25,427 [main] DEBUG [nynu.mapper.UserMapper2.addUser3] - ==>  Preparing: INSERT INTO user ( u_name, u_age)VALUES(?,?) 
+2025-02-28 11:35:25,427 [main] DEBUG [nynu.mapper.UserMapper2.addUser3] - ==> Parameters: 金吒(String), 30(Integer)
+2025-02-28 11:35:25,427 [main] DEBUG [nynu.mapper.UserMapper2.addUser3] - <==    Updates: 1
+2025-02-28 11:37:08,509 [main] DEBUG [nynu.mapper.UserMapper2.userUpdate] - ==>  Preparing: UPDATE USER SET u_name=?,u_age=? WHERE u_id=? 
+2025-02-28 11:37:08,538 [main] DEBUG [nynu.mapper.UserMapper2.userUpdate] - ==> Parameters: 黑马程序员(String), 30(Integer), 1(Integer)
+2025-02-28 11:37:08,538 [main] DEBUG [nynu.mapper.UserMapper2.userUpdate] - <==    Updates: 1
+2025-02-28 11:37:33,897 [main] DEBUG [nynu.mapper.UserMapper2.addUser3!selectKey] - ==>  Preparing: select if(max(u_id)is null,1,max(u_id)+1) from user 
+2025-02-28 11:37:33,928 [main] DEBUG [nynu.mapper.UserMapper2.addUser3!selectKey] - ==> Parameters: 
+2025-02-28 11:37:33,945 [main] DEBUG [nynu.mapper.UserMapper2.addUser3!selectKey] - <==      Total: 1
+2025-02-28 11:37:33,946 [main] DEBUG [nynu.mapper.UserMapper2.addUser3] - ==>  Preparing: INSERT INTO user ( u_name, u_age)VALUES(?,?) 
+2025-02-28 11:37:33,946 [main] DEBUG [nynu.mapper.UserMapper2.addUser3] - ==> Parameters: 金吒(String), 30(Integer)
+2025-02-28 11:37:33,946 [main] DEBUG [nynu.mapper.UserMapper2.addUser3] - <==    Updates: 1
+2025-02-28 11:38:30,074 [main] DEBUG [nynu.mapper.UserMapper2.addUser3!selectKey] - ==>  Preparing: select if(max(u_id)is null,1,max(u_id)+1) from user 
+2025-02-28 11:38:30,098 [main] DEBUG [nynu.mapper.UserMapper2.addUser3!selectKey] - ==> Parameters: 
+2025-02-28 11:38:30,114 [main] DEBUG [nynu.mapper.UserMapper2.addUser3!selectKey] - <==      Total: 1
+2025-02-28 11:38:30,116 [main] DEBUG [nynu.mapper.UserMapper2.addUser3] - ==>  Preparing: INSERT INTO user ( u_id ,u_name, u_age)VALUES(?,?,?) 
+2025-02-28 11:38:30,116 [main] DEBUG [nynu.mapper.UserMapper2.addUser3] - ==> Parameters: 27(Integer), 金吒(String), 30(Integer)
+2025-02-28 11:38:30,116 [main] DEBUG [nynu.mapper.UserMapper2.addUser3] - <==    Updates: 1
+2025-02-28 11:38:56,091 [main] DEBUG [nynu.mapper.UserMapper2.addUser3!selectKey] - ==>  Preparing: select if(max(u_id)is null,1,max(u_id)+1) from user 
+2025-02-28 11:38:56,117 [main] DEBUG [nynu.mapper.UserMapper2.addUser3!selectKey] - ==> Parameters: 
+2025-02-28 11:38:56,131 [main] DEBUG [nynu.mapper.UserMapper2.addUser3!selectKey] - <==      Total: 1
+2025-02-28 11:38:56,131 [main] DEBUG [nynu.mapper.UserMapper2.addUser3] - ==>  Preparing: INSERT INTO user ( u_id ,u_name, u_age)VALUES(?,?,?) 
+2025-02-28 11:38:56,131 [main] DEBUG [nynu.mapper.UserMapper2.addUser3] - ==> Parameters: 28(Integer), 金吒(String), 30(Integer)
+2025-02-28 11:38:56,131 [main] DEBUG [nynu.mapper.UserMapper2.addUser3] - <==    Updates: 1
+2025-02-28 11:40:02,436 [main] DEBUG [nynu.mapper.UserMapper2.addUser3!selectKey] - ==>  Preparing: select if(max(u_id)is null,1,max(u_id)+1) from user 
+2025-02-28 11:40:02,464 [main] DEBUG [nynu.mapper.UserMapper2.addUser3!selectKey] - ==> Parameters: 
+2025-02-28 11:40:02,483 [main] DEBUG [nynu.mapper.UserMapper2.addUser3!selectKey] - <==      Total: 1
+2025-02-28 11:40:02,484 [main] DEBUG [nynu.mapper.UserMapper2.addUser3] - ==>  Preparing: INSERT INTO user ( u_id ,u_name, u_age)VALUES(?,?,?) 
+2025-02-28 11:40:02,484 [main] DEBUG [nynu.mapper.UserMapper2.addUser3] - ==> Parameters: 29(Integer), 金吒(String), 30(Integer)
+2025-02-28 11:40:02,484 [main] DEBUG [nynu.mapper.UserMapper2.addUser3] - <==    Updates: 1
+2025-03-04 22:23:07,550 [main] DEBUG [nynu.mapper.UserMapper2.addUser] - ==>  Preparing: INSERT INTO user ( u_name, u_age)VALUES(?,?) 
+2025-03-04 22:23:07,575 [main] DEBUG [nynu.mapper.UserMapper2.addUser] - ==> Parameters: 金吒(String), 30(Integer)
+2025-03-04 22:23:07,577 [main] DEBUG [nynu.mapper.UserMapper2.addUser] - <==    Updates: 1
+2025-03-05 10:42:14,896 [main] DEBUG [nynu.mapper.UserMapper2.addUser] - ==>  Preparing: INSERT INTO user ( u_name, u_age)VALUES(?,?) 
+2025-03-05 10:42:14,925 [main] DEBUG [nynu.mapper.UserMapper2.addUser] - ==> Parameters: 金吒(String), 30(Integer)
+2025-03-05 10:42:14,926 [main] DEBUG [nynu.mapper.UserMapper2.addUser] - <==    Updates: 1
+2025-03-05 10:56:00,174 [main] DEBUG [nynu.mapper.UserMapper2.addUser] - ==>  Preparing: INSERT INTO user ( u_name, u_age)VALUES(?,?) 
+2025-03-05 10:56:00,202 [main] DEBUG [nynu.mapper.UserMapper2.addUser] - ==> Parameters: 金吒(String), 30(Integer)
+2025-03-05 10:56:00,204 [main] DEBUG [nynu.mapper.UserMapper2.addUser] - <==    Updates: 1
+2025-03-05 10:56:07,497 [main] DEBUG [nynu.mapper.UserMapper2.addUser] - ==>  Preparing: INSERT INTO user ( u_name, u_age)VALUES(?,?) 
+2025-03-05 10:56:07,524 [main] DEBUG [nynu.mapper.UserMapper2.addUser] - ==> Parameters: 金吒(String), 30(Integer)
+2025-03-05 10:56:07,525 [main] DEBUG [nynu.mapper.UserMapper2.addUser] - <==    Updates: 1
+2025-03-05 11:00:15,673 [main] DEBUG [nynu.mapper.UserMapper2.addUser] - ==>  Preparing: INSERT INTO user ( u_name, u_age)VALUES(?,?) 
+2025-03-05 11:00:15,700 [main] DEBUG [nynu.mapper.UserMapper2.addUser] - ==> Parameters: 金吒(String), 30(Integer)
+2025-03-05 11:00:15,701 [main] DEBUG [nynu.mapper.UserMapper2.addUser] - <==    Updates: 1
+2025-03-06 11:25:10,545 [main] DEBUG [nynu.mapper.CustomerMapper.findCustomerByUsernameAndJobs] - ==>  Preparing: select * from t_customer where 1=1 
+2025-03-06 11:25:10,574 [main] DEBUG [nynu.mapper.CustomerMapper.findCustomerByUsernameAndJobs] - ==> Parameters: 
+2025-03-06 11:25:10,592 [main] DEBUG [nynu.mapper.CustomerMapper.findCustomerByUsernameAndJobs] - <==      Total: 0
+2025-03-06 11:25:35,604 [main] DEBUG [nynu.mapper.CustomerMapper.findCustomerByUsernameAndJobs] - ==>  Preparing: select * from t_customer where 1=1 
+2025-03-06 11:25:35,629 [main] DEBUG [nynu.mapper.CustomerMapper.findCustomerByUsernameAndJobs] - ==> Parameters: 
+2025-03-06 11:25:35,645 [main] DEBUG [nynu.mapper.CustomerMapper.findCustomerByUsernameAndJobs] - <==      Total: 0
+2025-03-06 11:25:40,825 [main] DEBUG [nynu.mapper.CustomerMapper.findCustomerByUsernameAndJobs] - ==>  Preparing: select * from t_customer where 1=1 and username like concat('%',?,'%') 
+2025-03-06 11:25:40,853 [main] DEBUG [nynu.mapper.CustomerMapper.findCustomerByUsernameAndJobs] - ==> Parameters: 张(String)
+2025-03-06 11:25:40,902 [main] DEBUG [nynu.mapper.CustomerMapper.findCustomerByUsernameAndJobs] - <==      Total: 0
+2025-03-06 11:25:45,296 [main] DEBUG [nynu.mapper.CustomerMapper.findCustomerByUsernameAndJobs] - ==>  Preparing: select * from t_customer where 1=1 and username like concat('%',?,'%') and jobs=? 
+2025-03-06 11:25:45,480 [main] DEBUG [nynu.mapper.CustomerMapper.findCustomerByUsernameAndJobs] - ==> Parameters: 张(String), 学生(String)
+2025-03-06 11:25:45,505 [main] DEBUG [nynu.mapper.CustomerMapper.findCustomerByUsernameAndJobs] - <==      Total: 0
+2025-03-06 11:25:48,964 [main] DEBUG [nynu.mapper.CustomerMapper.findCustomerByUsernameAndJobs] - ==>  Preparing: select * from t_customer where 1=1 and jobs=? 
+2025-03-06 11:25:48,991 [main] DEBUG [nynu.mapper.CustomerMapper.findCustomerByUsernameAndJobs] - ==> Parameters: 学生(String)
+2025-03-06 11:25:49,005 [main] DEBUG [nynu.mapper.CustomerMapper.findCustomerByUsernameAndJobs] - <==      Total: 0
+2025-03-06 11:25:53,939 [main] DEBUG [nynu.mapper.CustomerMapper.findCustomerByUsernameAndJobs2] - ==>  Preparing: select * from t_customer 
+2025-03-06 11:25:53,962 [main] DEBUG [nynu.mapper.CustomerMapper.findCustomerByUsernameAndJobs2] - ==> Parameters: 
+2025-03-06 11:25:53,982 [main] DEBUG [nynu.mapper.CustomerMapper.findCustomerByUsernameAndJobs2] - <==      Total: 0
+2025-03-06 11:25:57,994 [main] DEBUG [nynu.mapper.CustomerMapper.findCustomerByUsernameAndJobs3] - ==>  Preparing: select * from t_customer 
+2025-03-06 11:25:58,024 [main] DEBUG [nynu.mapper.CustomerMapper.findCustomerByUsernameAndJobs3] - ==> Parameters: 
+2025-03-06 11:25:58,038 [main] DEBUG [nynu.mapper.CustomerMapper.findCustomerByUsernameAndJobs3] - <==      Total: 0
+2025-03-06 11:26:02,797 [main] DEBUG [nynu.mapper.CustomerMapper.findCustomerByUsernameAndJobs4] - ==>  Preparing: select * from t_customer WHERE phone is null 
+2025-03-06 11:26:02,822 [main] DEBUG [nynu.mapper.CustomerMapper.findCustomerByUsernameAndJobs4] - ==> Parameters: 
+2025-03-06 11:26:02,836 [main] DEBUG [nynu.mapper.CustomerMapper.findCustomerByUsernameAndJobs4] - <==      Total: 0
+2025-03-06 11:26:06,681 [main] DEBUG [nynu.mapper.CustomerMapper.findCustomerByUsernameAndJobs4] - ==>  Preparing: select * from t_customer WHERE username like concat('%',?,'%') 
+2025-03-06 11:26:06,709 [main] DEBUG [nynu.mapper.CustomerMapper.findCustomerByUsernameAndJobs4] - ==> Parameters: 张(String)
+2025-03-06 11:26:06,728 [main] DEBUG [nynu.mapper.CustomerMapper.findCustomerByUsernameAndJobs4] - <==      Total: 0
+2025-03-06 11:26:10,124 [main] DEBUG [nynu.mapper.CustomerMapper.findCustomerByUsernameAndJobs4] - ==>  Preparing: select * from t_customer WHERE username like concat('%',?,'%') 
+2025-03-06 11:26:10,159 [main] DEBUG [nynu.mapper.CustomerMapper.findCustomerByUsernameAndJobs4] - ==> Parameters: 张(String)
+2025-03-06 11:26:10,178 [main] DEBUG [nynu.mapper.CustomerMapper.findCustomerByUsernameAndJobs4] - <==      Total: 0
+2025-03-06 11:26:14,231 [main] DEBUG [nynu.mapper.CustomerMapper.findCustomerByIds] - ==>  Preparing: select * from t_customer where id<=? 
+2025-03-06 11:26:14,252 [main] DEBUG [nynu.mapper.CustomerMapper.findCustomerByIds] - ==> Parameters: 3(Integer)
+2025-03-06 11:26:14,304 [main] DEBUG [nynu.mapper.CustomerMapper.findCustomerByIds] - <==      Total: 0
+2025-03-06 11:26:17,829 [main] DEBUG [nynu.mapper.CustomerMapper.updateCustomer] - ==>  Preparing: update t_customer set username=?,jobs=?,phone=? where id=? 
+2025-03-06 11:26:17,855 [main] DEBUG [nynu.mapper.CustomerMapper.updateCustomer] - ==> Parameters: 哪吒(String), 神话任务(String), null, 2(Integer)
+2025-03-06 11:26:17,876 [main] DEBUG [nynu.mapper.CustomerMapper.updateCustomer] - <==    Updates: 0
+2025-03-06 11:26:23,630 [main] DEBUG [nynu.mapper.CustomerMapper.updateCustomer2] - ==>  Preparing: update t_customer SET username=?, jobs=?, phone=? where id=? 
+2025-03-06 11:26:23,652 [main] DEBUG [nynu.mapper.CustomerMapper.updateCustomer2] - ==> Parameters: 哪吒(String), 神话任务(String), 123345(String), 2(Integer)
+2025-03-06 11:26:23,652 [main] DEBUG [nynu.mapper.CustomerMapper.updateCustomer2] - <==    Updates: 0
+2025-03-06 11:26:28,064 [main] DEBUG [nynu.mapper.CustomerMapper.updateCustomer3] - ==>  Preparing: update t_customer set and username=?, and jobs=?, and phone=? where id=? 
+2025-03-06 11:26:28,091 [main] DEBUG [nynu.mapper.CustomerMapper.updateCustomer3] - ==> Parameters: 哪吒(String), 神话任务(String), 123345(String), 2(Integer)
+2025-03-06 11:27:14,406 [main] DEBUG [nynu.mapper.CustomerMapper.updateCustomer3] - ==>  Preparing: update t_customer set and username=?, and jobs=?, and phone=? where id=? 
+2025-03-06 11:27:14,437 [main] DEBUG [nynu.mapper.CustomerMapper.updateCustomer3] - ==> Parameters: 哪吒(String), 神话任务(String), 123345(String), 2(Integer)
+2025-03-06 11:27:52,081 [main] DEBUG [nynu.mapper.CustomerMapper.updateCustomer3] - ==>  Preparing: update t_customer set username=?, jobs=?, phone=? where id=? 
+2025-03-06 11:27:52,111 [main] DEBUG [nynu.mapper.CustomerMapper.updateCustomer3] - ==> Parameters: 哪吒(String), 神话任务(String), 123345(String), 2(Integer)
+2025-03-06 11:27:52,130 [main] DEBUG [nynu.mapper.CustomerMapper.updateCustomer3] - <==    Updates: 0
+2025-03-07 10:06:42,516 [main] DEBUG [nynu.mapper.CustomerMapper.updateCustomer3] - ==>  Preparing: update t_customer set username=?, jobs=?, phone=? where id=? 
+2025-03-07 10:06:42,534 [main] DEBUG [nynu.mapper.CustomerMapper.updateCustomer3] - ==> Parameters: 哪吒(String), 神话任务(String), 123345(String), 2(Integer)
+2025-03-07 10:06:42,541 [main] DEBUG [nynu.mapper.CustomerMapper.updateCustomer3] - <==    Updates: 0
+2025-03-07 10:07:05,956 [main] DEBUG [nynu.mapper.CustomerMapper.updateCustomer3] - ==>  Preparing: update t_customer set username=?, jobs=?, phone=? where id=? 
+2025-03-07 10:07:05,973 [main] DEBUG [nynu.mapper.CustomerMapper.updateCustomer3] - ==> Parameters: 哪吒(String), 神话任务(String), 123345(String), 2(Integer)
+2025-03-07 10:07:05,974 [main] DEBUG [nynu.mapper.CustomerMapper.updateCustomer3] - <==    Updates: 0
+2025-03-07 10:07:14,501 [main] DEBUG [nynu.mapper.CustomerMapper.updateCustomer3] - ==>  Preparing: update t_customer set username=?, jobs=?, phone=? where id=? 
+2025-03-07 10:07:14,518 [main] DEBUG [nynu.mapper.CustomerMapper.updateCustomer3] - ==> Parameters: 哪吒(String), 神话任务(String), 123345(String), 1(Integer)
+2025-03-07 10:07:14,523 [main] DEBUG [nynu.mapper.CustomerMapper.updateCustomer3] - <==    Updates: 1
+2025-03-07 10:26:35,117 [main] DEBUG [nynu.mapper.CustomerMapper.selectArray] - ==>  Preparing: select * from t_customer where id in /*collection="��������" item="ÿ�������" index="�±�" open="�����" close="���ұ�" separator="�ָ��ַ�"*/ ( /*�ڲ�дҪ�ظ�������*/ ? , /*�ڲ�дҪ�ظ�������*/ ? , /*�ڲ�дҪ�ظ�������*/ ? ) 
+2025-03-07 10:26:35,133 [main] DEBUG [nynu.mapper.CustomerMapper.selectArray] - ==> Parameters: 1(Integer), 3(Integer), 5(Integer)
+2025-03-07 10:26:35,150 [main] DEBUG [nynu.mapper.CustomerMapper.selectArray] - <==      Total: 2
+2025-03-07 10:31:10,126 [main] DEBUG [nynu.mapper.CustomerMapper.selectArray] - ==>  Preparing: select * from t_customer where id in /*collection="��������" item="ÿ�������" index="�±�" open="�����" close="���ұ�" separator="�ָ��ַ�"*/ ( /*�ڲ�дҪ�ظ�������*/ ? , /*�ڲ�дҪ�ظ�������*/ ? , /*�ڲ�дҪ�ظ�������*/ ? ) 
+2025-03-07 10:31:10,150 [main] DEBUG [nynu.mapper.CustomerMapper.selectArray] - ==> Parameters: 1(Integer), 3(Integer), 5(Integer)
+2025-03-07 10:31:10,166 [main] DEBUG [nynu.mapper.CustomerMapper.selectArray] - <==      Total: 2
+2025-03-07 10:34:35,776 [main] DEBUG [nynu.mapper.CustomerMapper.selectMap] - ==>  Preparing: select * from t_customer where id in /*collection="��������" item="ÿ�������" index="�±�" open="�����" close="���ұ�" separator="�ָ��ַ�"*/ ( /*�ڲ�дҪ�ظ�������*/ ? , /*�ڲ�дҪ�ظ�������*/ ? , /*�ڲ�дҪ�ظ�������*/ ? ) 
+2025-03-07 10:34:35,792 [main] DEBUG [nynu.mapper.CustomerMapper.selectMap] - ==> Parameters: 1(Integer), 3(Integer), 5(Integer)
+2025-03-07 10:34:35,792 [main] DEBUG [nynu.mapper.CustomerMapper.selectMap] - <==      Total: 2
+2025-03-07 10:35:14,124 [main] DEBUG [nynu.mapper.CustomerMapper.selectArray] - ==>  Preparing: select * from t_customer where id in /*collection="��������" item="ÿ�������" index="�±�" open="�����" close="���ұ�" separator="�ָ��ַ�"*/ ( /*�ڲ�дҪ�ظ�������*/ ? , /*�ڲ�дҪ�ظ�������*/ ? , /*�ڲ�дҪ�ظ�������*/ ? ) 
+2025-03-07 10:35:14,144 [main] DEBUG [nynu.mapper.CustomerMapper.selectArray] - ==> Parameters: 1(Integer), 3(Integer), 5(Integer)
+2025-03-07 10:35:14,156 [main] DEBUG [nynu.mapper.CustomerMapper.selectArray] - <==      Total: 2
+2025-03-07 10:37:47,905 [main] DEBUG [nynu.mapper.CustomerMapper.selectList] - ==>  Preparing: select * from t_customer where id in ( ? , ? , ? ) 
+2025-03-07 10:37:47,924 [main] DEBUG [nynu.mapper.CustomerMapper.selectList] - ==> Parameters: 1(Integer), 3(Integer), 5(Integer)
+2025-03-07 10:37:47,937 [main] DEBUG [nynu.mapper.CustomerMapper.selectList] - <==      Total: 2
+2025-03-07 10:39:02,088 [main] DEBUG [nynu.mapper.CustomerMapper.selectMap] - ==>  Preparing: select * from t_customer where id in /*collection="��������" item="ÿ�������" index="�±�" open="�����" close="���ұ�" separator="�ָ��ַ�"*/ ( /*�ڲ�дҪ�ظ�������*/ ? , /*�ڲ�дҪ�ظ�������*/ ? , /*�ڲ�дҪ�ظ�������*/ ? ) 
+2025-03-07 10:39:02,107 [main] DEBUG [nynu.mapper.CustomerMapper.selectMap] - ==> Parameters: 1(Integer), 3(Integer), 5(Integer)
+2025-03-07 10:39:02,116 [main] DEBUG [nynu.mapper.CustomerMapper.selectMap] - <==      Total: 2
+2025-03-07 10:40:07,763 [main] DEBUG [nynu.mapper.CustomerMapper.selectMap] - ==>  Preparing: select * from t_customer where id in /*collection="��������" item="ÿ�������" index="�±�" open="�����" close="���ұ�" separator="�ָ��ַ�"*/ /*collection:��map��д������*/ ( /*�ڲ�дҪ�ظ�������*/ ? , /*�ڲ�дҪ�ظ�������*/ ? , /*�ڲ�дҪ�ظ�������*/ ? ) 
+2025-03-07 10:40:07,780 [main] DEBUG [nynu.mapper.CustomerMapper.selectMap] - ==> Parameters: 0(Integer), 1(Integer), 2(Integer)
+2025-03-07 10:40:07,786 [main] DEBUG [nynu.mapper.CustomerMapper.selectMap] - <==      Total: 2
+2025-03-07 10:40:26,558 [main] DEBUG [nynu.mapper.CustomerMapper.selectMap] - ==>  Preparing: select * from t_customer where id in /*collection="��������" item="ÿ�������" index="�±�" open="�����" close="���ұ�" separator="�ָ��ַ�"*/ /*collection:��map��д������*/ ( /*�ڲ�дҪ�ظ�������*/ ? , /*�ڲ�дҪ�ظ�������*/ ? , /*�ڲ�дҪ�ظ�������*/ ? ) 
+2025-03-07 10:40:26,577 [main] DEBUG [nynu.mapper.CustomerMapper.selectMap] - ==> Parameters: 0(Integer), 1(Integer), 2(Integer)
+2025-03-07 10:40:26,589 [main] DEBUG [nynu.mapper.CustomerMapper.selectMap] - <==      Total: 2
+2025-03-07 10:44:31,644 [main] DEBUG [nynu.mapper.CustomerMapper.selectMap2] - ==>  Preparing: select * from t_customer where id in /*collection="��������" item="ÿ��ı���" index="�±�" open="�����" close="���ұ�" separator="�ָ��ַ�"*/ /*collection:��map��д������*/ ( /*�ڲ�дҪ�ظ�������*/ ? , /*�ڲ�дҪ�ظ�������*/ ? , /*�ڲ�дҪ�ظ�������*/ ? ) and username like concat('%',?,'%') 
+2025-03-07 10:44:31,666 [main] DEBUG [nynu.mapper.CustomerMapper.selectMap2] - ==> Parameters: 1(Integer), 3(Integer), 5(Integer), null
+2025-03-07 10:44:31,681 [main] DEBUG [nynu.mapper.CustomerMapper.selectMap2] - <==      Total: 0
+2025-03-07 10:45:54,717 [main] DEBUG [nynu.mapper.CustomerMapper.selectMap2] - ==>  Preparing: select * from t_customer where id in ( /*�ڲ�дҪ�ظ�������*/ ? , /*�ڲ�дҪ�ظ�������*/ ? , /*�ڲ�дҪ�ظ�������*/ ? ) and username like concat('%',?,'%') 
+2025-03-07 10:45:54,738 [main] DEBUG [nynu.mapper.CustomerMapper.selectMap2] - ==> Parameters: 1(Integer), 3(Integer), 5(Integer), 张(String)
+2025-03-07 10:45:54,749 [main] DEBUG [nynu.mapper.CustomerMapper.selectMap2] - <==      Total: 0
+2025-03-07 10:46:15,597 [main] DEBUG [nynu.mapper.CustomerMapper.selectMap2] - ==>  Preparing: select * from t_customer where id in ( /*�ڲ�дҪ�ظ�������*/ ? , /*�ڲ�дҪ�ظ�������*/ ? , /*�ڲ�дҪ�ظ�������*/ ? ) or username like concat('%',?,'%') 
+2025-03-07 10:46:15,628 [main] DEBUG [nynu.mapper.CustomerMapper.selectMap2] - ==> Parameters: 1(Integer), 3(Integer), 5(Integer), 张(String)
+2025-03-07 10:46:15,639 [main] DEBUG [nynu.mapper.CustomerMapper.selectMap2] - <==      Total: 2
+2025-03-07 10:46:38,362 [main] DEBUG [nynu.mapper.CustomerMapper.selectMap2] - ==>  Preparing: select * from t_customer where id in ( /*�ڲ�дҪ�ظ�������*/ ? , /*�ڲ�дҪ�ظ�������*/ ? , /*�ڲ�дҪ�ظ�������*/ ? ) and username like concat('%',?,'%') 
+2025-03-07 10:46:38,391 [main] DEBUG [nynu.mapper.CustomerMapper.selectMap2] - ==> Parameters: 1(Integer), 3(Integer), 5(Integer), 张(String)
+2025-03-07 10:46:38,404 [main] DEBUG [nynu.mapper.CustomerMapper.selectMap2] - <==      Total: 1
+2025-03-07 10:47:06,626 [main] DEBUG [nynu.mapper.CustomerMapper.selectMap2] - ==>  Preparing: select * from t_customer where id in ( /*�ڲ�дҪ�ظ�������*/ ? , /*�ڲ�дҪ�ظ�������*/ ? , /*�ڲ�дҪ�ظ�������*/ ? ) and username like concat('%',?,'%') 
+2025-03-07 10:47:06,634 [main] DEBUG [nynu.mapper.CustomerMapper.selectMap2] - ==> Parameters: 1(Integer), 3(Integer), 5(Integer), null
+2025-03-07 10:47:06,650 [main] DEBUG [nynu.mapper.CustomerMapper.selectMap2] - <==      Total: 0
+2025-03-07 10:47:13,354 [main] DEBUG [nynu.mapper.CustomerMapper.selectMap2] - ==>  Preparing: select * from t_customer where id in ( /*�ڲ�дҪ�ظ�������*/ ? , /*�ڲ�дҪ�ظ�������*/ ? , /*�ڲ�дҪ�ظ�������*/ ? ) and username like concat('%',?,'%') 
+2025-03-07 10:47:13,372 [main] DEBUG [nynu.mapper.CustomerMapper.selectMap2] - ==> Parameters: 1(Integer), 3(Integer), 5(Integer), 张(String)
+2025-03-07 10:47:13,389 [main] DEBUG [nynu.mapper.CustomerMapper.selectMap2] - <==      Total: 1
+2025-03-07 10:48:27,956 [main] DEBUG [nynu.mapper.CustomerMapper.selectMap2] - ==>  Preparing: select * from t_customer where id in ( /*�ڲ�дҪ�ظ�������*/ ? , /*�ڲ�дҪ�ظ�������*/ ? , /*�ڲ�дҪ�ظ�������*/ ? ) and username like concat('%',?,'%') 
+2025-03-07 10:48:27,973 [main] DEBUG [nynu.mapper.CustomerMapper.selectMap2] - ==> Parameters: 1(Integer), 3(Integer), 5(Integer), 张(String)
+2025-03-07 10:48:27,981 [main] DEBUG [nynu.mapper.CustomerMapper.selectMap2] - <==      Total: 1
+2025-03-07 10:52:17,048 [main] DEBUG [nynu.mapper.CustomerMapper.selectMap2] - ==>  Preparing: select * from t_customer where id in ( /*�ڲ�дҪ�ظ�������*/ ? , /*�ڲ�дҪ�ظ�������*/ ? , /*�ڲ�дҪ�ظ�������*/ ? ) and username like concat('%',?,'%') 
+2025-03-07 10:52:17,066 [main] DEBUG [nynu.mapper.CustomerMapper.selectMap2] - ==> Parameters: 1(Integer), 3(Integer), 5(Integer), 张(String)
+2025-03-07 10:52:17,067 [main] DEBUG [nynu.mapper.CustomerMapper.selectMap2] - <==      Total: 1
+2025-03-07 10:55:22,285 [main] DEBUG [nynu.mapper.CustomerMapper.selectMap2] - ==>  Preparing: select * from t_customer where id in ( /*�ڲ�дҪ�ظ�������*/ ? , /*�ڲ�дҪ�ظ�������*/ ? , /*�ڲ�дҪ�ظ�������*/ ? ) and username like concat('%',?,'%') 
+2025-03-07 10:55:22,302 [main] DEBUG [nynu.mapper.CustomerMapper.selectMap2] - ==> Parameters: 1(Integer), 3(Integer), 5(Integer), 张(String)
+2025-03-07 10:55:22,318 [main] DEBUG [nynu.mapper.CustomerMapper.selectMap2] - <==      Total: 1
+2025-03-07 11:14:44,926 [main] DEBUG [nynu.mapper.CustomerMapper.insertCustomer] - ==>  Preparing: insert into t_customer (username,jobs,phone) values 
+2025-03-07 11:14:44,943 [main] DEBUG [nynu.mapper.CustomerMapper.insertCustomer] - ==> Parameters: 
+2025-03-07 11:15:12,114 [main] DEBUG [nynu.mapper.CustomerMapper.insertCustomer] - ==>  Preparing: insert into t_customer (username,jobs,phone) values (?,?,?) 
+2025-03-07 11:15:34,946 [main] DEBUG [nynu.mapper.CustomerMapper.insertCustomer] - ==>  Preparing: insert into t_customer (username,jobs,phone) values (?,?,?) 
+2025-03-07 11:16:51,830 [main] DEBUG [nynu.mapper.CustomerMapper.insertCustomer2] - ==>  Preparing: insert into t_customer (username,jobs,phone) values (?,?,?) , (?,?,?) 
+2025-03-07 11:16:51,847 [main] DEBUG [nynu.mapper.CustomerMapper.insertCustomer2] - ==> Parameters: 哪吒(String), 神话任务(String), 0377(String), nit(String), 神话任务(String), 0377(String)
+2025-03-07 11:16:51,849 [main] DEBUG [nynu.mapper.CustomerMapper.insertCustomer2] - <==    Updates: 2
+2025-03-07 11:17:25,309 [main] DEBUG [nynu.mapper.CustomerMapper.insertCustomer2] - ==>  Preparing: insert into t_customer (username,jobs,phone) values (?,?,?) , (?,?,?) 
+2025-03-07 11:17:25,339 [main] DEBUG [nynu.mapper.CustomerMapper.insertCustomer2] - ==> Parameters: 哪吒(String), 神话任务(String), 0377(String), nit(String), 神话任务(String), 0377(String)
+2025-03-07 11:17:25,339 [main] DEBUG [nynu.mapper.CustomerMapper.insertCustomer2] - <==    Updates: 2
+2025-03-07 11:17:30,488 [main] DEBUG [nynu.mapper.CustomerMapper.insertCustomer] - ==>  Preparing: insert into t_customer (username,jobs,phone) values (?,?,?) 
+2025-03-07 11:17:30,501 [main] DEBUG [nynu.mapper.CustomerMapper.insertCustomer] - ==> Parameters: 哪吒(String), 神话任务(String), 0377(String)
+2025-03-07 11:17:30,501 [main] DEBUG [nynu.mapper.CustomerMapper.insertCustomer] - <==    Updates: 1
+2025-03-07 11:19:58,902 [main] DEBUG [nynu.mapper.CustomerMapper.insertCustomer3] - ==>  Preparing: insert into t_customer (username,jobs,phone) values (?,?,?) , (?,?,?) 
+2025-03-07 11:19:58,925 [main] DEBUG [nynu.mapper.CustomerMapper.insertCustomer3] - ==> Parameters: 哪吒(String), 神话任务(String), 0377(String), nit(String), 神话任务(String), 0377(String)
+2025-03-07 11:19:58,926 [main] DEBUG [nynu.mapper.CustomerMapper.insertCustomer3] - <==    Updates: 2
+2025-03-07 11:35:22,670 [main] DEBUG [nynu.mapper.CustomerMapper.insertCustomer4] - ==>  Preparing: insert into t_customer (username,jobs,phone) SET username=?,jobs=?,phone=? ( username ) values ( (#item) ) WHERE id=? 
+2025-03-07 11:40:35,951 [main] DEBUG [nynu.mapper.CustomerMapper.insertCustomer4] - ==>  Preparing: insert into t_customer (username,jobs,phone) ( username ) values ( (#item) ) WHERE id=? 
+2025-03-07 11:40:53,738 [main] DEBUG [nynu.mapper.CustomerMapper.insertCustomer4] - ==>  Preparing: insert into t_customer (username,jobs,phone) ( username ) values ( ? ) WHERE id=? 
+2025-03-07 11:41:10,584 [main] DEBUG [nynu.mapper.CustomerMapper.insertCustomer4] - ==>  Preparing: insert into t_customer ( username ) values ( ? ) WHERE id=? 
+2025-03-07 11:41:22,841 [main] DEBUG [nynu.mapper.CustomerMapper.insertCustomer4] - ==>  Preparing: insert into t_customer ( username ) values ( ? ) 
+2025-03-07 11:41:22,868 [main] DEBUG [nynu.mapper.CustomerMapper.insertCustomer4] - ==> Parameters: 扬子(String)
+2025-03-07 11:41:22,870 [main] DEBUG [nynu.mapper.CustomerMapper.insertCustomer4] - <==    Updates: 1

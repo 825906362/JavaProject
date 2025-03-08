@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="nynu.mapper.UserMapper">
+    <select id="findById" parameterType="Integer" resultType="user">
+        select * from user where u_id=#{id}
+    </select>
+    <select id="findAll" resultType="nynu.pojo.User">
+        select * from user
+    </select>
+    <select id="findByName" parameterType="String" resultType="nynu.pojo.User">
+        SELECT * FROM user WHERE u_name LIKE concat('%',#{uname},'%')
+    </select>
+    <select id="findByNameAndAge" resultType="nynu.pojo.User">
+        SELECT * FROM user
+        WHERE u_name LIKE concat('%',#{uname},'%')
+          and u_age=#{uage}
+    </select>
+    <!--    DUPLICATE entry '7' FOR KEY 'PRIMARY'
+        主键重复
+        INSERT INTO 表名(用逗号分割的列名)VALUES(用逗号分割的值)
+        INSERT INTO users (uid, uname, 	uage)VALUES(8,"丽丽",18)
+        uid自动增长
+        -->
+    <!--增删改不需要写返回值类型，默认返回值类型是Integer-->
+    <insert id="addUser" parameterType="nynu.pojo.User">
+        INSERT INTO user ( u_name, u_age)VALUES(#{uname},#{uage})
+    </insert>
+</mapper>

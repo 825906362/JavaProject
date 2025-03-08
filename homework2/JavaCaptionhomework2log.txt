@@ -1,0 +1,66 @@
+2025-03-05 00:24:22,952 [main] DEBUG [cn.nynu.mapper.EmployeeMapper.selectById] - ==>  Preparing: select * from Employee where id=? 
+2025-03-05 00:24:22,975 [main] DEBUG [cn.nynu.mapper.EmployeeMapper.selectById] - ==> Parameters: 1(Integer)
+2025-03-05 00:24:23,004 [main] DEBUG [cn.nynu.mapper.EmployeeMapper.selectById] - <==      Total: 1
+2025-03-05 00:26:03,874 [main] DEBUG [cn.nynu.mapper.EmployeeMapper.selectById] - ==>  Preparing: select * from Employee where id=? 
+2025-03-05 00:26:03,900 [main] DEBUG [cn.nynu.mapper.EmployeeMapper.selectById] - ==> Parameters: 1(Integer)
+2025-03-05 00:26:03,943 [main] DEBUG [cn.nynu.mapper.EmployeeMapper.selectById] - <==      Total: 1
+2025-03-05 00:27:37,799 [main] DEBUG [cn.nynu.mapper.EmployeeMapper.selectById] - ==>  Preparing: select * from Employee where id=? 
+2025-03-05 00:27:37,822 [main] DEBUG [cn.nynu.mapper.EmployeeMapper.selectById] - ==> Parameters: 1(Integer)
+2025-03-05 00:27:37,837 [main] DEBUG [cn.nynu.mapper.EmployeeMapper.selectById] - <==      Total: 1
+2025-03-05 00:30:18,363 [main] DEBUG [cn.nynu.mapper.EmployeeMapper.insertEmployee!selectKey] - ==>  Preparing: select if max((id) is null 1,max(id)+1) from Employee 
+2025-03-05 00:30:18,387 [main] DEBUG [cn.nynu.mapper.EmployeeMapper.insertEmployee!selectKey] - ==> Parameters: 
+2025-03-05 00:31:54,734 [main] DEBUG [cn.nynu.mapper.EmployeeMapper.insertEmployee!selectKey] - ==>  Preparing: select if max((id) is null, 1,max(id)+1) from Employee 
+2025-03-05 00:31:54,763 [main] DEBUG [cn.nynu.mapper.EmployeeMapper.insertEmployee!selectKey] - ==> Parameters: 
+2025-03-05 00:32:59,041 [main] DEBUG [cn.nynu.mapper.EmployeeMapper.insertEmployee!selectKey] - ==>  Preparing: select if max((id) is null, 1,max(id)+1) from Employee 
+2025-03-05 00:32:59,064 [main] DEBUG [cn.nynu.mapper.EmployeeMapper.insertEmployee!selectKey] - ==> Parameters: 
+2025-03-05 00:33:15,303 [main] DEBUG [cn.nynu.mapper.EmployeeMapper.insertEmployee!selectKey] - ==>  Preparing: SELECT IFNULL(MAX(id), 0) + 1 FROM Employee 
+2025-03-05 00:33:15,331 [main] DEBUG [cn.nynu.mapper.EmployeeMapper.insertEmployee!selectKey] - ==> Parameters: 
+2025-03-05 00:33:15,379 [main] DEBUG [cn.nynu.mapper.EmployeeMapper.insertEmployee!selectKey] - <==      Total: 1
+2025-03-05 00:33:15,379 [main] DEBUG [cn.nynu.mapper.EmployeeMapper.insertEmployee] - ==>  Preparing: insert into Emloyee(id,name,age,position) values(?,?,?,?) 
+2025-03-05 00:33:15,380 [main] DEBUG [cn.nynu.mapper.EmployeeMapper.insertEmployee] - ==> Parameters: 4(Integer), 李四(String), 10(Integer), 经理(String)
+2025-03-05 00:33:23,897 [main] DEBUG [cn.nynu.mapper.EmployeeMapper.insertEmployee!selectKey] - ==>  Preparing: SELECT IFNULL(MAX(id), 1) + 1 FROM Employee 
+2025-03-05 00:33:23,932 [main] DEBUG [cn.nynu.mapper.EmployeeMapper.insertEmployee!selectKey] - ==> Parameters: 
+2025-03-05 00:33:23,956 [main] DEBUG [cn.nynu.mapper.EmployeeMapper.insertEmployee!selectKey] - <==      Total: 1
+2025-03-05 00:33:23,957 [main] DEBUG [cn.nynu.mapper.EmployeeMapper.insertEmployee] - ==>  Preparing: insert into Emloyee(id,name,age,position) values(?,?,?,?) 
+2025-03-05 00:33:23,958 [main] DEBUG [cn.nynu.mapper.EmployeeMapper.insertEmployee] - ==> Parameters: 4(Integer), 李四(String), 10(Integer), 经理(String)
+2025-03-05 00:33:31,353 [main] DEBUG [cn.nynu.mapper.EmployeeMapper.insertEmployee!selectKey] - ==>  Preparing: SELECT IFNULL(MAX(id), 0) + 1 FROM Employee 
+2025-03-05 00:33:31,385 [main] DEBUG [cn.nynu.mapper.EmployeeMapper.insertEmployee!selectKey] - ==> Parameters: 
+2025-03-05 00:33:31,406 [main] DEBUG [cn.nynu.mapper.EmployeeMapper.insertEmployee!selectKey] - <==      Total: 1
+2025-03-05 00:33:31,407 [main] DEBUG [cn.nynu.mapper.EmployeeMapper.insertEmployee] - ==>  Preparing: insert into Emloyee(id,name,age,position) values(?,?,?,?) 
+2025-03-05 00:33:31,409 [main] DEBUG [cn.nynu.mapper.EmployeeMapper.insertEmployee] - ==> Parameters: 4(Integer), 李四(String), 10(Integer), 经理(String)
+2025-03-05 00:33:49,458 [main] DEBUG [cn.nynu.mapper.EmployeeMapper.insertEmployee!selectKey] - ==>  Preparing: SELECT IFNULL(MAX(id), 0) + 1 FROM Employee 
+2025-03-05 00:33:49,488 [main] DEBUG [cn.nynu.mapper.EmployeeMapper.insertEmployee!selectKey] - ==> Parameters: 
+2025-03-05 00:33:49,509 [main] DEBUG [cn.nynu.mapper.EmployeeMapper.insertEmployee!selectKey] - <==      Total: 1
+2025-03-05 00:33:49,510 [main] DEBUG [cn.nynu.mapper.EmployeeMapper.insertEmployee] - ==>  Preparing: insert into Employee(id,name,age,position) values(?,?,?,?) 
+2025-03-05 00:33:49,511 [main] DEBUG [cn.nynu.mapper.EmployeeMapper.insertEmployee] - ==> Parameters: 4(Integer), 李四(String), 10(Integer), 经理(String)
+2025-03-05 00:33:49,512 [main] DEBUG [cn.nynu.mapper.EmployeeMapper.insertEmployee] - <==    Updates: 1
+2025-03-05 00:35:54,239 [main] DEBUG [cn.nynu.mapper.EmployeeMapper.insertEmployee!selectKey] - ==>  Preparing: SELECT IFNULL(MAX(id), 0) + 1 FROM Employee 
+2025-03-05 00:35:54,262 [main] DEBUG [cn.nynu.mapper.EmployeeMapper.insertEmployee!selectKey] - ==> Parameters: 
+2025-03-05 00:35:54,277 [main] DEBUG [cn.nynu.mapper.EmployeeMapper.insertEmployee!selectKey] - <==      Total: 1
+2025-03-05 00:35:54,278 [main] DEBUG [cn.nynu.mapper.EmployeeMapper.insertEmployee] - ==>  Preparing: insert into Employee(id,name,age,position) values(?,?,?,?) 
+2025-03-05 00:35:54,278 [main] DEBUG [cn.nynu.mapper.EmployeeMapper.insertEmployee] - ==> Parameters: 5(Integer), 王五(String), 10(Integer), 经理(String)
+2025-03-05 00:35:54,279 [main] DEBUG [cn.nynu.mapper.EmployeeMapper.insertEmployee] - <==    Updates: 1
+2025-03-05 00:36:39,245 [main] DEBUG [cn.nynu.mapper.EmployeeMapper.updateEmployee] - ==>  Preparing: update Employee set name={name},age=?,position=? where id=? 
+2025-03-05 00:37:20,350 [main] DEBUG [cn.nynu.mapper.EmployeeMapper.updateEmployee] - ==>  Preparing: update Employee set name={name},age=?,position=? where id=? 
+2025-03-05 00:37:20,387 [main] DEBUG [cn.nynu.mapper.EmployeeMapper.updateEmployee] - ==> Parameters: 10(Integer), 经理(String), 1(Integer)
+2025-03-05 00:39:22,089 [main] DEBUG [cn.nynu.mapper.EmployeeMapper.updateEmployee] - ==>  Preparing: update Employee set name=?,age=?,position=? where id=? 
+2025-03-05 00:39:22,113 [main] DEBUG [cn.nynu.mapper.EmployeeMapper.updateEmployee] - ==> Parameters: 王五(String), 10(Integer), 经理(String), 1(Integer)
+2025-03-05 00:39:22,114 [main] DEBUG [cn.nynu.mapper.EmployeeMapper.updateEmployee] - <==    Updates: 1
+2025-03-05 00:40:53,307 [main] DEBUG [cn.nynu.mapper.EmployeeMapper.deleteEmployee] - ==>  Preparing: delete from Employee where id=? 
+2025-03-05 00:40:53,335 [main] DEBUG [cn.nynu.mapper.EmployeeMapper.deleteEmployee] - ==> Parameters: 2(Integer)
+2025-03-05 00:40:53,336 [main] DEBUG [cn.nynu.mapper.EmployeeMapper.deleteEmployee] - <==    Updates: 1
+2025-03-05 09:55:46,527 [main] DEBUG [cn.nynu.mapper.EmployeeMapper.updateEmployee] - ==>  Preparing: update Employee set name=?,age=?,position=? where id=? 
+2025-03-05 09:55:46,553 [main] DEBUG [cn.nynu.mapper.EmployeeMapper.updateEmployee] - ==> Parameters: 李四(String), 18(Integer), 人员(String), 1(Integer)
+2025-03-05 09:55:46,553 [main] DEBUG [cn.nynu.mapper.EmployeeMapper.updateEmployee] - <==    Updates: 1
+2025-03-05 10:06:51,047 [main] DEBUG [cn.nynu.mapper.EmployeeMapper.insertEmployee!selectKey] - ==>  Preparing: SELECT IFNULL(MAX(id), 0) + 1 FROM Employee 
+2025-03-05 10:06:51,069 [main] DEBUG [cn.nynu.mapper.EmployeeMapper.insertEmployee!selectKey] - ==> Parameters: 
+2025-03-05 10:06:51,117 [main] DEBUG [cn.nynu.mapper.EmployeeMapper.insertEmployee!selectKey] - <==      Total: 1
+2025-03-05 10:06:51,117 [main] DEBUG [cn.nynu.mapper.EmployeeMapper.insertEmployee] - ==>  Preparing: insert into Employee(id,name,age,position) values(?,?,?,?) 
+2025-03-05 10:06:51,118 [main] DEBUG [cn.nynu.mapper.EmployeeMapper.insertEmployee] - ==> Parameters: 6(Integer), 李四(String), 10(Integer), 人员(String)
+2025-03-05 10:06:51,119 [main] DEBUG [cn.nynu.mapper.EmployeeMapper.insertEmployee] - <==    Updates: 1
+2025-03-05 10:10:26,614 [main] DEBUG [cn.nynu.mapper.EmployeeMapper.insertEmployee!selectKey] - ==>  Preparing: SELECT IFNULL(MAX(id), 0) + 1 FROM Employee 
+2025-03-05 10:10:26,645 [main] DEBUG [cn.nynu.mapper.EmployeeMapper.insertEmployee!selectKey] - ==> Parameters: 
+2025-03-05 10:10:26,665 [main] DEBUG [cn.nynu.mapper.EmployeeMapper.insertEmployee!selectKey] - <==      Total: 1
+2025-03-05 10:10:26,665 [main] DEBUG [cn.nynu.mapper.EmployeeMapper.insertEmployee] - ==>  Preparing: insert into Employee(id,name,age,position) values(?,?,?,?) 
+2025-03-05 10:10:26,666 [main] DEBUG [cn.nynu.mapper.EmployeeMapper.insertEmployee] - ==> Parameters: 7(Integer), 李四(String), 10(Integer), 人员(String)
+2025-03-05 10:10:26,666 [main] DEBUG [cn.nynu.mapper.EmployeeMapper.insertEmployee] - <==    Updates: 1

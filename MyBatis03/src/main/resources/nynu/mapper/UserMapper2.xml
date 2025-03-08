@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="nynu.mapper.UserMapper2">
+    <!--增删改不需要写返回值类型，默认返回值类型是Integer
+    User类中包含多个成员 可以作为参数
+    -->
+    <!--#{uname}中的变量来源于User类中的成员变量uname，与类中的成员变量名一致-->
+    <!--括号中的u_name来源于表中的列名，与列名一致-->
+    <!--该方法不会带回主键-->
+    <insert id="addUser" parameterType="User">
+        INSERT INTO user ( u_name, u_age)VALUES(#{uname},#{uage})
+    </insert>
+    <!--带回主键ID
+    要求表必须有自动增长的主键
+    keyColumn数据库中表中主键名 keyProperty类User中字段名
+    -->
+    <insert id="addUser2" parameterType="User" useGeneratedKeys="true" keyColumn="uid" keyProperty="uid">
+        INSERT INTO user ( u_name, u_age)VALUES(#{uname},#{uage})
+    </insert>
+    <!--带回主键ID
+    不要求表必须有自动增长的主键，都可以正确执行！！！
+    keyColumn数据库中表中主键名 keyProperty类User中字段名
+    -->
+    <insert id="addUser3" parameterType="User">
+        <selectKey keyColumn="u_id" keyProperty="uid" order="BEFORE" resultType="Integer">
+            select if(max(u_id)is null,1,max(u_id)+1) from user
+        </selectKey>
+        INSERT INTO user ( u_id ,u_name, u_age)VALUES(#{uid},#{uname},#{uage})
+    </insert>
+    <insert id="addUser4" parameterType="User" useGeneratedKeys="true" keyColumn="uid" keyProperty="uid">
+        INSERT INTO userNozeng ( u_name, u_age)VALUES(#{uname},#{uage})
+    </insert>
+    <insert id="addUser5" parameterType="User">
+        <selectKey keyColumn="uid" keyProperty="" order="BEFORE" resultType="Integer">
+            select if(max(uid)is null,1,max(uid)+1) from user
+        </selectKey>
+        INSERT INTO userNozeng ( u_name, u_age)VALUES(#{uname},#{uage})
+    </insert>
+
+    <!--
+    UPDATE USER SET u_age=18
+    UPDATE USER SET u_age=20 WHERE u_name='金吒'
+    UPDATE USER SET u_name='传智播客',u_age=10 WHERE u_id=2
+    -->
+    <update id="userUpdate" parameterType="User">
+        UPDATE USER SET u_name=#{uname},u_age=#{uage} WHERE u_id=#{uid}
+    </update>
+    <!--
+    删除语句要注意写条件，不写就全部删除
+    DELETE FROM USER WHERE u_name='金吒'
+    DELETE FROM USER WHERE u_name LIKE CONCAT('%','木','%') AND u_age=18
+    -->
+    <delete id="userDalete" parameterType="Integer">
+        DELETE FROM USER WHERE u_id=#{uid}
+    </delete>
+    <select id="findById" parameterType="Integer" resultType="User">
+        select * from user where u_id=#{uid}
+    </select>
+
+    <!--如果数据库表字段名和类字段名不同名的时候，会出现null问题
+    不用resultType变成resultMap
+    或者可以给查询语句的列起别名
+    column数据库字段名 property类中字段名-->
+    <resultMap id="user2ResultMap" type="User2">
+        <id column="uid" property="id"></id>
+        <result column="uname" property="name"></result>
+        <result column="uage" property="age"></result>
+    </resultMap>
+    <select id="findById2" parameterType="Integer" resultMap="user2ResultMap">
+        select * from user where u_id=#{uid}
+    </select>
+</mapper>

@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="nynu.mapper.CustomerMapper">
+    <!--动态SQL语句-->
+    <!--test后名称来源于参数名，如果参数是类类型，应该是类中字段名-->
+    <select id="findCustomerByUsernameAndJobs" parameterType="Customer" resultType="Customer">
+        select * from t_customer
+        where 1=1
+            <if test=" username!=null and username!='' ">
+                and username like concat('%',#{username},'%')
+            </if>
+            <if test=" jobs!=null and jobs!='' ">
+                and jobs=#{jobs}
+            </if>
+    </select>
+
+    <select id="findCustomerByUsernameAndJobs2" parameterType="Customer" resultType="Customer">
+        select * from t_customer
+        <where>
+        <if test=" username!=null and username!='' ">
+            and username like concat('%',#{username},'%')
+        </if>
+        <if test=" jobs!=null and jobs!='' ">
+            and jobs=#{jobs}
+        </if>
+        </where>
+    </select>
+
+    <select id="findCustomerByUsernameAndJobs3" parameterType="Customer" resultType="Customer">
+        select * from t_customer
+        <trim prefix="where" prefixOverrides="and">
+            <if test=" username!=null and username!='' ">
+                and username like concat('%',#{username},'%')
+            </if>
+            <if test=" jobs!=null and jobs!='' ">
+                and jobs=#{jobs}
+            </if>
+        </trim>
+    </select>
+
+    <!--choose语句多个条件可以不要，最多只能有一个
+    如果有多个满足的条件，只执行第一个满足的条件-->
+    <select id="findCustomerByUsernameAndJobs4" parameterType="Customer" resultType="Customer">
+        select * from t_customer
+        <where>
+            <choose>
+                <when test="username!=null and username!=''">
+                    and username like concat('%',#{username},'%')
+                </when>
+                <when test="jobs!=null and jobs!=''">
+                    and jobs=#{jobs}
+                </when>
+                <otherwise>
+                    and phone is null
+                </otherwise>
+            </choose>
+        </where>
+    </select>
+
+    <!--大于小于号：：大于小于已经被作为格式符号-->
+<!--    小于&lt;  大于&gt;
+        <![CDATA[具体内容]]>    //使用<>表示大于小于号
+-->
+    <select id="findCustomerByIds" parameterType="Integer" resultType="Customer">
+        select * from t_customer
+        where id&lt;=#{id}
+    </select>
+    <select id="findCustomerByIds2" parameterType="Integer" resultType="Customer">
+        select * from t_customer
+        <![CDATA[where id<=#{id}]]]>
+    </select>
+    <!--没给就是给空值-->
+    <update id="updateCustomer" parameterType="Customer">
+        update t_customer set username=#{username},jobs=#{jobs},phone=#{phone}
+        where id=#{id}
+    </update>
+    <!--没给就不改值-->
+    <update id="updateCustomer2" parameterType="Customer">
+        update t_customer
+        <set>
+            <if test=" username!=null and username!='' ">
+                 username=#{username},
+            </if>
+            <if test=" jobs!=null and jobs!='' ">
+                 jobs=#{jobs},
+            </if>
+            <if test=" phone!=null and phone!='' ">
+                 phone=#{phone},
+            </if>
+        </set>
+        where id=#{id}
+    </update>
+    <update id="updateCustomer3" parameterType="Customer">
+        update t_customer
+        <trim prefix="set" suffix="" prefixOverrides="" suffixOverrides=",">
+            <if test=" username!=null and username!='' ">
+                username=#{username},
+            </if>
+            <if test=" jobs!=null and jobs!='' ">
+                jobs=#{jobs},
+            </if>
+            <if test=" phone!=null and phone!='' ">
+                 phone=#{phone},
+            </if>
+        </trim>
+        where id=#{id}
+    </update>
+
+    <!--select * from t_customer where id in(1,4,5)-->
+    <select id="selectArray" parameterType="Integer[]" resultType="Customer">
+        select * from t_customer
+        where id in
+        /*collection="容器类型" item="每项的名字" index="下标" open="最左边" close="最右边" separator="分隔字符"*/
+        <foreach collection="array" item="id" index="index" open="(" close=")" separator=",">
+            /*内部写要重复的内容*/
+            #{id}
+        </foreach>
+    </select>
+
+    <select id="selectList" parameterType="java.util.List" resultType="Customer">
+        select * from t_customer
+        where id in
+        <foreach collection="list" item="id" index="index" open="(" close=")" separator=",">
+            #{id}
+        </foreach>
+    </select>
+
+    <!--*collection="容器类型" item="每项的别名" index="下标" open="最左边" close="最右边" separator="分隔字符"*/
+    /*collection:在map中写键名字*/-->
+    <select id="selectMap" parameterType="HashMap" resultType="Customer">
+        select * from t_customer
+        where id in
+        <foreach collection="ids" item="id" index="index" open="(" close=")" separator=",">
+            /*内部写要重复的内容*/
+            #{id}
+        </foreach>
+    </select>
+
+    <!--/*collection="容器类型" item="每项的别名" index="下标" open="最左边" close="最右边" separator="分隔字符"*/
+    /*collection:在map中写键名字*/-->
+    <select id="selectMap2" resultType="Customer">
+        select * from t_customer
+        where id in
+        <foreach collection="ids" item="id" index="index" open="(" close=")" separator=",">
+            /*内部写要重复的内容*/
+            #{id}
+        </foreach>
+        and username like concat('%',#{name},'%')
+    </select>
+
+    <select id="selectMap3" resultType="Customer">
+        select * from t_customer
+        where id in
+        <foreach collection="ids" item="id" index="index" open="(" close=")" separator=",">
+            /*内部写要重复的内容*/
+            #{id}
+        </foreach>
+        and username like concat('%',#{username},'%')
+    </select>
+
+    <delete id="deleteManyParameter">
+        delete * from t_customer
+        where id in
+        <foreach collection="ids" item="id" index="index" open="(" close=")" separator=",">
+            /*内部写要重复的内容*/
+            #{id}
+        </foreach>
+        and username like concat('%',#{username},'%')
+    </delete>
+
+
+
+    <insert id="insertCustomer" parameterType="Customer">
+        insert into t_customer (username,jobs,phone) values (#{username},#{jobs},#{phone})
+    </insert>
+
+
+    <insert id="insertCustomer2">
+        insert into t_customer (username,jobs,phone) values
+        <foreach collection="array" item="item" index="index" open="" close="" separator=",">
+            (#{item.username},#{item.jobs},#{item.phone})
+        </foreach>
+    </insert>
+
+    <insert id="insertCustomer3">
+        insert into t_customer (username,jobs,phone) values
+        <foreach collection="list" item="item" index="index" open="" close="" separator=",">
+            (#{item.username},#{item.jobs},#{item.phone})
+        </foreach>
+    </insert>
+
+    <!--UPDATE t_customer SET username='',jobs='',phone='' WHERE id=''-->
+    <insert id="insertCustomer4">
+        insert into t_customer
+
+        <foreach collection="keys" item="item" index="index" separator="," open="(" close=")">
+            ${index}
+        </foreach>
+        values
+        <foreach collection="keys" item="item" index="index" separator="," open="(" close=")">
+            #{item}
+        </foreach>
+
+    </insert>
+</mapper>
