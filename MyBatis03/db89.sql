@@ -16,6 +16,33 @@ CREATE DATABASE /*!32312 IF NOT EXISTS*/`db89` /*!40100 DEFAULT CHARACTER SET ut
 
 USE `db89`;
 
+/*Table structure for table `t_customer` */
+
+DROP TABLE IF EXISTS `t_customer`;
+
+CREATE TABLE `t_customer` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `username` varchar(20) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `jobs` varchar(20) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `phone` varchar(20) COLLATE utf8_unicode_ci DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=14 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+/*Data for the table `t_customer` */
+
+insert  into `t_customer`(`id`,`username`,`jobs`,`phone`) values (1,'哪吒','神话任务','123345');
+insert  into `t_customer`(`id`,`username`,`jobs`,`phone`) values (2,'逆天','华语','123758');
+insert  into `t_customer`(`id`,`username`,`jobs`,`phone`) values (3,'李四','学生','138987');
+insert  into `t_customer`(`id`,`username`,`jobs`,`phone`) values (5,'张天佑','老师','129387');
+insert  into `t_customer`(`id`,`username`,`jobs`,`phone`) values (6,'哪吒','神话任务','0377');
+insert  into `t_customer`(`id`,`username`,`jobs`,`phone`) values (7,'nit','神话任务','0377');
+insert  into `t_customer`(`id`,`username`,`jobs`,`phone`) values (8,'哪吒','神话任务','0377');
+insert  into `t_customer`(`id`,`username`,`jobs`,`phone`) values (9,'nit','神话任务','0377');
+insert  into `t_customer`(`id`,`username`,`jobs`,`phone`) values (10,'哪吒','神话任务','0377');
+insert  into `t_customer`(`id`,`username`,`jobs`,`phone`) values (11,'哪吒','神话任务','0377');
+insert  into `t_customer`(`id`,`username`,`jobs`,`phone`) values (12,'nit','神话任务','0377');
+insert  into `t_customer`(`id`,`username`,`jobs`,`phone`) values (13,'扬子',NULL,NULL);
+
 /*Table structure for table `user` */
 
 DROP TABLE IF EXISTS `user`;
@@ -26,7 +53,7 @@ CREATE TABLE `user` (
   `u_age` int(11) DEFAULT NULL COMMENT '年龄',
   `user_pass` int(11) DEFAULT NULL COMMENT '密码',
   PRIMARY KEY (`u_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=30 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=35 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 /*Data for the table `user` */
 
@@ -51,6 +78,11 @@ insert  into `user`(`u_id`,`u_name`,`u_age`,`user_pass`) values (26,'金吒',30,
 insert  into `user`(`u_id`,`u_name`,`u_age`,`user_pass`) values (27,'金吒',30,NULL);
 insert  into `user`(`u_id`,`u_name`,`u_age`,`user_pass`) values (28,'金吒',30,NULL);
 insert  into `user`(`u_id`,`u_name`,`u_age`,`user_pass`) values (29,'金吒',30,NULL);
+insert  into `user`(`u_id`,`u_name`,`u_age`,`user_pass`) values (30,'金吒',30,NULL);
+insert  into `user`(`u_id`,`u_name`,`u_age`,`user_pass`) values (31,'金吒',30,NULL);
+insert  into `user`(`u_id`,`u_name`,`u_age`,`user_pass`) values (32,'金吒',30,NULL);
+insert  into `user`(`u_id`,`u_name`,`u_age`,`user_pass`) values (33,'金吒',30,NULL);
+insert  into `user`(`u_id`,`u_name`,`u_age`,`user_pass`) values (34,'金吒',30,NULL);
 
 /*Table structure for table `user2345` */
 
