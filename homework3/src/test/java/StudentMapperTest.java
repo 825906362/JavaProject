@@ -76,7 +76,7 @@ public class StudentMapperTest {
     @Test
     public void testFindByNumbers() {
         // 准备测试数据
-        List<String> numbers = Arrays.asList("2023001", "2023003", "S2024001","S2024005");
+        List<String> numbers = Arrays.asList("S2024004", "S2024003", "S2024001","S2024005");
 
         // 执行查询
         List<Student> result = mapper.findByNumbers(numbers);
@@ -91,9 +91,9 @@ public class StudentMapperTest {
     public void testBatchInsert() {
         // 准备测试数据
         List<Student> students = Arrays.asList(
-                new Student("批量1", "CS", "S2024001"),
-                new Student("批量2", null, "S2024002"),
-                new Student("批量3", "Math", "S2024003")
+                new Student("批量1", "CS", "S2024004"),
+                new Student("批量2", null, "S2024005"),
+                new Student("批量3", "Math", "S2024006")
         );
 
         // 执行批量插入
