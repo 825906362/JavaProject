@@ -30,10 +30,12 @@ CREATE TABLE `employee` (
 
 /*Data for the table `employee` */
 
-insert  into `employee`(`id`,`name`,`age`,`position`) values (1,'王五',10,'经理');
+insert  into `employee`(`id`,`name`,`age`,`position`) values (1,'李四',18,'人员');
 insert  into `employee`(`id`,`name`,`age`,`position`) values (3,'王五',35,'经理');
 insert  into `employee`(`id`,`name`,`age`,`position`) values (4,'李四',10,'经理');
 insert  into `employee`(`id`,`name`,`age`,`position`) values (5,'王五',10,'经理');
+insert  into `employee`(`id`,`name`,`age`,`position`) values (6,'李四',10,'人员');
+insert  into `employee`(`id`,`name`,`age`,`position`) values (7,'李四',10,'人员');
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
 /*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
