@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="nynu.mapper.TbPersonMapper">
+    <select id="findPersonById" parameterType="Integer" resultType="TbPerson">
+        select * from tb_person where id = #{id}
+    </select>
+
+
+    <select id="findPersonById1" parameterType="Integer" resultMap="TbPersonMap1" >
+        select * from tb_person where id =#{id}
+    </select>
+
+    <resultMap id="TbPersonMap1" type="TbPerson">
+        <id column="id" property="id"></id>
+        <result column="name" property="name" ></result>
+        <result column="age" property="age"></result>
+        <result column="sex" property="sex"></result>
+        <result column="card_id" property="cardId"></result>
+        <!--一对一关联实现 property类中子对象 column写关联字段 select包名+selectid名,如果在同一个文件中包名可以省略-->
+        <association property="tbIdCard" column="card_id" select="findCardById"></association>
+    </resultMap>
+    <select id="findCardById" parameterType="Integer" resultType="TbIdCard">
+        select * from tb_idcard where id=#{id}
+    </select>
+<!--
+    <select id="findPersonById2" parameterType="Integer" resultMap="TbPersonMap2" >
+        select * from tb_person where id =#{id}
+    </select>
+    <resultMap id="TbPersonMap2" type="TbPerson">
+        <id column="id" property="id"></id>
+        <result column="name" property="name" ></result>
+        <result column="age" property="age"></result>
+        <result column="sex" property="sex"></result>
+        <result column="card_id" property="cardId"></result>
+        &lt;!&ndash;一对一关联实现 property类中子对象 column写关联字段 select包名+selectid名,如果在同一个文件中包名可以省略&ndash;&gt;
+        <association property="tbIdCard" column="card_id" select="findCardById">
+
+        </association>
+    </resultMap>
+    -->
+
+
+</mapper>

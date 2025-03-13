@@ -10,6 +10,8 @@
         <setting name="mapUnderscoreToCamelCase" value="true"/>
         <!--配置日志类型log4j slfj-->
         <setting name="logImpl" value="LOG4J"/>
+        <!--开启懒加载，按需加载-->
+        <setting name="lazyLoadingEnabled" value="true"/>
     </settings>
 
     <!--别名定义-->

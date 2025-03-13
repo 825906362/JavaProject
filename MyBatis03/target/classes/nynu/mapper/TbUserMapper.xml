@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="nynu.mapper.TbUserMapper">
+    <!--
+    SELECT * FROM tb_user WHERE id=1
+    SELECT * FROM tb_order WHERE user_id=1-->
+    <select id="findUserById" parameterType="Integer" resultMap="tbUserMap1">
+        SELECT * FROM tb_user WHERE id=#{id}
+    </select>
+    <resultMap id="tbUserMap1" type="TbUser">
+        <id column="id" property="id"></id>
+        <result column="username" property="username"></result>
+        <result column="address" property="address"></result>
+        <!--为什么property里面是ordersList而不是List<TbOrders>？
+        fetchType="lazy" 懒加载  eager关闭懒加载 默认是关闭懒加载
+        config.xml中配置的懒加载将对所有子查询有效
+        懒加载:当需要订单的时候，再执行子查询
+        -->
+        <collection property="ordersList" column="id"
+                    fetchType="eager"
+                    select="findOrdersById22"></collection>
+    </resultMap>
+    <select id="findOrdersById22" parameterType="Integer" resultType="TbOrders">
+        SELECT * FROM tb_orders WHERE user_id=#{id}
+    </select>
+
+    <!--
+    根据用户id查询用户以及订单信息
+    SELECT user.*,orders.id oid,orders.number FROM tb_user USER,tb_orders orders
+    WHERE user.id=orders.user_id
+    AND user.id=1   -->
+    <!--嵌套结果查询
+        难点：类中property和列中column如何匹配-->
+    <select id="findUserById2" parameterType="Integer" resultMap="tbUserMap2">
+        SELECT user.*,orders.id oid,orders.number FROM tb_user USER,tb_orders orders
+        WHERE user.id=orders.user_id
+          AND user.id=#{id}
+    </select>
+    <resultMap id="tbUserMap2" type="TbUser">
+        <id property="id" column="id"></id>
+        <result property="username" column="username"></result>
+        <result property="address" column="address"></result>
+        <!--ofType：列表中子对象的类型（一对多）
+            javaType：子对象的类型（一对一）-->
+        <collection property="ordersList" ofType="nynu.pojo.TbOrders">
+            <id property="id" column="oid"></id>
+            <result property="number" column="number"></result>
+            <result property="userId" column="id"></result>
+        </collection>
+    </resultMap>
+
+    <!--根据订单号查找订单携带用户信息
+        SELECT orders.*,user.username,user.address FROM tb_user USER,tb_orders orders
+        WHERE user.id=orders.user_id
+        AND orders.id=1 -->
+    <select id="findOrdersById" parameterType="Integer" resultMap="tbOrdersMap">
+        SELECT orders.*,user.username,user.address FROM tb_user USER,tb_orders orders
+        WHERE USER.id=orders.user_id
+        AND orders.id=#{id}
+    </select>
+
+
+
+
+    <resultMap id="tbOrdersMap" type="TbOrders">
+        <id property="id" column="id"></id>
+        <result property="number" column="number"></result>
+        <result property="userId" column="user_id"></result>
+        <association property="tbUser" javaType="TbUser">
+            <id property="id" column="user_id"></id>
+            <result property="username" column="username"></result>
+            <result property="address" column="address"></result>
+        </association>
+    </resultMap>
+
+</mapper>

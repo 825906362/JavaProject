@@ -445,3 +445,121 @@
 2025-03-08 17:11:04,781 [main] DEBUG [nynu.mapper.CustomerMapper.insertCustomer] - ==>  Preparing: insert into t_customer (username,jobs,phone) values (?,?,?) 
 2025-03-08 17:11:04,801 [main] DEBUG [nynu.mapper.CustomerMapper.insertCustomer] - ==> Parameters: 单个添加(String), 神话任务(String), 0377(String)
 2025-03-08 17:11:04,803 [main] DEBUG [nynu.mapper.CustomerMapper.insertCustomer] - <==    Updates: 1
+2025-03-12 10:31:50,945 [main] DEBUG [nynu.mapper.CustomerMapper.insertCustomer4] - ==>  Preparing: insert into t_customer ( username ) values ( ? ) 
+2025-03-12 10:31:50,971 [main] DEBUG [nynu.mapper.CustomerMapper.insertCustomer4] - ==> Parameters: 扬子(String)
+2025-03-12 10:31:50,971 [main] DEBUG [nynu.mapper.CustomerMapper.insertCustomer4] - <==    Updates: 1
+2025-03-12 11:58:51,007 [main] DEBUG [nynu.mapper.TbPersonMapper.findPersonById] - ==>  Preparing: select * from tb_person where id = 2; 
+2025-03-12 11:58:51,031 [main] DEBUG [nynu.mapper.TbPersonMapper.findPersonById] - ==> Parameters: 
+2025-03-12 11:58:51,075 [main] DEBUG [nynu.mapper.TbPersonMapper.findPersonById] - <==      Total: 1
+2025-03-12 11:59:23,817 [main] DEBUG [nynu.mapper.TbPersonMapper.findPersonById] - ==>  Preparing: select * from tb_person where id = 2; 
+2025-03-12 11:59:23,845 [main] DEBUG [nynu.mapper.TbPersonMapper.findPersonById] - ==> Parameters: 
+2025-03-12 11:59:23,863 [main] DEBUG [nynu.mapper.TbPersonMapper.findPersonById] - <==      Total: 1
+2025-03-12 12:02:04,444 [main] DEBUG [nynu.mapper.TbPersonMapper.findPersonById] - ==>  Preparing: select * from tb_person where id = ? 
+2025-03-12 12:02:04,475 [main] DEBUG [nynu.mapper.TbPersonMapper.findPersonById] - ==> Parameters: 2(Integer)
+2025-03-12 12:02:04,493 [main] DEBUG [nynu.mapper.TbPersonMapper.findPersonById] - <==      Total: 1
+2025-03-12 12:05:13,423 [main] DEBUG [nynu.mapper.TbPersonMapper.findPersonById] - ==>  Preparing: select * from tb_person where id = ? 
+2025-03-12 12:05:13,451 [main] DEBUG [nynu.mapper.TbPersonMapper.findPersonById] - ==> Parameters: 2(Integer)
+2025-03-12 12:05:13,472 [main] DEBUG [nynu.mapper.TbPersonMapper.findPersonById] - <==      Total: 1
+2025-03-12 12:08:04,091 [main] DEBUG [nynu.mapper.TbPersonMapper.findPersonById] - ==>  Preparing: select * from tb_person where id = ? 
+2025-03-12 12:08:04,123 [main] DEBUG [nynu.mapper.TbPersonMapper.findPersonById] - ==> Parameters: 2(Integer)
+2025-03-12 12:08:04,164 [main] DEBUG [nynu.mapper.TbPersonMapper.findPersonById] - <==      Total: 1
+2025-03-12 12:08:56,200 [main] DEBUG [nynu.mapper.TbPersonMapper.findPersonById] - ==>  Preparing: select * from tb_person where id = ? 
+2025-03-12 12:08:56,225 [main] DEBUG [nynu.mapper.TbPersonMapper.findPersonById] - ==> Parameters: 2(Integer)
+2025-03-12 12:08:56,242 [main] DEBUG [nynu.mapper.TbPersonMapper.findPersonById] - <==      Total: 1
+2025-03-12 12:09:38,376 [main] DEBUG [nynu.mapper.TbPersonMapper.findPersonById1] - ==>  Preparing: select * from tb_person where id =? 
+2025-03-12 12:09:38,398 [main] DEBUG [nynu.mapper.TbPersonMapper.findPersonById1] - ==> Parameters: 2(Integer)
+2025-03-12 12:11:46,200 [main] DEBUG [nynu.mapper.TbPersonMapper.findPersonById1] - ==>  Preparing: select * from tb_person where id =? 
+2025-03-12 12:11:46,225 [main] DEBUG [nynu.mapper.TbPersonMapper.findPersonById1] - ==> Parameters: 2(Integer)
+2025-03-12 12:13:07,256 [main] DEBUG [nynu.mapper.TbPersonMapper.findPersonById1] - ==>  Preparing: select * from tb_person where id =? 
+2025-03-12 12:13:07,282 [main] DEBUG [nynu.mapper.TbPersonMapper.findPersonById1] - ==> Parameters: 2(Integer)
+2025-03-12 12:13:20,472 [main] DEBUG [nynu.mapper.TbPersonMapper.findPersonById1] - ==>  Preparing: select * from tb_person where id =? 
+2025-03-12 12:13:20,504 [main] DEBUG [nynu.mapper.TbPersonMapper.findPersonById1] - ==> Parameters: 2(Integer)
+2025-03-12 12:13:20,526 [main] DEBUG [nynu.mapper.TbPersonMapper.findCardById] - ====>  Preparing: select * from tb_idcard where id=? 
+2025-03-12 12:13:20,526 [main] DEBUG [nynu.mapper.TbPersonMapper.findCardById] - ====> Parameters: 2(Integer)
+2025-03-12 12:13:20,528 [main] DEBUG [nynu.mapper.TbPersonMapper.findCardById] - <====      Total: 1
+2025-03-12 12:13:20,529 [main] DEBUG [nynu.mapper.TbPersonMapper.findPersonById1] - <==      Total: 1
+2025-03-13 10:36:42,885 [main] DEBUG [nynu.mapper.TbUserMapper.findUserById] - ==>  Preparing: 
+2025-03-13 10:36:56,466 [main] DEBUG [nynu.mapper.TbUserMapper.findUserById] - ==>  Preparing: SELECT * FROM tb_user WHERE id=? 
+2025-03-13 10:36:56,489 [main] DEBUG [nynu.mapper.TbUserMapper.findUserById] - ==> Parameters: 1(Integer)
+2025-03-13 10:36:56,533 [main] DEBUG [nynu.mapper.TbUserMapper.findUserById] - <==      Total: 1
+2025-03-13 10:38:20,030 [main] DEBUG [nynu.mapper.TbUserMapper.findUserById] - ==>  Preparing: SELECT * FROM tb_user WHERE id=? 
+2025-03-13 10:38:20,058 [main] DEBUG [nynu.mapper.TbUserMapper.findUserById] - ==> Parameters: 1(Integer)
+2025-03-13 10:38:20,077 [main] DEBUG [nynu.mapper.TbUserMapper.findUserById] - <==      Total: 1
+2025-03-13 10:43:49,210 [main] DEBUG [nynu.mapper.TbUserMapper.findUserById] - ==>  Preparing: SELECT * FROM tb_user WHERE id=? 
+2025-03-13 10:43:49,232 [main] DEBUG [nynu.mapper.TbUserMapper.findUserById] - ==> Parameters: 1(Integer)
+2025-03-13 10:43:49,247 [main] DEBUG [nynu.mapper.TbUserMapper.findOrderById] - ====>  Preparing: SELECT * FROM tb_order WHERE user_id=? 
+2025-03-13 10:43:49,247 [main] DEBUG [nynu.mapper.TbUserMapper.findOrderById] - ====> Parameters: 1(Integer)
+2025-03-13 10:44:17,036 [main] DEBUG [nynu.mapper.TbUserMapper.findUserById] - ==>  Preparing: SELECT * FROM tb_user WHERE id=? 
+2025-03-13 10:44:17,068 [main] DEBUG [nynu.mapper.TbUserMapper.findUserById] - ==> Parameters: 1(Integer)
+2025-03-13 10:44:17,086 [main] DEBUG [nynu.mapper.TbUserMapper.findOrderById] - ====>  Preparing: SELECT * FROM tb_order WHERE user_id=? 
+2025-03-13 10:44:17,086 [main] DEBUG [nynu.mapper.TbUserMapper.findOrderById] - ====> Parameters: 1(Integer)
+2025-03-13 10:45:31,179 [main] DEBUG [nynu.mapper.TbUserMapper.findUserById] - ==>  Preparing: SELECT * FROM tb_user WHERE id=? 
+2025-03-13 10:45:31,206 [main] DEBUG [nynu.mapper.TbUserMapper.findUserById] - ==> Parameters: 1(Integer)
+2025-03-13 10:45:31,225 [main] DEBUG [nynu.mapper.TbUserMapper.findOrderById] - ====>  Preparing: SELECT * FROM tb_orders WHERE user_id=? 
+2025-03-13 10:45:31,226 [main] DEBUG [nynu.mapper.TbUserMapper.findOrderById] - ====> Parameters: 1(Integer)
+2025-03-13 10:45:31,227 [main] DEBUG [nynu.mapper.TbUserMapper.findOrderById] - <====      Total: 3
+2025-03-13 10:45:56,355 [main] DEBUG [nynu.mapper.TbUserMapper.findUserById] - ==>  Preparing: SELECT * FROM tb_user WHERE id=? 
+2025-03-13 10:45:56,388 [main] DEBUG [nynu.mapper.TbUserMapper.findUserById] - ==> Parameters: 1(Integer)
+2025-03-13 10:45:56,409 [main] DEBUG [nynu.mapper.TbUserMapper.findOrderById] - ====>  Preparing: SELECT * FROM tb_orders WHERE user_id=? 
+2025-03-13 10:45:56,409 [main] DEBUG [nynu.mapper.TbUserMapper.findOrderById] - ====> Parameters: 1(Integer)
+2025-03-13 10:46:16,756 [main] DEBUG [nynu.mapper.TbUserMapper.findUserById] - ==>  Preparing: SELECT * FROM tb_user WHERE id=? 
+2025-03-13 10:46:16,788 [main] DEBUG [nynu.mapper.TbUserMapper.findUserById] - ==> Parameters: 1(Integer)
+2025-03-13 10:46:16,812 [main] DEBUG [nynu.mapper.TbUserMapper.findOrderById] - ====>  Preparing: SELECT * FROM tb_orders WHERE user_id=? 
+2025-03-13 10:46:16,812 [main] DEBUG [nynu.mapper.TbUserMapper.findOrderById] - ====> Parameters: 1(Integer)
+2025-03-13 10:52:13,980 [main] DEBUG [nynu.mapper.TbUserMapper.findUserById] - ==>  Preparing: SELECT * FROM tb_user WHERE id=? 
+2025-03-13 10:52:14,008 [main] DEBUG [nynu.mapper.TbUserMapper.findUserById] - ==> Parameters: 1(Integer)
+2025-03-13 10:52:14,027 [main] DEBUG [nynu.mapper.TbUserMapper.findOrdersById] - ====>  Preparing: SELECT * FROM tb_orders WHERE user_id=? 
+2025-03-13 10:52:14,027 [main] DEBUG [nynu.mapper.TbUserMapper.findOrdersById] - ====> Parameters: 1(Integer)
+2025-03-13 10:52:14,029 [main] DEBUG [nynu.mapper.TbUserMapper.findOrdersById] - <====      Total: 3
+2025-03-13 10:52:14,029 [main] DEBUG [nynu.mapper.TbUserMapper.findUserById] - <==      Total: 1
+2025-03-13 10:53:20,557 [main] DEBUG [nynu.mapper.TbUserMapper.findUserById] - ==>  Preparing: SELECT * FROM tb_user WHERE id=? 
+2025-03-13 10:53:20,591 [main] DEBUG [nynu.mapper.TbUserMapper.findUserById] - ==> Parameters: 1(Integer)
+2025-03-13 10:53:20,611 [main] DEBUG [nynu.mapper.TbUserMapper.findOrdersById] - ====>  Preparing: SELECT * FROM tb_orders WHERE user_id=? 
+2025-03-13 10:53:20,612 [main] DEBUG [nynu.mapper.TbUserMapper.findOrdersById] - ====> Parameters: 1(Integer)
+2025-03-13 10:53:20,613 [main] DEBUG [nynu.mapper.TbUserMapper.findOrdersById] - <====      Total: 3
+2025-03-13 10:53:20,613 [main] DEBUG [nynu.mapper.TbUserMapper.findUserById] - <==      Total: 1
+2025-03-13 10:58:42,715 [main] DEBUG [nynu.mapper.TbUserMapper.findUserById] - ==>  Preparing: SELECT * FROM tb_user WHERE id=? 
+2025-03-13 10:58:42,740 [main] DEBUG [nynu.mapper.TbUserMapper.findUserById] - ==> Parameters: 1(Integer)
+2025-03-13 10:58:42,759 [main] DEBUG [nynu.mapper.TbUserMapper.findOrdersById] - ====>  Preparing: SELECT * FROM tb_orders WHERE user_id=? 
+2025-03-13 10:58:42,760 [main] DEBUG [nynu.mapper.TbUserMapper.findOrdersById] - ====> Parameters: 1(Integer)
+2025-03-13 10:58:42,761 [main] DEBUG [nynu.mapper.TbUserMapper.findOrdersById] - <====      Total: 3
+2025-03-13 10:58:42,762 [main] DEBUG [nynu.mapper.TbUserMapper.findUserById] - <==      Total: 1
+2025-03-13 11:01:10,069 [main] DEBUG [nynu.mapper.TbUserMapper.findUserById] - ==>  Preparing: SELECT * FROM tb_user WHERE id=? 
+2025-03-13 11:01:10,102 [main] DEBUG [nynu.mapper.TbUserMapper.findUserById] - ==> Parameters: 1(Integer)
+2025-03-13 11:01:10,192 [main] DEBUG [nynu.mapper.TbUserMapper.findUserById] - <==      Total: 1
+2025-03-13 11:01:10,193 [main] DEBUG [nynu.mapper.TbUserMapper.findOrdersById] - ==>  Preparing: SELECT * FROM tb_orders WHERE user_id=? 
+2025-03-13 11:01:10,193 [main] DEBUG [nynu.mapper.TbUserMapper.findOrdersById] - ==> Parameters: 1(Integer)
+2025-03-13 11:01:10,194 [main] DEBUG [nynu.mapper.TbUserMapper.findOrdersById] - <==      Total: 3
+2025-03-13 11:04:15,032 [main] DEBUG [nynu.mapper.TbUserMapper.findUserById] - ==>  Preparing: SELECT * FROM tb_user WHERE id=? 
+2025-03-13 11:04:15,054 [main] DEBUG [nynu.mapper.TbUserMapper.findUserById] - ==> Parameters: 1(Integer)
+2025-03-13 11:04:15,099 [main] DEBUG [nynu.mapper.TbUserMapper.findUserById] - <==      Total: 1
+2025-03-13 11:04:15,099 [main] DEBUG [nynu.mapper.TbUserMapper.findOrdersById] - ==>  Preparing: SELECT * FROM tb_orders WHERE user_id=? 
+2025-03-13 11:04:15,100 [main] DEBUG [nynu.mapper.TbUserMapper.findOrdersById] - ==> Parameters: 1(Integer)
+2025-03-13 11:04:15,101 [main] DEBUG [nynu.mapper.TbUserMapper.findOrdersById] - <==      Total: 3
+2025-03-13 11:05:50,291 [main] DEBUG [nynu.mapper.TbUserMapper.findUserById] - ==>  Preparing: SELECT * FROM tb_user WHERE id=? 
+2025-03-13 11:05:50,321 [main] DEBUG [nynu.mapper.TbUserMapper.findUserById] - ==> Parameters: 1(Integer)
+2025-03-13 11:05:50,340 [main] DEBUG [nynu.mapper.TbUserMapper.findOrdersById] - ====>  Preparing: SELECT * FROM tb_orders WHERE user_id=? 
+2025-03-13 11:05:50,340 [main] DEBUG [nynu.mapper.TbUserMapper.findOrdersById] - ====> Parameters: 1(Integer)
+2025-03-13 11:05:50,343 [main] DEBUG [nynu.mapper.TbUserMapper.findOrdersById] - <====      Total: 3
+2025-03-13 11:05:50,343 [main] DEBUG [nynu.mapper.TbUserMapper.findUserById] - <==      Total: 1
+2025-03-13 11:15:48,881 [main] DEBUG [nynu.mapper.TbUserMapper.findUserById] - ==>  Preparing: SELECT * FROM tb_user WHERE id=? 
+2025-03-13 11:15:48,902 [main] DEBUG [nynu.mapper.TbUserMapper.findUserById] - ==> Parameters: 1(Integer)
+2025-03-13 11:15:48,919 [main] DEBUG [nynu.mapper.TbUserMapper.findOrdersById] - ====>  Preparing: SELECT * FROM tb_orders WHERE user_id=? 
+2025-03-13 11:15:48,920 [main] DEBUG [nynu.mapper.TbUserMapper.findOrdersById] - ====> Parameters: 1(Integer)
+2025-03-13 11:15:48,921 [main] DEBUG [nynu.mapper.TbUserMapper.findOrdersById] - <====      Total: 3
+2025-03-13 11:15:48,921 [main] DEBUG [nynu.mapper.TbUserMapper.findUserById] - <==      Total: 1
+2025-03-13 11:16:03,913 [main] DEBUG [nynu.mapper.TbUserMapper.findUserById2] - ==>  Preparing: SELECT user.*,orders.id oid,orders.number FROM tb_user USER,tb_orders orders WHERE user.id=orders.user_id AND user.id=? 
+2025-03-13 11:16:03,942 [main] DEBUG [nynu.mapper.TbUserMapper.findUserById2] - ==> Parameters: 1(Integer)
+2025-03-13 11:16:03,961 [main] DEBUG [nynu.mapper.TbUserMapper.findUserById2] - <==      Total: 3
+2025-03-13 11:16:25,020 [main] DEBUG [nynu.mapper.TbUserMapper.findUserById2] - ==>  Preparing: SELECT user.*,orders.id oid,orders.number FROM tb_user USER,tb_orders orders WHERE user.id=orders.user_id AND user.id=? 
+2025-03-13 11:16:25,050 [main] DEBUG [nynu.mapper.TbUserMapper.findUserById2] - ==> Parameters: 1(Integer)
+2025-03-13 11:16:25,067 [main] DEBUG [nynu.mapper.TbUserMapper.findUserById2] - <==      Total: 3
+2025-03-13 11:16:33,823 [main] DEBUG [nynu.mapper.TbUserMapper.findUserById2] - ==>  Preparing: SELECT user.*,orders.id oid,orders.number FROM tb_user USER,tb_orders orders WHERE user.id=orders.user_id AND user.id=? 
+2025-03-13 11:16:33,861 [main] DEBUG [nynu.mapper.TbUserMapper.findUserById2] - ==> Parameters: 1(Integer)
+2025-03-13 11:16:33,881 [main] DEBUG [nynu.mapper.TbUserMapper.findUserById2] - <==      Total: 3
+2025-03-13 11:18:01,029 [main] DEBUG [nynu.mapper.TbUserMapper.findUserById2] - ==>  Preparing: SELECT user.*,orders.id oid,orders.number FROM tb_user USER,tb_orders orders WHERE user.id=orders.user_id AND user.id=? 
+2025-03-13 11:18:01,058 [main] DEBUG [nynu.mapper.TbUserMapper.findUserById2] - ==> Parameters: 1(Integer)
+2025-03-13 11:18:01,076 [main] DEBUG [nynu.mapper.TbUserMapper.findUserById2] - <==      Total: 3
+2025-03-13 11:40:01,302 [main] DEBUG [nynu.mapper.TbUserMapper.findOrdersById] - ==>  Preparing: SELECT orders.*,user.username,user.address FROM tb_user USER,tb_orders orders WHERE USER.id=orders.user_id AND orders.id=? 
+2025-03-13 11:40:01,335 [main] DEBUG [nynu.mapper.TbUserMapper.findOrdersById] - ==> Parameters: 4(Integer)
+2025-03-13 11:40:01,353 [main] DEBUG [nynu.mapper.TbUserMapper.findOrdersById] - <==      Total: 1

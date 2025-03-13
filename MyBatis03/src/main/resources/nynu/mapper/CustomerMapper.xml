@@ -19,12 +19,12 @@
     <select id="findCustomerByUsernameAndJobs2" parameterType="Customer" resultType="Customer">
         select * from t_customer
         <where>
-        <if test=" username!=null and username!='' ">
-            and username like concat('%',#{username},'%')
-        </if>
-        <if test=" jobs!=null and jobs!='' ">
-            and jobs=#{jobs}
-        </if>
+            <if test=" username!=null and username!='' ">
+                and username like concat('%',#{username},'%')
+            </if>
+            <if test=" jobs!=null and jobs!='' ">
+                and jobs=#{jobs}
+            </if>
         </where>
     </select>
 
@@ -194,7 +194,6 @@
     <!--UPDATE t_customer SET username='',jobs='',phone='' WHERE id=''-->
     <insert id="insertCustomer4">
         insert into t_customer
-
         <foreach collection="keys" item="item" index="index" separator="," open="(" close=")">
             ${index}
         </foreach>

@@ -10,9 +10,6 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.util.Arrays;
 import java.util.List;
-import java.util.stream.Collectors;
-
-import static org.junit.Assert.*;
 
 public class StudentMapperTest {
     private static SqlSessionFactory sqlSessionFactory;
@@ -51,7 +48,7 @@ public class StudentMapperTest {
 
         // 场景2：按专业查询
         Student condition2 = new Student();
-        condition2.setMajor("计算机科学");
+        condition2.setMajor("Math");
         List<Student> result2 = mapper.findByCondition(condition2);
         if(!result2.isEmpty())System.out.println(result2);
 
