@@ -26,7 +26,7 @@ CREATE TABLE `t_customer` (
   `jobs` varchar(20) COLLATE utf8_unicode_ci DEFAULT NULL,
   `phone` varchar(20) COLLATE utf8_unicode_ci DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=14 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=15 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 /*Data for the table `t_customer` */
 
@@ -42,6 +42,123 @@ insert  into `t_customer`(`id`,`username`,`jobs`,`phone`) values (10,'哪吒','�
 insert  into `t_customer`(`id`,`username`,`jobs`,`phone`) values (11,'哪吒','神话任务','0377');
 insert  into `t_customer`(`id`,`username`,`jobs`,`phone`) values (12,'nit','神话任务','0377');
 insert  into `t_customer`(`id`,`username`,`jobs`,`phone`) values (13,'扬子',NULL,NULL);
+insert  into `t_customer`(`id`,`username`,`jobs`,`phone`) values (14,'扬子',NULL,NULL);
+
+/*Table structure for table `tb_idcard` */
+
+DROP TABLE IF EXISTS `tb_idcard`;
+
+CREATE TABLE `tb_idcard` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `code` varchar(18) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `address` varchar(50) COLLATE utf8_unicode_ci DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `id` (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+/*Data for the table `tb_idcard` */
+
+insert  into `tb_idcard`(`id`,`code`,`address`) values (1,'12334435','上海');
+insert  into `tb_idcard`(`id`,`code`,`address`) values (2,'32432534','深圳');
+
+/*Table structure for table `tb_orders` */
+
+DROP TABLE IF EXISTS `tb_orders`;
+
+CREATE TABLE `tb_orders` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `number` varchar(30) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `user_id` int(11) DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  KEY `FK_tb_orders` (`user_id`),
+  CONSTRAINT `FK_tb_orders` FOREIGN KEY (`user_id`) REFERENCES `tb_user` (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+/*Data for the table `tb_orders` */
+
+insert  into `tb_orders`(`id`,`number`,`user_id`) values (1,'1000011',1);
+insert  into `tb_orders`(`id`,`number`,`user_id`) values (2,'1000012',2);
+insert  into `tb_orders`(`id`,`number`,`user_id`) values (3,'1000013',2);
+insert  into `tb_orders`(`id`,`number`,`user_id`) values (4,'1000014',1);
+insert  into `tb_orders`(`id`,`number`,`user_id`) values (5,'1000015',2);
+
+/*Table structure for table `tb_ordersitem` */
+
+DROP TABLE IF EXISTS `tb_ordersitem`;
+
+CREATE TABLE `tb_ordersitem` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `orders_id` int(11) DEFAULT NULL,
+  `product_id` int(11) DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  KEY `FK_tb_ordersitem` (`orders_id`),
+  KEY `FK_tb_ordersitem2` (`product_id`),
+  CONSTRAINT `FK_tb_ordersitem` FOREIGN KEY (`orders_id`) REFERENCES `tb_orders` (`id`),
+  CONSTRAINT `FK_tb_ordersitem2` FOREIGN KEY (`product_id`) REFERENCES `tb_product` (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+/*Data for the table `tb_ordersitem` */
+
+insert  into `tb_ordersitem`(`id`,`orders_id`,`product_id`) values (1,1,1);
+insert  into `tb_ordersitem`(`id`,`orders_id`,`product_id`) values (2,1,3);
+insert  into `tb_ordersitem`(`id`,`orders_id`,`product_id`) values (3,1,5);
+insert  into `tb_ordersitem`(`id`,`orders_id`,`product_id`) values (4,2,1);
+insert  into `tb_ordersitem`(`id`,`orders_id`,`product_id`) values (5,2,2);
+
+/*Table structure for table `tb_person` */
+
+DROP TABLE IF EXISTS `tb_person`;
+
+CREATE TABLE `tb_person` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(20) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `age` int(11) DEFAULT NULL,
+  `sex` varchar(1) COLLATE utf8_unicode_ci DEFAULT '男',
+  `card_id` int(11) DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  KEY `FK_tb_person` (`card_id`),
+  CONSTRAINT `FK_tb_person` FOREIGN KEY (`card_id`) REFERENCES `tb_idcard` (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+/*Data for the table `tb_person` */
+
+insert  into `tb_person`(`id`,`name`,`age`,`sex`,`card_id`) values (1,'张三',20,'男',1);
+insert  into `tb_person`(`id`,`name`,`age`,`sex`,`card_id`) values (2,'李四',18,'女',2);
+
+/*Table structure for table `tb_product` */
+
+DROP TABLE IF EXISTS `tb_product`;
+
+CREATE TABLE `tb_product` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(32) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `price` double DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+/*Data for the table `tb_product` */
+
+insert  into `tb_product`(`id`,`name`,`price`) values (1,'电视机',5000);
+insert  into `tb_product`(`id`,`name`,`price`) values (2,'冰箱',4000);
+insert  into `tb_product`(`id`,`name`,`price`) values (3,'空调',3000);
+insert  into `tb_product`(`id`,`name`,`price`) values (4,'洗衣机',2000);
+insert  into `tb_product`(`id`,`name`,`price`) values (5,'电脑',6000);
+
+/*Table structure for table `tb_user` */
+
+DROP TABLE IF EXISTS `tb_user`;
+
+CREATE TABLE `tb_user` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `username` varchar(20) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `address` varchar(20) COLLATE utf8_unicode_ci DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+/*Data for the table `tb_user` */
+
+insert  into `tb_user`(`id`,`username`,`address`) values (1,'小明','北京');
+insert  into `tb_user`(`id`,`username`,`address`) values (2,'小李','南阳');
 
 /*Table structure for table `user` */
 
