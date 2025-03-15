@@ -662,3 +662,14 @@
 2025-03-14 11:45:28,349 [main] DEBUG [nynu.mapper.TbProductMapper.findOrdersById3] - ====> Parameters: 2(Integer)
 2025-03-14 11:45:28,349 [main] DEBUG [nynu.mapper.TbProductMapper.findOrdersById3] - <====      Total: 1
 2025-03-14 11:45:28,349 [main] DEBUG [nynu.mapper.TbProductMapper.findProductByIdWithOrders] - <==      Total: 2
+2025-03-16 00:27:59,434 [main] DEBUG [nynu.mapper.TbProductMapper.findProductByIdWithOrders] - ==>  Preparing: SELECT product.*,orders.id oid,orders.number,orders.user_id FROM tb_product product,tb_orders orders,tb_ordersitem ordersitem WHERE product.id=ordersitem.product_id AND ordersitem.orders_id=orders.id AND product_id=? 
+2025-03-16 00:27:59,456 [main] DEBUG [nynu.mapper.TbProductMapper.findProductByIdWithOrders] - ==> Parameters: 1(Integer)
+2025-03-16 00:32:58,123 [main] DEBUG [nynu.mapper.TbProductMapper.findProductByIdWithOrders] - ==>  Preparing: SELECT product.*,orders.id oid,orders.number,orders.user_id FROM tb_product product,tb_orders orders,tb_ordersitem ordersitem WHERE product.id=ordersitem.product_id AND ordersitem.orders_id=orders.id AND product_id=? 
+2025-03-16 00:32:58,144 [main] DEBUG [nynu.mapper.TbProductMapper.findProductByIdWithOrders] - ==> Parameters: 1(Integer)
+2025-03-16 00:32:58,200 [main] DEBUG [nynu.mapper.TbProductMapper.findOrdersById3] - ====>  Preparing: SELECT * FROM tb_user WHERE id=? 
+2025-03-16 00:32:58,201 [main] DEBUG [nynu.mapper.TbProductMapper.findOrdersById3] - ====> Parameters: 1(Integer)
+2025-03-16 00:32:58,202 [main] DEBUG [nynu.mapper.TbProductMapper.findOrdersById3] - <====      Total: 1
+2025-03-16 00:32:58,204 [main] DEBUG [nynu.mapper.TbProductMapper.findOrdersById3] - ====>  Preparing: SELECT * FROM tb_user WHERE id=? 
+2025-03-16 00:32:58,204 [main] DEBUG [nynu.mapper.TbProductMapper.findOrdersById3] - ====> Parameters: 2(Integer)
+2025-03-16 00:32:58,204 [main] DEBUG [nynu.mapper.TbProductMapper.findOrdersById3] - <====      Total: 1
+2025-03-16 00:32:58,204 [main] DEBUG [nynu.mapper.TbProductMapper.findProductByIdWithOrders] - <==      Total: 2

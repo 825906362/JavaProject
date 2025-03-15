@@ -1,0 +1,75 @@
+2025-03-16 01:35:41,641 [main] DEBUG [mapper.CategoryMapper.findProductByCategory] - ==>  Preparing: select goods_id,goods_name,price,categories.type_id type_id,type_name from product,category where product.type_id=category.type_id and type_name=? 
+2025-03-16 01:35:41,665 [main] DEBUG [mapper.CategoryMapper.findProductByCategory] - ==> Parameters: 白色家电(String)
+2025-03-16 01:47:10,677 [main] DEBUG [mapper.CategoryMapper.findProductByCategory] - ==>  Preparing: select * from category where type_name=? 
+2025-03-16 01:47:10,696 [main] DEBUG [mapper.CategoryMapper.findProductByCategory] - ==> Parameters: 白色家电(String)
+2025-03-16 01:47:10,719 [main] DEBUG [mapper.CategoryMapper.findProductByTypeId] - ====>  Preparing: select * from product where type_id={id} 
+2025-03-16 01:47:10,720 [main] DEBUG [mapper.CategoryMapper.findProductByTypeId] - ====> Parameters: 
+2025-03-16 01:47:53,911 [main] DEBUG [mapper.CategoryMapper.findProductByCategory] - ==>  Preparing: select * from category where type_name=? 
+2025-03-16 01:47:53,929 [main] DEBUG [mapper.CategoryMapper.findProductByCategory] - ==> Parameters: 白色家电(String)
+2025-03-16 01:47:53,945 [main] DEBUG [mapper.CategoryMapper.findProductByTypeId] - ====>  Preparing: select * from product where type_id={id} 
+2025-03-16 01:47:53,945 [main] DEBUG [mapper.CategoryMapper.findProductByTypeId] - ====> Parameters: 
+2025-03-16 01:48:17,287 [main] DEBUG [mapper.CategoryMapper.findProductByCategory] - ==>  Preparing: select * from category where type_name=? 
+2025-03-16 01:48:17,308 [main] DEBUG [mapper.CategoryMapper.findProductByCategory] - ==> Parameters: 白色家电(String)
+2025-03-16 01:48:17,323 [main] DEBUG [mapper.CategoryMapper.findProductByTypeId] - ====>  Preparing: select * from product where type_id={id} 
+2025-03-16 01:48:17,324 [main] DEBUG [mapper.CategoryMapper.findProductByTypeId] - ====> Parameters: 
+2025-03-16 01:48:58,954 [main] DEBUG [mapper.CategoryMapper.findProductByCategory] - ==>  Preparing: select * from category where type_name=? 
+2025-03-16 01:48:58,977 [main] DEBUG [mapper.CategoryMapper.findProductByCategory] - ==> Parameters: 白色家电(String)
+2025-03-16 01:48:58,993 [main] DEBUG [mapper.CategoryMapper.findProductByTypeId] - ====>  Preparing: select * from product where type_id=? 
+2025-03-16 01:48:58,993 [main] DEBUG [mapper.CategoryMapper.findProductByTypeId] - ====> Parameters: 2(Integer)
+2025-03-16 01:48:58,995 [main] DEBUG [mapper.CategoryMapper.findProductByTypeId] - <====      Total: 3
+2025-03-16 01:48:58,996 [main] DEBUG [mapper.CategoryMapper.findProductByCategory] - <==      Total: 1
+2025-03-16 01:49:16,622 [main] DEBUG [mapper.CategoryMapper.findProductByCategory] - ==>  Preparing: select * from category where type_name=? 
+2025-03-16 01:49:16,642 [main] DEBUG [mapper.CategoryMapper.findProductByCategory] - ==> Parameters: 白色家电(String)
+2025-03-16 01:49:16,657 [main] DEBUG [mapper.CategoryMapper.findProductByTypeId] - ====>  Preparing: select * from product where type_id=? 
+2025-03-16 01:49:16,658 [main] DEBUG [mapper.CategoryMapper.findProductByTypeId] - ====> Parameters: 2(Integer)
+2025-03-16 01:49:16,659 [main] DEBUG [mapper.CategoryMapper.findProductByTypeId] - <====      Total: 3
+2025-03-16 01:49:16,660 [main] DEBUG [mapper.CategoryMapper.findProductByCategory] - <==      Total: 1
+2025-03-16 01:49:49,534 [main] DEBUG [mapper.CategoryMapper.findProductByCategory1] - ==>  Preparing: select * from category where type_name=? 
+2025-03-16 01:49:49,554 [main] DEBUG [mapper.CategoryMapper.findProductByCategory1] - ==> Parameters: 白色家电(String)
+2025-03-16 01:49:49,569 [main] DEBUG [mapper.CategoryMapper.findProductByTypeId] - ====>  Preparing: select * from product where type_id=? 
+2025-03-16 01:49:49,569 [main] DEBUG [mapper.CategoryMapper.findProductByTypeId] - ====> Parameters: 2(Integer)
+2025-03-16 01:49:49,571 [main] DEBUG [mapper.CategoryMapper.findProductByTypeId] - <====      Total: 3
+2025-03-16 01:49:49,573 [main] DEBUG [mapper.CategoryMapper.findProductByCategory1] - <==      Total: 1
+2025-03-16 01:59:30,759 [main] DEBUG [mapper.CategoryMapper.findProductByCategory1] - ==>  Preparing: select * from category where type_name=? 
+2025-03-16 01:59:30,781 [main] DEBUG [mapper.CategoryMapper.findProductByCategory1] - ==> Parameters: 白色家电(String)
+2025-03-16 01:59:30,796 [main] DEBUG [mapper.CategoryMapper.findProductByTypeId] - ====>  Preparing: select * from product where type_id=? 
+2025-03-16 01:59:30,797 [main] DEBUG [mapper.CategoryMapper.findProductByTypeId] - ====> Parameters: 2(Integer)
+2025-03-16 01:59:30,798 [main] DEBUG [mapper.CategoryMapper.findProductByTypeId] - <====      Total: 3
+2025-03-16 01:59:30,799 [main] DEBUG [mapper.CategoryMapper.findProductByCategory1] - <==      Total: 1
+2025-03-16 02:04:40,236 [main] DEBUG [mapper.CategoryMapper.findProductByCategory2] - ==>  Preparing: select product.*,type_name from product,category where product.type_id=category.type_id and type_name=? 
+2025-03-16 02:04:40,256 [main] DEBUG [mapper.CategoryMapper.findProductByCategory2] - ==> Parameters: 白色家电(String)
+2025-03-16 02:04:40,271 [main] DEBUG [mapper.CategoryMapper.findProductByCategory2] - <==      Total: 3
+2025-03-16 02:06:21,143 [main] DEBUG [mapper.CategoryMapper.findProductByCategory1] - ==>  Preparing: select * from category where type_name=? 
+2025-03-16 02:06:21,162 [main] DEBUG [mapper.CategoryMapper.findProductByCategory1] - ==> Parameters: 白色家电(String)
+2025-03-16 02:06:21,178 [main] DEBUG [mapper.CategoryMapper.findProductByTypeId] - ====>  Preparing: select * from product where type_id=? 
+2025-03-16 02:06:21,178 [main] DEBUG [mapper.CategoryMapper.findProductByTypeId] - ====> Parameters: 2(Integer)
+2025-03-16 02:06:21,180 [main] DEBUG [mapper.CategoryMapper.findProductByTypeId] - <====      Total: 3
+2025-03-16 02:06:21,181 [main] DEBUG [mapper.CategoryMapper.findProductByCategory1] - <==      Total: 1
+2025-03-16 02:06:54,464 [main] DEBUG [mapper.CategoryMapper.findProductByCategory1] - ==>  Preparing: select * from category where type_name=? 
+2025-03-16 02:06:54,485 [main] DEBUG [mapper.CategoryMapper.findProductByCategory1] - ==> Parameters: 白色家电(String)
+2025-03-16 02:06:54,503 [main] DEBUG [mapper.CategoryMapper.findProductByTypeId] - ====>  Preparing: select * from product where type_id=? 
+2025-03-16 02:06:54,504 [main] DEBUG [mapper.CategoryMapper.findProductByTypeId] - ====> Parameters: 2(Integer)
+2025-03-16 02:06:54,505 [main] DEBUG [mapper.CategoryMapper.findProductByTypeId] - <====      Total: 3
+2025-03-16 02:06:54,506 [main] DEBUG [mapper.CategoryMapper.findProductByCategory1] - <==      Total: 1
+2025-03-16 02:06:58,446 [main] DEBUG [mapper.CategoryMapper.findProductByCategory2] - ==>  Preparing: select product.*,type_name from product,category where product.type_id=category.type_id and type_name=? 
+2025-03-16 02:06:58,468 [main] DEBUG [mapper.CategoryMapper.findProductByCategory2] - ==> Parameters: 白色家电(String)
+2025-03-16 02:06:58,485 [main] DEBUG [mapper.CategoryMapper.findProductByCategory2] - <==      Total: 3
+2025-03-16 02:07:13,876 [main] DEBUG [mapper.CategoryMapper.findProductByCategory1] - ==>  Preparing: select * from category where type_name=? 
+2025-03-16 02:07:13,901 [main] DEBUG [mapper.CategoryMapper.findProductByCategory1] - ==> Parameters: 白色家电(String)
+2025-03-16 02:07:13,919 [main] DEBUG [mapper.CategoryMapper.findProductByTypeId] - ====>  Preparing: select * from product where type_id=? 
+2025-03-16 02:07:13,919 [main] DEBUG [mapper.CategoryMapper.findProductByTypeId] - ====> Parameters: 2(Integer)
+2025-03-16 02:07:13,921 [main] DEBUG [mapper.CategoryMapper.findProductByTypeId] - <====      Total: 3
+2025-03-16 02:07:13,922 [main] DEBUG [mapper.CategoryMapper.findProductByCategory1] - <==      Total: 1
+2025-03-16 02:08:02,404 [main] DEBUG [mapper.CategoryMapper.findProductByCategory2] - ==>  Preparing: select * from product,category where product.type_id=category.type_id and type_name=? 
+2025-03-16 02:08:02,425 [main] DEBUG [mapper.CategoryMapper.findProductByCategory2] - ==> Parameters: 白色家电(String)
+2025-03-16 02:08:02,440 [main] DEBUG [mapper.CategoryMapper.findProductByCategory2] - <==      Total: 3
+2025-03-16 02:08:17,121 [main] DEBUG [mapper.CategoryMapper.findProductByCategory2] - ==>  Preparing: select product.*,type_name from product,category where product.type_id=category.type_id and type_name=? 
+2025-03-16 02:08:17,142 [main] DEBUG [mapper.CategoryMapper.findProductByCategory2] - ==> Parameters: 白色家电(String)
+2025-03-16 02:08:17,158 [main] DEBUG [mapper.CategoryMapper.findProductByCategory2] - <==      Total: 3
+2025-03-16 02:09:51,891 [main] DEBUG [mapper.CategoryMapper.findProductByCategory2] - ==>  Preparing: select product.*,type_name from product,category where product.type_id=category.type_id and type_name=? 
+2025-03-16 02:09:51,912 [main] DEBUG [mapper.CategoryMapper.findProductByCategory2] - ==> Parameters: 白色家电(String)
+2025-03-16 02:10:16,591 [main] DEBUG [mapper.CategoryMapper.findProductByCategory2] - ==>  Preparing: select product.*,type_name from product,category where product.type_id=category.type_id and type_name=? 
+2025-03-16 02:10:16,612 [main] DEBUG [mapper.CategoryMapper.findProductByCategory2] - ==> Parameters: 白色家电(String)
+2025-03-16 02:11:06,042 [main] DEBUG [mapper.CategoryMapper.findProductByCategory2] - ==>  Preparing: select product.*,type_name from product,category where product.type_id=category.type_id and type_name=? 
+2025-03-16 02:11:06,063 [main] DEBUG [mapper.CategoryMapper.findProductByCategory2] - ==> Parameters: 白色家电(String)
+2025-03-16 02:11:06,081 [main] DEBUG [mapper.CategoryMapper.findProductByCategory2] - <==      Total: 3

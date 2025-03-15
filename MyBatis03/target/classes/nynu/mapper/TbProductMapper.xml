@@ -29,7 +29,7 @@
             <id column="oid" property="id"></id>
             <result column="number" property="number"></result>
             <result column="user_id" property="userId"></result>
-            <association property="TbUser" column="user_id" select="findOrdersById3" fetchType="eager"></association>
+            <association property="tbUser" column="user_id" select="findOrdersById3" fetchType="eager"></association>
         </collection>
     </resultMap>
     <select id="findOrdersById3" parameterType="Integer" resultType="TbUser">
