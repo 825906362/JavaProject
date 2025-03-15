@@ -60,10 +60,6 @@
         WHERE USER.id=orders.user_id
         AND orders.id=#{id}
     </select>
-
-
-
-
     <resultMap id="tbOrdersMap" type="TbOrders">
         <id property="id" column="id"></id>
         <result property="number" column="number"></result>
@@ -75,4 +71,7 @@
         </association>
     </resultMap>
 
+    <select id="findOrdersById3" parameterType="Integer" resultType="TbUser">
+        SELECT * FROM tb_user WHERE id=#{id}
+    </select>
 </mapper>
