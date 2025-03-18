@@ -45,8 +45,9 @@
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
-        <option name="mavenHome" value="E:/apache-maven-3.8.4" />
-        <option name="userSettingsFile" value="E:\apache-maven-3.8.4\conf\settings.xml" />
+        <option name="localRepository" value="C:\maven-3.8.4_repository" />
+        <option name="mavenHome" value="C:/apache-maven-3.8.4" />
+        <option name="userSettingsFile" value="C:\apache-maven-3.8.4\conf\settings.xml" />
       </MavenGeneralSettings>
     </option>
   </component>
@@ -140,6 +141,7 @@
       <updated>1741917139991</updated>
       <workItem from="1741917141111" duration="800000" />
       <workItem from="1742056460389" duration="5772000" />
+      <workItem from="1742257059840" duration="169000" />
     </task>
     <servers />
   </component>
