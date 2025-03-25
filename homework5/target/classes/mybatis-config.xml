@@ -3,25 +3,23 @@
         PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-config.dtd">
 <configuration>
-    <!--åŠ è½½å…¶ä»–çš„èµ„æº-->
+    <!--¼ÓÔØÆäËûµÄ×ÊÔ´-->
     <properties resource="db.properties"></properties>
     <settings>
-        <!--å¼€å¯é©¼å³°å‘½å-->
+        <!--¿ªÆôÍÕ·åÃüÃû-->
         <setting name="mapUnderscoreToCamelCase" value="true"/>
-        <!--é…ç½®æ—¥å¿—ç±»åž‹log4j slfj-->
+        <!--ÅäÖÃÈÕÖ¾ÀàÐÍlog4j slfj-->
         <setting name="logImpl" value="LOG4J"/>
-        <!--å¼€å¯æ‡’åŠ è½½ï¼ŒæŒ‰éœ€åŠ è½½-->
+        <!--¿ªÆôÀÁ¼ÓÔØ£¬°´Ðè¼ÓÔØ-->
         <setting name="lazyLoadingEnabled" value="true"/>
-        <!--å¼€å¯äºŒçº§ç¼“å­˜-->
-        <setting name="cacheEnabled" value="true"/>
     </settings>
 
-    <!--åˆ«åå®šä¹‰-->
+    <!--±ðÃû¶¨Òå-->
     <typeAliases>
-        <!--ç»™ä¸€ä¸ªç±»èµ·ä¸€ä¸ªåˆ«åï¼Œåˆ«åä¸åŒºåˆ†å¤§å°å†™-->
+        <!--¸øÒ»¸öÀàÆðÒ»¸ö±ðÃû£¬±ðÃû²»Çø·Ö´óÐ¡Ð´-->
         <!--<typeAlias type="nynu.pojo.User" alias="User"></typeAlias>-->
-        <!--ç»™ä¸€ä¸ªåŒ…ä¸‹æ‰€æœ‰ç±»èµ·åˆ«å-->
-        <package name="nynu.pojo"/>
+        <!--¸øÒ»¸ö°üÏÂËùÓÐÀàÆð±ðÃû-->
+        <package name="pojo"/>
     </typeAliases>
 
     <environments default="development">
@@ -37,11 +35,11 @@
     </environments>
 
     <mappers>
-        <!--mapper.xmlæ–‡ä»¶åŠ è½½æ–¹æ³•1-->
+        <!--mapper.xmlÎÄ¼þ¼ÓÔØ·½·¨1-->
         <!--<mapper resource="nynu/mapper/UserMapper.xml"></mapper>-->
-        <!--mapper.xmlæ–‡ä»¶åŠ è½½æ–¹æ³•2-->
+        <!--mapper.xmlÎÄ¼þ¼ÓÔØ·½·¨2-->
         <!--<mapper class="nynu.mapper.UserMapper"></mapper>-->
-        <!--mapper.xmlæ–‡ä»¶åŠ è½½æ–¹æ³•3-->
-        <package name="nynu.mapper"></package>
+        <!--mapper.xmlÎÄ¼þ¼ÓÔØ·½·¨3-->
+        <package name="mapper"></package>
     </mappers>
 </configuration>

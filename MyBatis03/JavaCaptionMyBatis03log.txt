@@ -682,3 +682,131 @@
 2025-03-18 08:17:12,060 [main] DEBUG [nynu.mapper.TbProductMapper.findOrdersById3] - ====> Parameters: 2(Integer)
 2025-03-18 08:17:12,068 [main] DEBUG [nynu.mapper.TbProductMapper.findOrdersById3] - <====      Total: 1
 2025-03-18 08:17:12,068 [main] DEBUG [nynu.mapper.TbProductMapper.findProductByIdWithOrders] - <==      Total: 2
+2025-03-19 10:38:17,560 [main] DEBUG [nynu.mapper.BookMapper.findBookById] - ==>  Preparing: select * from tb_book where id=? 
+2025-03-19 10:38:17,592 [main] DEBUG [nynu.mapper.BookMapper.findBookById] - ==> Parameters: 1(Integer)
+2025-03-19 10:38:17,612 [main] DEBUG [nynu.mapper.BookMapper.findBookById] - <==      Total: 1
+2025-03-19 10:39:06,016 [main] DEBUG [nynu.mapper.BookMapper.findBookById] - ==>  Preparing: select * from tb_book where id=? 
+2025-03-19 10:39:06,046 [main] DEBUG [nynu.mapper.BookMapper.findBookById] - ==> Parameters: 1(Integer)
+2025-03-19 10:39:06,061 [main] DEBUG [nynu.mapper.BookMapper.findBookById] - <==      Total: 1
+2025-03-19 10:43:09,852 [main] DEBUG [nynu.mapper.BookMapper.findBookById] - ==>  Preparing: select * from tb_book where id=? 
+2025-03-19 10:43:09,880 [main] DEBUG [nynu.mapper.BookMapper.findBookById] - ==> Parameters: 1(Integer)
+2025-03-19 10:43:09,898 [main] DEBUG [nynu.mapper.BookMapper.findBookById] - <==      Total: 1
+2025-03-19 10:43:09,898 [main] DEBUG [nynu.mapper.BookMapper.insertBook] - ==>  Preparing: insert into tb_book (id,bookname,price,author) values (?,?,?,?) 
+2025-03-19 10:43:09,900 [main] DEBUG [nynu.mapper.BookMapper.insertBook] - ==> Parameters: null, MySQL数据库(String), null, null
+2025-03-19 10:43:09,900 [main] DEBUG [nynu.mapper.BookMapper.insertBook] - <==    Updates: 1
+2025-03-19 10:43:09,900 [main] DEBUG [nynu.mapper.BookMapper.findBookById] - ==>  Preparing: select * from tb_book where id=? 
+2025-03-19 10:43:09,901 [main] DEBUG [nynu.mapper.BookMapper.findBookById] - ==> Parameters: 1(Integer)
+2025-03-19 10:43:09,901 [main] DEBUG [nynu.mapper.BookMapper.findBookById] - <==      Total: 1
+2025-03-19 10:48:28,109 [main] DEBUG [nynu.mapper.BookMapper.findBookById] - ==>  Preparing: select * from tb_book where id=? 
+2025-03-19 10:48:28,136 [main] DEBUG [nynu.mapper.BookMapper.findBookById] - ==> Parameters: 1(Integer)
+2025-03-19 10:48:28,146 [main] DEBUG [nynu.mapper.BookMapper.findBookById] - <==      Total: 1
+2025-03-19 10:48:28,158 [main] DEBUG [nynu.mapper.BookMapper.findBookById] - ==>  Preparing: select * from tb_book where id=? 
+2025-03-19 10:48:28,158 [main] DEBUG [nynu.mapper.BookMapper.findBookById] - ==> Parameters: 1(Integer)
+2025-03-19 10:48:28,158 [main] DEBUG [nynu.mapper.BookMapper.findBookById] - <==      Total: 1
+2025-03-19 10:53:51,782 [main] DEBUG [nynu.mapper.BookMapper] - Cache Hit Ratio [nynu.mapper.BookMapper]: 0.0
+2025-03-19 10:53:51,901 [main] DEBUG [nynu.mapper.BookMapper.findBookById] - ==>  Preparing: select * from tb_book where id=? 
+2025-03-19 10:53:51,921 [main] DEBUG [nynu.mapper.BookMapper.findBookById] - ==> Parameters: 1(Integer)
+2025-03-19 10:53:51,942 [main] DEBUG [nynu.mapper.BookMapper.findBookById] - <==      Total: 1
+2025-03-19 10:53:51,948 [main] DEBUG [nynu.mapper.BookMapper] - Cache Hit Ratio [nynu.mapper.BookMapper]: 0.5
+2025-03-19 10:54:55,207 [main] DEBUG [nynu.mapper.BookMapper] - Cache Hit Ratio [nynu.mapper.BookMapper]: 0.0
+2025-03-19 10:54:55,359 [main] DEBUG [nynu.mapper.BookMapper.findBookById] - ==>  Preparing: select * from tb_book where id=? 
+2025-03-19 10:54:55,400 [main] DEBUG [nynu.mapper.BookMapper.findBookById] - ==> Parameters: 1(Integer)
+2025-03-19 10:54:55,424 [main] DEBUG [nynu.mapper.BookMapper.findBookById] - <==      Total: 1
+2025-03-19 10:54:55,435 [main] DEBUG [nynu.mapper.BookMapper] - Cache Hit Ratio [nynu.mapper.BookMapper]: 0.5
+2025-03-19 10:54:55,435 [main] DEBUG [nynu.mapper.BookMapper] - Cache Hit Ratio [nynu.mapper.BookMapper]: 0.6666666666666666
+2025-03-19 10:54:55,436 [main] DEBUG [nynu.mapper.BookMapper] - Cache Hit Ratio [nynu.mapper.BookMapper]: 0.75
+2025-03-19 10:55:56,549 [main] DEBUG [nynu.mapper.BookMapper] - Cache Hit Ratio [nynu.mapper.BookMapper]: 0.0
+2025-03-19 10:55:56,681 [main] DEBUG [nynu.mapper.BookMapper.findBookById] - ==>  Preparing: select * from tb_book where id=? 
+2025-03-19 10:55:56,713 [main] DEBUG [nynu.mapper.BookMapper.findBookById] - ==> Parameters: 1(Integer)
+2025-03-19 10:55:56,733 [main] DEBUG [nynu.mapper.BookMapper.findBookById] - <==      Total: 1
+2025-03-19 10:55:56,744 [main] DEBUG [nynu.mapper.BookMapper] - Cache Hit Ratio [nynu.mapper.BookMapper]: 0.5
+2025-03-19 10:55:56,744 [main] DEBUG [nynu.mapper.BookMapper] - Cache Hit Ratio [nynu.mapper.BookMapper]: 0.6666666666666666
+2025-03-19 10:55:56,744 [main] DEBUG [nynu.mapper.BookMapper] - Cache Hit Ratio [nynu.mapper.BookMapper]: 0.75
+2025-03-19 10:55:56,744 [main] DEBUG [nynu.mapper.BookMapper] - Cache Hit Ratio [nynu.mapper.BookMapper]: 0.8
+2025-03-19 11:00:57,165 [main] DEBUG [nynu.mapper.BookMapper] - Cache Hit Ratio [nynu.mapper.BookMapper]: 0.0
+2025-03-19 11:00:57,281 [main] DEBUG [nynu.mapper.BookMapper.findBookById] - ==>  Preparing: select * from tb_book where id=? 
+2025-03-19 11:00:57,309 [main] DEBUG [nynu.mapper.BookMapper.findBookById] - ==> Parameters: 1(Integer)
+2025-03-19 11:00:57,329 [main] DEBUG [nynu.mapper.BookMapper.findBookById] - <==      Total: 1
+2025-03-19 11:00:57,352 [main] DEBUG [nynu.mapper.BookMapper.insertBook] - ==>  Preparing: insert into tb_book (id,bookname,price,author) values (?,?,?,?) 
+2025-03-19 11:00:57,352 [main] DEBUG [nynu.mapper.BookMapper.insertBook] - ==> Parameters: null, MySQL数据库(String), null, null
+2025-03-19 11:00:57,352 [main] DEBUG [nynu.mapper.BookMapper.insertBook] - <==    Updates: 1
+2025-03-19 11:00:57,352 [main] DEBUG [nynu.mapper.BookMapper] - Cache Hit Ratio [nynu.mapper.BookMapper]: 0.5
+2025-03-19 11:00:57,357 [main] DEBUG [nynu.mapper.BookMapper] - Cache Hit Ratio [nynu.mapper.BookMapper]: 0.6666666666666666
+2025-03-19 11:00:57,357 [main] DEBUG [nynu.mapper.BookMapper] - Cache Hit Ratio [nynu.mapper.BookMapper]: 0.75
+2025-03-19 11:00:57,357 [main] DEBUG [nynu.mapper.BookMapper] - Cache Hit Ratio [nynu.mapper.BookMapper]: 0.8
+2025-03-19 11:02:14,661 [main] DEBUG [nynu.mapper.BookMapper] - Cache Hit Ratio [nynu.mapper.BookMapper]: 0.0
+2025-03-19 11:02:14,779 [main] DEBUG [nynu.mapper.BookMapper.findBookById] - ==>  Preparing: select * from tb_book where id=? 
+2025-03-19 11:02:14,801 [main] DEBUG [nynu.mapper.BookMapper.findBookById] - ==> Parameters: 1(Integer)
+2025-03-19 11:02:14,817 [main] DEBUG [nynu.mapper.BookMapper.findBookById] - <==      Total: 1
+2025-03-19 11:02:14,822 [main] DEBUG [nynu.mapper.BookMapper.insertBook] - ==>  Preparing: insert into tb_book (id,bookname,price,author) values (?,?,?,?) 
+2025-03-19 11:02:14,822 [main] DEBUG [nynu.mapper.BookMapper.insertBook] - ==> Parameters: null, MySQL数据库(String), null, null
+2025-03-19 11:02:14,822 [main] DEBUG [nynu.mapper.BookMapper.insertBook] - <==    Updates: 1
+2025-03-19 11:03:23,648 [main] DEBUG [nynu.mapper.BookMapper] - Cache Hit Ratio [nynu.mapper.BookMapper]: 0.0
+2025-03-19 11:03:23,762 [main] DEBUG [nynu.mapper.BookMapper.findBookById] - ==>  Preparing: select * from tb_book where id=? 
+2025-03-19 11:03:23,786 [main] DEBUG [nynu.mapper.BookMapper.findBookById] - ==> Parameters: 1(Integer)
+2025-03-19 11:03:23,802 [main] DEBUG [nynu.mapper.BookMapper.findBookById] - <==      Total: 1
+2025-03-19 11:03:45,457 [main] DEBUG [nynu.mapper.BookMapper] - Cache Hit Ratio [nynu.mapper.BookMapper]: 0.0
+2025-03-19 11:03:45,577 [main] DEBUG [nynu.mapper.BookMapper.findBookById] - ==>  Preparing: select * from tb_book where id=? 
+2025-03-19 11:03:45,597 [main] DEBUG [nynu.mapper.BookMapper.findBookById] - ==> Parameters: 1(Integer)
+2025-03-19 11:03:45,613 [main] DEBUG [nynu.mapper.BookMapper.findBookById] - <==      Total: 1
+2025-03-19 11:03:45,613 [main] DEBUG [nynu.mapper.BookMapper.insertBook] - ==>  Preparing: insert into tb_book (id,bookname,price,author) values (?,?,?,?) 
+2025-03-19 11:03:45,613 [main] DEBUG [nynu.mapper.BookMapper.insertBook] - ==> Parameters: null, MySQL数据库(String), null, null
+2025-03-19 11:03:45,613 [main] DEBUG [nynu.mapper.BookMapper.insertBook] - <==    Updates: 1
+2025-03-19 11:03:45,647 [main] DEBUG [nynu.mapper.BookMapper] - Cache Hit Ratio [nynu.mapper.BookMapper]: 0.0
+2025-03-19 11:03:45,647 [main] DEBUG [nynu.mapper.BookMapper.findBookById] - ==>  Preparing: select * from tb_book where id=? 
+2025-03-19 11:03:45,647 [main] DEBUG [nynu.mapper.BookMapper.findBookById] - ==> Parameters: 1(Integer)
+2025-03-19 11:03:45,647 [main] DEBUG [nynu.mapper.BookMapper.findBookById] - <==      Total: 1
+2025-03-19 11:03:45,647 [main] DEBUG [nynu.mapper.BookMapper] - Cache Hit Ratio [nynu.mapper.BookMapper]: 0.0
+2025-03-19 11:03:45,647 [main] DEBUG [nynu.mapper.BookMapper] - Cache Hit Ratio [nynu.mapper.BookMapper]: 0.0
+2025-03-19 11:03:45,647 [main] DEBUG [nynu.mapper.BookMapper] - Cache Hit Ratio [nynu.mapper.BookMapper]: 0.0
+2025-03-19 11:15:15,627 [main] DEBUG [nynu.mapper.BookMapper.findBookById] - ==>  Preparing: select * from tb_book where id=? 
+2025-03-19 11:15:15,651 [main] DEBUG [nynu.mapper.BookMapper.findBookById] - ==> Parameters: 1(Integer)
+2025-03-19 11:15:15,668 [main] DEBUG [nynu.mapper.BookMapper.findBookById] - <==      Total: 1
+2025-03-19 11:15:20,654 [main] DEBUG [nynu.mapper.BookMapper.insertBook] - ==>  Preparing: insert into tb_book (id,bookname,price,author) values (?,?,?,?) 
+2025-03-19 11:15:20,688 [main] DEBUG [nynu.mapper.BookMapper.insertBook] - ==> Parameters: null, 数据结构(String), null, null
+2025-03-19 11:15:20,689 [main] DEBUG [nynu.mapper.BookMapper.insertBook] - <==    Updates: 1
+2025-03-19 11:18:38,801 [main] DEBUG [nynu.mapper.BookMapper.deleteBook] - ==>  Preparing: delete from tb_book where id=? 
+2025-03-19 11:18:38,825 [main] DEBUG [nynu.mapper.BookMapper.deleteBook] - ==> Parameters: 3(Integer)
+2025-03-19 11:18:38,854 [main] DEBUG [nynu.mapper.BookMapper.deleteBook] - <==    Updates: 1
+2025-03-19 11:18:43,436 [main] DEBUG [nynu.mapper.BookMapper.updateBook] - ==>  Preparing: update tb_book set bookname=? where id=? 
+2025-03-19 11:18:43,461 [main] DEBUG [nynu.mapper.BookMapper.updateBook] - ==> Parameters: 数据结构(String), 1(Integer)
+2025-03-19 11:18:43,463 [main] DEBUG [nynu.mapper.BookMapper.updateBook] - <==    Updates: 1
+2025-03-19 11:28:46,421 [main] DEBUG [nynu.mapper.BookMapper] - Cache Hit Ratio [nynu.mapper.BookMapper]: 0.0
+2025-03-19 11:28:46,532 [main] DEBUG [nynu.mapper.BookMapper.findBookByName] - ==>  Preparing: select * from tb_book WHERE where bookname like concat('%',?,'%') 
+2025-03-19 11:28:46,566 [main] DEBUG [nynu.mapper.BookMapper.findBookByName] - ==> Parameters: 数据(String)
+2025-03-19 11:31:37,478 [main] DEBUG [nynu.mapper.BookMapper.findBookByName2] - ==>  Preparing: select * from tb_book WHERE where bookname like concat('%',?,'%') 
+2025-03-19 11:31:37,499 [main] DEBUG [nynu.mapper.BookMapper.findBookByName2] - ==> Parameters: 数据(String)
+2025-03-19 11:32:07,764 [main] DEBUG [nynu.mapper.BookMapper.findBookByName2] - ==>  Preparing: select * from tb_book WHERE bookname like concat('%',?,'%') 
+2025-03-19 11:32:07,785 [main] DEBUG [nynu.mapper.BookMapper.findBookByName2] - ==> Parameters: 数据(String)
+2025-03-19 11:32:07,828 [main] DEBUG [nynu.mapper.BookMapper.findBookByName2] - <==      Total: 5
+2025-03-19 11:32:15,626 [main] DEBUG [nynu.mapper.BookMapper] - Cache Hit Ratio [nynu.mapper.BookMapper]: 0.0
+2025-03-19 11:32:15,748 [main] DEBUG [nynu.mapper.BookMapper.findBookByName] - ==>  Preparing: select * from tb_book WHERE bookname like concat('%',?,'%') 
+2025-03-19 11:32:15,770 [main] DEBUG [nynu.mapper.BookMapper.findBookByName] - ==> Parameters: 数据(String)
+2025-03-19 11:32:15,785 [main] DEBUG [nynu.mapper.BookMapper.findBookByName] - <==      Total: 5
+2025-03-20 10:12:49,378 [main] DEBUG [nynu.mapper.TbPersonMapper.findPersonById3] - ==>  Preparing: select * from tb_person where id=? 
+2025-03-20 10:12:49,427 [main] DEBUG [nynu.mapper.TbPersonMapper.findPersonById3] - ==> Parameters: 1(Integer)
+2025-03-20 10:12:49,441 [main] DEBUG [nynu.mapper.TbPersonMapper.findPersonById3] - <==      Total: 1
+2025-03-20 10:18:29,545 [main] DEBUG [nynu.mapper.TbPersonMapper.findPersonById3] - ==>  Preparing: select * from tb_person where id=? 
+2025-03-20 10:18:29,572 [main] DEBUG [nynu.mapper.TbPersonMapper.findPersonById3] - ==> Parameters: 1(Integer)
+2025-03-20 10:18:29,654 [main] DEBUG [nynu.mapper.TbPersonMapper.findPersonById3] - <==      Total: 1
+2025-03-20 10:18:29,654 [main] DEBUG [nynu.mapper.TbPersonMapper.selectCardByCardId] - ==>  Preparing: select * from tb_idcard where id=? 
+2025-03-20 10:18:29,654 [main] DEBUG [nynu.mapper.TbPersonMapper.selectCardByCardId] - ==> Parameters: 1(Integer)
+2025-03-20 10:18:29,655 [main] DEBUG [nynu.mapper.TbPersonMapper.selectCardByCardId] - <==      Total: 1
+2025-03-20 10:20:59,894 [main] DEBUG [nynu.mapper.TbPersonMapper.findPersonById3] - ==>  Preparing: select * from tb_person where id=? 
+2025-03-20 10:20:59,918 [main] DEBUG [nynu.mapper.TbPersonMapper.findPersonById3] - ==> Parameters: 1(Integer)
+2025-03-20 10:20:59,975 [main] DEBUG [nynu.mapper.TbPersonMapper.findPersonById3] - <==      Total: 1
+2025-03-20 10:20:59,975 [main] DEBUG [nynu.mapper.TbPersonMapper.selectCardByCardId] - ==>  Preparing: select * from tb_idcard where id=? 
+2025-03-20 10:20:59,975 [main] DEBUG [nynu.mapper.TbPersonMapper.selectCardByCardId] - ==> Parameters: 1(Integer)
+2025-03-20 10:20:59,976 [main] DEBUG [nynu.mapper.TbPersonMapper.selectCardByCardId] - <==      Total: 1
+2025-03-20 10:30:14,167 [main] DEBUG [nynu.mapper.TbUserMapper.findUserById3] - ==>  Preparing: select * from tb_user where id=? 
+2025-03-20 10:30:14,188 [main] DEBUG [nynu.mapper.TbUserMapper.findUserById3] - ==> Parameters: 1(Integer)
+2025-03-20 10:30:14,233 [main] DEBUG [nynu.mapper.TbUserMapper.findUserById3] - <==      Total: 1
+2025-03-20 10:30:14,241 [main] DEBUG [nynu.mapper.TbUserMapper.selectOrdersByUserId] - ==>  Preparing: select * from tb_orders where user_id=? 
+2025-03-20 10:30:14,242 [main] DEBUG [nynu.mapper.TbUserMapper.selectOrdersByUserId] - ==> Parameters: 1(Integer)
+2025-03-20 10:30:14,246 [main] DEBUG [nynu.mapper.TbUserMapper.selectOrdersByUserId] - <==      Total: 2
+2025-03-20 10:35:41,964 [main] DEBUG [nynu.mapper.TbUserMapper.findUserById5] - ==>  Preparing: select * from tb_user where id=? 
+2025-03-20 10:35:41,983 [main] DEBUG [nynu.mapper.TbUserMapper.findUserById5] - ==> Parameters: 1(Integer)
+2025-03-20 10:35:42,026 [main] DEBUG [nynu.mapper.TbUserMapper.findUserById5] - <==      Total: 1
+2025-03-20 10:35:42,026 [main] DEBUG [nynu.mapper.TbUserMapper.selectOrdersByUserId] - ==>  Preparing: select * from tb_orders where user_id=? 
+2025-03-20 10:35:42,027 [main] DEBUG [nynu.mapper.TbUserMapper.selectOrdersByUserId] - ==> Parameters: 1(Integer)
+2025-03-20 10:35:42,027 [main] DEBUG [nynu.mapper.TbUserMapper.selectOrdersByUserId] - <==      Total: 2

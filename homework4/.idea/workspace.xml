@@ -82,7 +82,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.homework4Test.findCategoryByTypeName2Test">
+  <component name="RunManager" selected="JUnit.homework4Test">
     <configuration name="homework4Test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="homework4" />
       <option name="PACKAGE_NAME" value="" />
@@ -124,10 +124,10 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.homework4Test.findCategoryByTypeName2Test" />
-        <item itemvalue="JUnit.homework4Test.findCategoryByTypeName1Test" />
-        <item itemvalue="JUnit.homework4Test.findCategoryByTypeNameTest" />
         <item itemvalue="JUnit.homework4Test" />
+        <item itemvalue="JUnit.homework4Test.findCategoryByTypeName1Test" />
+        <item itemvalue="JUnit.homework4Test.findCategoryByTypeName2Test" />
+        <item itemvalue="JUnit.homework4Test.findCategoryByTypeNameTest" />
       </list>
     </recent_temporary>
   </component>
@@ -142,6 +142,8 @@
       <workItem from="1741917141111" duration="800000" />
       <workItem from="1742056460389" duration="5772000" />
       <workItem from="1742257059840" duration="169000" />
+      <workItem from="1742349378255" duration="1841000" />
+      <workItem from="1742864652209" duration="826000" />
     </task>
     <servers />
   </component>

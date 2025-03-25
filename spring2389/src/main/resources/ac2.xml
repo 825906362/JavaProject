@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="userMapper123" class="nynu.mapper.UserMapper"></bean>
+
+    <bean id="userService" class="nynu.service.impl.UserServiceImpl">
+        <!--name是类中的成员对象名，ref是引用的实例的名字-->
+        <property name="userMapper" ref="userMapper123"></property><!--res是引用-->
+    </bean>
+</beans>
