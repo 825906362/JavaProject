@@ -1,9 +1,22 @@
 package nynu.pojo;
 
+import java.util.List;
+import java.util.Map;
+
 public class User {
+    public Map<String, Integer> getScoreMap() {
+        return scoreMap;
+    }
+
+    public void setScoreMap(Map<String, Integer> scoreMap) {
+        this.scoreMap = scoreMap;
+    }
+
     Integer id;
     String name;
     String password;
+    List<String> addressList;
+    Map<String,Integer> scoreMap;
 
     public User(){
         System.out.println("无参构造函数");
@@ -15,7 +28,6 @@ public class User {
         this.password = password;
         System.out.println("有三参构造函数");
     }
-
 
     public void setId(Integer id) {
         this.id = id;
@@ -40,4 +52,14 @@ public class User {
                 ", password='" + password + '\'' +
                 '}';
     }
+
+    public List<String> getAddressList() {
+        return addressList;
+    }
+
+    public void setAddressList(List<String> addressList) {
+        this.addressList = addressList;
+    }
+
+
 }

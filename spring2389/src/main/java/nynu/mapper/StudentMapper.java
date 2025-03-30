@@ -1,6 +1,9 @@
 package nynu.mapper;
 
-public class UserMapper {
+import org.springframework.stereotype.Repository;
+
+@Repository
+public class StudentMapper {
     public void insert(){
         System.out.println("----执行数据库操作增删改查----");
         System.out.println("mapper层添加");

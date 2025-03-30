@@ -6,7 +6,10 @@
     <bean id="userMapper123" class="nynu.mapper.UserMapper"></bean>
 
     <bean id="userService" class="nynu.service.impl.UserServiceImpl">
-        <!--name是类中的成员对象名，ref是引用的实例的名字-->
+        <!--name是类中的成员对象名/set方法名，ref是引用的实例的名字-->
         <property name="userMapper" ref="userMapper123"></property><!--res是引用-->
+    </bean>
+    <bean id="userController" class="nynu.controller.UserController">
+        <property name="userService" ref="userService"></property>
     </bean>
 </beans>

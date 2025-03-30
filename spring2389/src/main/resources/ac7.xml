@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+       http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/context
+       http://www.springframework.org/schema/context/spring-context.xsd"
+       default-autowire="byName"
+>
+
+
+    <!--ac2.xml基于xml装配，通过 set方法/构造方法 注入属性-->
+    <!--ac5.xml基于注解装配，1.配置 扫描包 2.类上和对象成员属性上要加注解（类中不需要set方法）-->
+    <!--ac7.xml自动装配,需要类中有对象的set方法-->
+    <bean id="userMapper123" class="nynu.mapper.UserMapper"></bean>
+
+    <!--autowire="byName" 找到一个和set方法同名的对象(注入值)注入值
+    autowire="byType" 找到一个和set方法参数类型相同的对象注入值
+    -->
+    <!--自动装配有两种：1.定义bean对象的时候，autowire设置注入模式-->
+    <!--2.在beans中添加default-autowire="byName"->对所有bean对象都有用-->
+    <bean id="userService" class="nynu.service.impl.UserServiceImpl" autowire="byType">
+    </bean>
+
+    <!--autowire="byName" 找到一个和set方法同名的对象(注入值)注入值
+    autowire="byType" 找到一个和set方法参数类型相同的对象注入值
+    -->
+    <bean id="userController" class="nynu.controller.UserController">
+    </bean>
+</beans>

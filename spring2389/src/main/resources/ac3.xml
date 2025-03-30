@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!--id是唯一的，不能重复的；name可以用多个名字，多个名字之间用空格或者逗号分隔-->
+    <bean id="user1" class="nynu.pojo.User"></bean>
+    <bean name="user2,user3" class="nynu.pojo.User"></bean>
+    <!--scope作用域:singleton:单例模式     当spring容器加载的时候就生成对象,整个项目只有一个对象-->
+    <bean id="user4" class="nynu.pojo.User" scope="singleton"></bean>
+    <!--scope作用域:prototype 原型模式     spring容器加载的时候不生成对象,使用的时候生成,可以生成多个,类似懒加载的new-->
+    <bean id="user5" class="nynu.pojo.User" scope="prototype"></bean>
+
+    <bean id="user6" class="nynu.pojo.User">
+        <property name="addressList">
+            <list>
+                <value>南阳师范学院</value>
+                <value>郑州市</value>
+                <value>巩义市</value>
+            </list>
+        </property>
+        <property name="scoreMap">
+            <map>
+                <entry key="语文" value="90"></entry>
+                <entry key="数学" value="80"></entry>
+                <entry key="英语" value="70"></entry>
+            </map>
+        </property>
+    </bean>
+
+</beans>

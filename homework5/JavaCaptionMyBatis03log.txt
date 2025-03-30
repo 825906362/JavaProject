@@ -91,3 +91,9 @@
 2025-03-26 03:10:54,056 [main] DEBUG [mapper.SStudentMapper.selectStudentByCid] - ==>  Preparing: select * from s_student where cid=? 
 2025-03-26 03:10:54,056 [main] DEBUG [mapper.SStudentMapper.selectStudentByCid] - ==> Parameters: 2(Integer)
 2025-03-26 03:10:54,060 [main] DEBUG [mapper.SStudentMapper.selectStudentByCid] - <==      Total: 2
+2025-03-26 09:55:24,348 [main] DEBUG [mapper.SStudentMapper.selectStudentById] - ==>  Preparing: select s_student.*,c_class.class_name from s_student,c_class where s_student.cid=c_class.class_id and s_student.student_id=? 
+2025-03-26 09:55:24,368 [main] DEBUG [mapper.SStudentMapper.selectStudentById] - ==> Parameters: 2(Integer)
+2025-03-26 09:55:24,422 [main] DEBUG [mapper.SStudentMapper.selectStudentById] - <==      Total: 1
+2025-03-26 09:55:24,422 [main] DEBUG [mapper.SStudentMapper.selectClassByCid] - ==>  Preparing: select class_name from c_class where class_id=? 
+2025-03-26 09:55:24,422 [main] DEBUG [mapper.SStudentMapper.selectClassByCid] - ==> Parameters: 2(Integer)
+2025-03-26 09:55:24,423 [main] DEBUG [mapper.SStudentMapper.selectClassByCid] - <==      Total: 1
