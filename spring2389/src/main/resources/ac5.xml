@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+       http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/context
+        http://www.springframework.org/schema/context/spring-context.xsd
+">
+
+    <!--ac.xml采用了基于xml的装配->用了set方法-->
+    <!--ac5.xml使用context命名空间,开启注解扫描功能,识别包上类的注解-->
+    <!--第一步:开启扫描包,第二步:类上加注解@Controller-->
+    <!--配置文件注入值方法1：@PropertySource(value = "prop.properties",encoding = "UTF-8")//加载配置文件-->
+    <!--方法2：-->
+<context:property-placeholder file-encoding="UTF-8" location="prop.properties"></context:property-placeholder>
+    <context:component-scan
+            base-package="nynu"></context:component-scan>
+</beans>
