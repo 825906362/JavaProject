@@ -1,13 +1,19 @@
+<<<<<<< HEAD
 import nynu.cglib.MyCglibProxy;
 import nynu.cglib.TeacherService;
 import nynu.cglib.TeacherServiceImpl;
+=======
+>>>>>>> d2d5caf (笔记本上更新了上课内容)
 import nynu.controller.StudentController;
 import nynu.controller.UserController;
 import nynu.jdk.MyJdkProxy;
 import nynu.jdk.ProductService;
 import nynu.jdk.ProductServiceImpl;
 import nynu.pojo.Student;
+<<<<<<< HEAD
 import nynu.xmlaop.BookService;
+=======
+>>>>>>> d2d5caf (笔记本上更新了上课内容)
 import org.junit.Test;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.AbstractApplicationContext;
@@ -28,6 +34,7 @@ public class Spring8Test {
         productService2.insert();
         productService2.delete();
     }
+<<<<<<< HEAD
 //    @Test
 //    public void f3(){
 //        TeacherService service=new TeacherServiceImpl();
@@ -53,4 +60,7 @@ public class Spring8Test {
         BookService bookService=ac.getBean("BookService");
         bookService.aroud();
     }
+=======
+
+>>>>>>> d2d5caf (笔记本上更新了上课内容)
 }

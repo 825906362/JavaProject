@@ -42,6 +42,7 @@
             <artifactId>log4j</artifactId>
             <version>1.2.17</version>
         </dependency>
+<<<<<<< HEAD
         <!--增加对aop编程aspect的支持-->
         <dependency>
             <groupId>org.aspectj</groupId>
@@ -53,6 +54,8 @@
             <artifactId>aspectjrt</artifactId>
             <version>${aspect-version}</version>
         </dependency>
+=======
+>>>>>>> d2d5caf (笔记本上更新了上课内容)
     </dependencies>
     <properties>
         <aspect-version>1.9.9</aspect-version>
