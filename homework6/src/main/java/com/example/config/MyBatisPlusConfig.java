@@ -19,7 +19,7 @@ public class MyBatisPlusConfig {
     @Bean
     public DataSource dataSource() {
         DruidDataSource dataSource = new DruidDataSource();
-        dataSource.setUrl("jdbc:mysql://localhost:3306/homework6?useSSL=false&serverTimezone=UTC");
+        dataSource.setUrl("jdbc:mysql://localhost:3305/homework6?useSSL=false&serverTimezone=UTC");
         dataSource.setUsername("root");
         dataSource.setPassword("root");
         dataSource.setDriverClassName("com.mysql.cj.jdbc.Driver");
