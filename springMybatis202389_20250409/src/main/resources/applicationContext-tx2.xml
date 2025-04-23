@@ -22,7 +22,5 @@
     </bean>
     <!-- 2.事务自动配置,类上或者方法@Transactional-->
    <tx:annotation-driven transaction-manager="transactionManager" ></tx:annotation-driven>
-
-
 </beans>
 
