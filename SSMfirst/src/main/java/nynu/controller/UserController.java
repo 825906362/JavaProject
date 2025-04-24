@@ -17,7 +17,7 @@ public class UserController {
     @Autowired
     UserService userService;
 
-    @RequestMapping(value = "/{pageAddress}",method = RequestMethod.GET)
+    @RequestMapping(value = "toPage/{pageAddress}",method = RequestMethod.GET)
     public String toPage( @PathVariable("pageAddress") String pageAddress){
         System.out.println("通过地址栏请求通用页面");
         return pageAddress;
@@ -44,9 +44,9 @@ public class UserController {
         }
         else{
             //跨页面数据传递，用Session
-            session.setAttribute("USER",user2);
+            session.setAttribute("USER123",user2);
             //return "index";//问题是页面刷新之后又重新登陆
-            return "redirect:index";
+            return "redirect:/toPage/index";
         }
     }
 

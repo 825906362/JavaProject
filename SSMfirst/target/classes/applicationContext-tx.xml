@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:tx="http://www.springframework.org/schema/tx"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -11,10 +11,10 @@
     <import resource="applicationContext-dao.xml"/>
 
     <import resource="applicationContext-service.xml"/>
-    <!-- 1.é…ç½®äº‹åŠ¡ç®¡ç†å™¨ -->
+    <!-- 1.ÅäÖÃÊÂÎñ¹ÜÀíÆ÷ -->
     <bean id="transactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
         <property name="dataSource" ref="dataSource"/>
     </bean>
-    <!-- 2.äº‹åŠ¡è‡ªåŠ¨é…ç½®,ç±»ä¸Šæˆ–è€…æ–¹æ³•@Transactional-->
+    <!-- 2.ÊÂÎñ×Ô¶¯ÅäÖÃ,ÀàÉÏ»òÕß·½·¨@Transactional-->
     <tx:annotation-driven transaction-manager="transactionManager" ></tx:annotation-driven>
 </beans>
