@@ -39,7 +39,7 @@ public class UserController {
         System.out.println("从数据库中查询出来的"+user2);
         if(user2==null){
             //model中数据只在页面地址不改变时候有用
-            model.addAttribute("message","你输入的账号或密码不正确，请重新输入。");
+            model.addAttribute("message","用户名或者密码错误！！！");
             return "login";
         }
         else{
@@ -48,16 +48,6 @@ public class UserController {
             //return "index";//问题是页面刷新之后又重新登陆
             return "redirect:/toPage/index";
         }
-    }
-    @RequestMapping(value = "/register",method = RequestMethod.POST)
-    public String userRegister(String userCode, String userPassword, User user  ,
-                            Model model, HttpSession session){
-        /*查询用户账号是否存在*/
-
-        /*如果账号存在message提示账号已存在*/
-
-        /*如果账号不存在，将用户信息插入数据库，返回登录页面*/
-        return "redirect:/toPage/login";
     }
 
 }

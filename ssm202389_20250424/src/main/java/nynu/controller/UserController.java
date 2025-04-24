@@ -2,7 +2,6 @@ package nynu.controller;
 
 import nynu.pojo.User;
 import nynu.service.UserService;
-import nynu.service.impl.UserServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -17,18 +16,23 @@ public class UserController {
     @Autowired
     UserService userService;
 
-    @RequestMapping(value = "toPage/{pageAddress}",method = RequestMethod.GET)
-    public String toPage( @PathVariable("pageAddress") String pageAddress){
+ /*   @RequestMapping(value = "/index",method = RequestMethod.GET)
+    public String toIndex(){
+        System.out.println("通过地址栏请求index页面");
+        return "index";
+    }*/
+    @RequestMapping(value = "/{pageAddress}",method = RequestMethod.GET)
+    public String toPage( @PathVariable ("pageAddress") String pageAddress){
         System.out.println("通过地址栏请求通用页面");
         return pageAddress;
     }
+
 
     @RequestMapping(value = "/login",method = RequestMethod.GET)
     public String toLogin(){
         System.out.println("通过地址栏请求登录页面");
         return "login";
     }
-
     @RequestMapping(value = "/login",method = RequestMethod.POST)
     public String userLogin(String userCode, String userPassword, User user  ,
                             Model model, HttpSession session){
@@ -39,25 +43,14 @@ public class UserController {
         System.out.println("从数据库中查询出来的"+user2);
         if(user2==null){
             //model中数据只在页面地址不改变时候有用
-            model.addAttribute("message","你输入的账号或密码不正确，请重新输入。");
+            model.addAttribute("message","用户名或者密码错误！！！");
             return "login";
         }
         else{
             //跨页面数据传递，用Session
-            session.setAttribute("USER123",user2);
+            session.setAttribute("USERSESSION",user2);
             //return "index";//问题是页面刷新之后又重新登陆
-            return "redirect:/toPage/index";
+            return "redirect:index";
         }
     }
-    @RequestMapping(value = "/register",method = RequestMethod.POST)
-    public String userRegister(String userCode, String userPassword, User user  ,
-                            Model model, HttpSession session){
-        /*查询用户账号是否存在*/
-
-        /*如果账号存在message提示账号已存在*/
-
-        /*如果账号不存在，将用户信息插入数据库，返回登录页面*/
-        return "redirect:/toPage/login";
-    }
-
 }

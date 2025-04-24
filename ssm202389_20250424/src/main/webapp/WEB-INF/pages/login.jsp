@@ -1,5 +1,11 @@
+<%--
+  Created by IntelliJ IDEA.
+  User: Administrator
+  Date: 2025/4/23
+  Time: 10:40
+  To change this template use File | Settings | File Templates.
+--%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8">
@@ -7,18 +13,24 @@
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
-
     <jsp:include page="css.jsp"/>
 </head>
 <body>
-    <div class="container-fluid position-relative bg-white d-flex p-0">
+<div class="container-fluid position-relative bg-white d-flex p-0">
+
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+
 
     <div class="container-fluid">
         <div class="row h-100 align-items-center justify-content-center" style="min-height: 100vh;">
             <div class="col-12 col-sm-8 col-md-6 col-lg-5 col-xl-4">
                 <div class="bg-light rounded p-4 p-sm-5 my-4 mx-3">
-                    <div class="d-flex align-items-center justify-content-between mb-3">
-                        <h3 class="text-success text-center"><i class="fa fa-lock"></i>用户登录</h3>
+                    <div class="d-flex align-items-center justify-content-between">
+                        <h3 class="text-success text-center"><i class="fa fa-alipay"></i>用户登录</h3>
                     </div>
                     <form action="login" method="post">
                         <div class="form-floating mb-3">
@@ -26,14 +38,15 @@
                             <label for="floatingInput">用户编号</label>
                         </div>
                         <div class="form-floating mb-4">
-                            <input type="password" class="form-control" name="userPassword" id="floatingPassword" placeholder="用户密码">
+                            <input type="password" name="userPassword"  class="form-control" id="floatingPassword" placeholder="用户密码">
                             <label for="floatingPassword">用户密码</label>
                         </div>
+
                         <div class="d-flex align-items-center justify-content-between mb-4">
-                            <span style="color: red">${message}</span>
+                            <a href="">忘记密码</a>
                         </div>
-                        <button type="submit" value="登录" class="btn btn-success py-3 w-100 mb-4">登录</button>
-                        <p class="text-center mb-0">还没有账户？ <a href="toPage/register">注册</a></p>
+                        <button type="submit" class="btn btn-success py-3 w-100 mb-4">Sign In</button>
+                        <p class="text-center mb-0"> 还没有账户<a href="">注册</a></p>
                     </form>
                 </div>
             </div>
@@ -42,6 +55,5 @@
 
 </div>
 
-    <jsp:include page="js.jsp"/>
-</body>
+<jsp:include page="js.jsp"/>
 </html>
