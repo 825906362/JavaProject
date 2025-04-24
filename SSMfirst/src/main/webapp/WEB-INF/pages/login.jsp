@@ -11,11 +11,12 @@
     <title>登录页面</title>
 </head>
 <body>
-<form action="/login" method="post">
+<form action="login" method="post">
     用户登录<br>
     用户编号<input type="text" name="userCode"><br>
     用户密码<input type="password" name="userPassword"><br>
-    <input type="submit" value="登录">
+    <input type="submit" value="登录"><br>
+    <div style="color: red">${message}</div>
 </form>
 </body>
 </html>
