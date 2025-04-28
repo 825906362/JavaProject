@@ -17,6 +17,8 @@ public class UserController {
     @Autowired
     UserService userService;
 
+
+
     @RequestMapping(value = "toPage/{pageAddress}",method = RequestMethod.GET)
     public String toPage( @PathVariable("pageAddress") String pageAddress){
         System.out.println("通过地址栏请求通用页面");
