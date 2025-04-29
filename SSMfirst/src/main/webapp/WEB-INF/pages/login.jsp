@@ -11,7 +11,7 @@
     <jsp:include page="css.jsp"/>
 </head>
 <body>
-    <div class="container-fluid position-relative bg-white d-flex p-0">
+<div class="container-fluid position-relative bg-white d-flex p-0">
 
     <div class="container-fluid">
         <div class="row h-100 align-items-center justify-content-center" style="min-height: 100vh;">
@@ -42,6 +42,6 @@
 
 </div>
 
-    <jsp:include page="js.jsp"/>
+<jsp:include page="js.jsp"/>
 </body>
 </html>

@@ -17,7 +17,7 @@ public class UserController {
     @Autowired
     UserService userService;
 
-    @RequestMapping(value = "toPage/{pageAddress}",method = RequestMethod.GET)
+    @RequestMapping(value = "/{pageAddress}",method = RequestMethod.GET)
     public String toPage( @PathVariable("pageAddress") String pageAddress){
         System.out.println("通过地址栏请求通用页面");
         return pageAddress;
@@ -28,6 +28,7 @@ public class UserController {
         System.out.println("通过地址栏请求登录页面");
         return "login";
     }
+
 
     @RequestMapping(value = "/login",method = RequestMethod.POST)
     public String userLogin(String userCode, String userPassword, User user  ,
@@ -44,10 +45,11 @@ public class UserController {
         }
         else{
             //跨页面数据传递，用Session
-            session.setAttribute("USER123",user2);
+            session.setAttribute("USERSESSION",user2);
             //return "index";//问题是页面刷新之后又重新登陆
-            return "redirect:/toPage/index";
+            return "redirect:/index";
         }
     }
+
 
 }

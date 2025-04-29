@@ -22,7 +22,11 @@
     <!--配置注解驱动 json -->
     <mvc:annotation-driven/>
     <!--放行静态资源-->
+<<<<<<< HEAD
     <mvc:resources mapping="/static/**" location="/static/"></mvc:resources>
 
 
+=======
+    <mvc:resources mapping="/assets/**" location="/assets/"></mvc:resources>
+>>>>>>> origin/main
 </beans>

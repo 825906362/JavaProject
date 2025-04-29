@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <script src="${pageContext.request.contextPath}/static/js/jquery.min.js"></script>
 <script src="${pageContext.request.contextPath}/static/js/matrix.login.js"></script>
 <script src="${pageContext.request.contextPath}/static/js/excanvas.min.js"></script>
@@ -44,3 +45,8 @@
         document.gomenu.selector.selectedIndex = 2;
     }
 </script>
+=======
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<script src="${pageContext.request.contextPath}/assets/js/app.js"></script>
+<script src="${pageContext.request.contextPath}/assets/js/theme.js"></script>
+>>>>>>> origin/main
