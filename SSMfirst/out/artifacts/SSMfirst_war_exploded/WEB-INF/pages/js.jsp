@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 <script src="${pageContext.request.contextPath}/static/js/jquery-3.4.1.min.js" type="4bebc94b2db97a1f9680a39f-text/javascript"></script>
 <script src="${pageContext.request.contextPath}/static/js/bootstrap.bundle.min.js" type="4bebc94b2db97a1f9680a39f-text/javascript"></script>
 <script src="${pageContext.request.contextPath}/static/js/chart.min.js" type="4bebc94b2db97a1f9680a39f-text/javascript"></script>
@@ -13,6 +14,8 @@
 <script src="${pageContext.request.contextPath}/static/js/rocket-loader.min.js" data-cf-settings="4bebc94b2db97a1f9680a39f-|49" defer=""></script>
 
 =======
+=======
+>>>>>>> origin/main
 
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
@@ -23,4 +26,7 @@
 
 </body>
 </html>
+<<<<<<< HEAD
+>>>>>>> origin/main
+=======
 >>>>>>> origin/main
