@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF8" ?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+    <!--配置栏目有先后次序-->
+    <!--加载其他的资源-->
+    <!--<properties resource="db.properties"></properties>-->
+
+    <settings>
+        <!--
+         Java语言遵顼驼峰命名，区分大小写，
+         数据库语言不区分大小写u_password(字段名和表名不区分，每个字段值区分)  为了表示两个单词，用小下划线分开俩单词
+         开启驼峰命名  (数据库)student_name （Java）studentName     注释快捷键ctrl+shift+/
+         -->
+        <setting name="mapUnderscoreToCamelCase" value="true"/>
+        <!--配置日志类型log4j slfj
+        Cause: java.lang.NoClassDefFoundError: org/apache/log4j/Priority   -->
+        <setting name="logImpl" value="LOG4J"/>
+        <!--延迟加载，懒加载-->
+        <setting name="lazyLoadingEnabled" value="true"/>
+        <!--按需加载-->
+        <setting name="aggressiveLazyLoading" value="false"/>
+        <!--开启二级缓存-->
+        <setting name="cacheEnabled" value="true"/>
+    </settings>
+
+
+
+    <typeAliases>
+        <!--给一个类起一个别名,别名不区分大小写-->
+        <!--<typeAlias type="User" alias="User"></typeAlias>-->
+        <!--给一个包下所有类起别名-->
+        <package name="nynu.pojo"/>
+    </typeAliases>
+    <!--<environments default="development">
+        <environment id="development">
+            <transactionManager type="JDBC"/>
+            <dataSource type="POOLED">
+                <property name="driver" value="${mysql.driver}"/>
+                <property name="url" value="${mysql.url}"/>
+                <property name="username" value="${mysql.username}"/>
+                <property name="password" value="${mysql.password}"/>
+            </dataSource>
+        </environment>
+    </environments>-->
+    <plugins>
+        <plugin interceptor="com.github.pagehelper.PageInterceptor"></plugin>
+    </plugins>
+    <mappers>
+        <!--mapper.xml加载方法1-->
+        <!--Type interface UserMapper is not known to the MapperRegistry.-->
+        <!--
+          <mapper resource="nynu/mapper/UserMapper2.xml"/>-->
+        <!--mapper.xml加载方法2-->
+        <!-- <mapper class="nynu.mapper.UserMapper" ></mapper>
+         <mapper class="nynu.mapper.UserMapper2" ></mapper>-->
+        <!--mapper.xml加载方法3-->
+        <package name="nynu.mapper"/>
+    </mappers>
+</configuration>
