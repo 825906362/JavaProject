@@ -1,6 +1,5 @@
 package nynu.service.impl;
 
-import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.github.pagehelper.PageHelper;
 import nynu.mapper.PostMapper;
 import nynu.pojo.Post;
@@ -18,8 +17,10 @@ public class PostServiceImpl implements PostService {
     PostMapper postMapper;
 
     @Override
-    public List<Post> selectPost(Integer pageNum, Integer pageSize) {
+    public List<Post> selectPost(Integer pageNum, Integer pageSize,
+                                 String postName, String postContext,
+                                 Integer minId, Integer maxId) {
         PageHelper.startPage(pageNum, pageSize);
-        return postMapper.selectPost();
+        return postMapper.selectPost(postName, postContext, minId, maxId);
     }
 }

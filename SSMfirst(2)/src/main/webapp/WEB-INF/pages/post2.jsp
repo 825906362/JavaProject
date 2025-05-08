@@ -24,7 +24,61 @@
                         <div class="card-body">
                             <h1 class="card-title display-4 text-center"> 投稿列表 </h1>
                         </div>
-                        <!-- 修复的表格部分 -->
+                        <!-- 查询表单功能 -->
+                        <form action="${pageContext.request.contextPath}/post2" method="get" class="mb-3" onsubmit="return adjustPagination()">
+                            <div class="row g-2">
+                                <!-- 模糊查询：投稿名称 -->
+                                <div class="col-md-3">
+                                    <input type="text" name="postName" class="form-control" placeholder="投稿名称" value="${param.postName}">
+                                </div>
+                                <!-- 模糊查询：投稿内容 -->
+                                <div class="col-md-3">
+                                    <input type="text" name="postContext" class="form-control" placeholder="投稿内容" value="${param.postContext}">
+                                </div>
+                                <!-- 最小ID -->
+                                <div class="col-md-2">
+                                    <input type="number" name="minId" class="form-control" placeholder="最小ID" value="${param.minId}">
+                                </div>
+                                <!-- 最大ID -->
+                                <div class="col-md-2">
+                                    <input type="number" name="maxId" class="form-control" placeholder="最大ID" value="${param.maxId}">
+                                </div>
+                                <!-- 查询按钮 -->
+                                <div class="col-md-2">
+                                    <button type="submit" class="btn btn-primary w-100">查询</button>
+                                </div>
+                            </div>
+
+                            <!-- 隐藏域：保留分页参数 -->
+                            <input type="hidden" name="pageNum" id="pageNum" value="1">
+                            <input type="hidden" name="pageSize" id="pageSize" value="${pageSize}">
+                        </form>
+                        <script>
+                            function adjustPagination() {
+                                // 获取所有查询字段的值
+                                const postName = document.querySelector("input[name='postName']").value.trim();
+                                const postContext = document.querySelector("input[name='postContext']").value.trim();
+                                const minId = document.querySelector("input[name='minId']").value.trim();
+                                const maxId = document.querySelector("input[name='maxId']").value.trim();
+
+                                // 判断是否有任意一个字段不为空
+                                const hasQuery = postName !== '' || postContext !== '' || minId !== '' || maxId !== '';
+
+                                // 设置分页参数
+                                const defaultPageSize = 2; // 默认每页显示2条（或根据后端配置）
+
+                                if (hasQuery) {
+                                    document.getElementById("pageNum").value = 1;
+                                    document.getElementById("pageSize").value = 10;
+                                } else {
+                                    document.getElementById("pageNum").value = 1;
+                                    document.getElementById("pageSize").value = defaultPageSize;
+                                }
+
+                                return true; // 允许表单提交
+                            }
+                        </script>
+                        <!-- 表格部分 -->
                         <div class="table-responsive">
                             <table class="table table-bordered table-hover text-danger">
                                 <thead>
@@ -47,7 +101,32 @@
                                 </tbody>
                             </table>
                         </div>
-                        <!-- 分页部分保持不变 -->
+                        <script>
+                            function adjustPagination() {
+                                // 获取所有查询字段的值
+                                const postName = document.querySelector("input[name='postName']").value.trim();
+                                const postContext = document.querySelector("input[name='postContext']").value.trim();
+                                const minId = document.querySelector("input[name='minId']").value.trim();
+                                const maxId = document.querySelector("input[name='maxId']").value.trim();
+
+                                // 判断是否有任意一个字段不为空
+                                const hasQuery = postName !== '' || postContext !== '' || minId !== '' || maxId !== '';
+
+                                // 设置分页参数
+                                const defaultPageSize = 2; // 默认每页显示2条（或根据后端配置）
+
+                                if (hasQuery) {
+                                    document.getElementById("pageNum").value = 1;
+                                    document.getElementById("pageSize").value = 10;
+                                } else {
+                                    document.getElementById("pageNum").value = 1;
+                                    document.getElementById("pageSize").value = defaultPageSize;
+                                }
+
+                                return true; // 允许表单提交
+                            }
+                        </script>
+                        <!-- 分页按钮部分 -->
                         <div class="d-flex flex-wrap justify-content-center align-items-center gap-2 p-3">
                             <!-- 首页和上页按钮 -->
                             <div class="btn-group">

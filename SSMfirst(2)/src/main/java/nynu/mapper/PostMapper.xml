@@ -3,5 +3,24 @@
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="nynu.mapper.PostMapper">
-
+    <select id="selectPost" resultType="nynu.pojo.Post">
+        SELECT * FROM POST
+        <where>
+            <!-- 投稿名称模糊查询 -->
+            <if test=" postName != null and postName != '' ">
+                AND post_name LIKE CONCAT('%', #{postName}, '%')
+            </if>
+            <!-- 投稿内容模糊查询 -->
+            <if test=" postContext != null and postContext != '' ">
+                AND post_context LIKE CONCAT('%', #{postContext}, '%')
+            </if>
+            <!-- ID范围查询 -->
+            <if test="minId != null">
+                AND post_id &gt;= #{minId}
+            </if>
+            <if test="maxId != null">
+                AND post_id &lt;= #{maxId}
+            </if>
+        </where>
+    </select>
 </mapper>
